@@ -1,148 +1,211 @@
+/* ================================================= */
+/* ================= RESET ========================= */
+/* ================================================= */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+
 html {
     scroll-behavior: smooth;
 }
 
+
 body {
     font-family: Arial, Helvetica, sans-serif;
+
     background: #f8f1e6;
+
     color: #172033;
+
     overflow-x: hidden;
+
     -webkit-font-smoothing: antialiased;
 }
+
+
+
+/* ================================================= */
+/* ================= LINKS ========================= */
+/* ================================================= */
 
 a {
     color: inherit;
 }
+
 
 a,
 button {
     -webkit-tap-highlight-color: transparent;
 }
 
-.header {
-    width: 100%;
-    min-height: 64px;
-    padding: 10px 25px;
-    background: #ffffff;
-    border-bottom: 1px solid #eadfd2;
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-}
 
-.logo {
-    font-size: 30px;
-    font-weight: 800;
-    letter-spacing: -0.7px;
-    color: #172033;
-}
-
-.logo span {
-    color: #d13622;
-}
-
-.secure {
-    display: inline-flex;
-    align-items: center;
-    gap: 7px;
-
-    color: #697386;
-    font-size: 11px;
-    font-weight: 700;
-    white-space: nowrap;
-}
+/* ================================================= */
+/* ================= PRINCIPAL ===================== */
+/* ================================================= */
 
 .offer {
-    min-height: calc(100vh - 64px);
+
+    min-height: 100vh;
+
     padding: 65px 20px 75px;
 
     background:
-        radial-gradient(circle at 10% 10%, rgba(209, 54, 34, 0.06), transparent 28%),
-        radial-gradient(circle at 90% 80%, rgba(23, 32, 51, 0.05), transparent 30%),
+
+        radial-gradient(
+            circle at 10% 10%,
+            rgba(209, 54, 34, 0.06),
+            transparent 28%
+        ),
+
+        radial-gradient(
+            circle at 90% 80%,
+            rgba(23, 32, 51, 0.05),
+            transparent 30%
+        ),
+
         #f8f1e6;
 }
 
+
 .offer-container {
+
     width: 100%;
+
     max-width: 1080px;
+
     margin: 0 auto;
+
     text-align: center;
 }
 
+
+
+/* ================================================= */
+/* ================= BADGE ======================== */
+/* ================================================= */
+
 .badge {
+
     display: inline-flex;
+
     align-items: center;
+
     justify-content: center;
 
     padding: 8px 15px;
+
     border-radius: 30px;
 
     background: #f7dddd;
+
     color: #d13622;
 
     font-size: 10px;
+
     font-weight: 800;
+
     letter-spacing: 1px;
 }
 
+
+
+/* ================================================= */
+/* ================= TÍTULO ======================== */
+/* ================================================= */
+
 .offer h1 {
+
     max-width: 800px;
+
     margin: 20px auto 15px;
 
     font-size: 48px;
+
     line-height: 1.08;
+
     letter-spacing: -1.2px;
+
     font-weight: 800;
+
     color: #172033;
 }
 
+
 .offer h1 span {
+
     display: block;
+
     color: #d13622;
 }
 
+
+
+/* ================================================= */
+/* ================= SUBTÍTULO ===================== */
+/* ================================================= */
+
 .subtitle {
+
     max-width: 620px;
+
     margin: 0 auto;
 
     color: #697386;
+
     font-size: 15px;
+
     line-height: 1.7;
 }
 
+
+
+/* ================================================= */
+/* ================= CARDS ======================== */
+/* ================================================= */
+
 .plans {
+
     width: 100%;
+
     max-width: 940px;
+
     margin: 45px auto 0;
 
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
     gap: 24px;
 
     align-items: stretch;
+
     text-align: left;
 }
 
+
 .plan {
+
     position: relative;
 
     padding: 32px;
+
     border-radius: 22px;
+
     background: #ffffff;
 
     border: 1px solid #eadfd2;
 
-    box-shadow: 0 18px 45px rgba(23, 32, 51, 0.09);
+    box-shadow:
+        0 18px 45px rgba(23, 32, 51, 0.09);
 
     display: flex;
+
     flex-direction: column;
 
     transition:
@@ -151,500 +214,97 @@ button {
         border-color 0.25s ease;
 }
 
+
 .plan:hover {
+
     transform: translateY(-5px);
-    box-shadow: 0 24px 55px rgba(23, 32, 51, 0.13);
+
+    box-shadow:
+        0 24px 55px rgba(23, 32, 51, 0.13);
 }
 
+
+
+/* ================================================= */
+/* ================= CARD EBOOK ==================== */
+/* ================================================= */
+
 .plan.basic {
+
     border-top: 4px solid #d13622;
 }
 
+
+
+/* ================================================= */
+/* ================= CARD COMPLETO ================ */
+/* ================================================= */
+
 .plan.complete {
+
     border: 2px solid #d13622;
-    box-shadow: 0 22px 55px rgba(209, 54, 34, 0.14);
+
+    box-shadow:
+        0 22px 55px rgba(209, 54, 34, 0.14);
 }
 
+
+
+/* ================================================= */
+/* ================= MAIS COMPLETO ================= */
+/* ================================================= */
+
 .popular {
+
     position: absolute;
+
     top: 0;
+
     right: 25px;
 
     transform: translateY(-50%);
 
     padding: 7px 13px;
+
     border-radius: 30px;
 
     background: #d13622;
+
     color: #ffffff;
 
     font-size: 9px;
+
     font-weight: 800;
+
     letter-spacing: 0.8px;
 }
 
-.plan-label {
-    display: inline-flex;
-    align-items: center;
 
-    width: fit-content;
-    margin-bottom: 14px;
 
-    padding: 6px 10px;
-    border-radius: 7px;
-
-    background: #f8f1e6;
-    color: #7c8799;
-
-    font-size: 9px;
-    font-weight: 800;
-    letter-spacing: 0.8px;
-}
-
-.complete .plan-label {
-    background: #f7dddd;
-    color: #d13622;
-}
-
-.plan h2 {
-    margin-bottom: 12px;
-
-    color: #172033;
-    font-size: 24px;
-    line-height: 1.2;
-    font-weight: 800;
-}
-
-.plan-description {
-    min-height: 70px;
-    margin-bottom: 22px;
-
-    color: #697386;
-    font-size: 13px;
-    line-height: 1.6;
-}
-
-.plan-price {
-    margin-bottom: 25px;
-
-    color: #d13622;
-    font-size: 36px;
-    line-height: 1;
-    font-weight: 800;
-}
-
-.plan-price small {
-    display: block;
-    margin-bottom: 7px;
-
-    color: #7c8799;
-    font-size: 10px;
-    line-height: 1.4;
-    font-weight: 600;
-}
-
-.includes-title {
-    margin-bottom: 12px;
-
-    color: #172033;
-    font-size: 13px;
-    font-weight: 800;
-}
-
-.plan ul {
-    list-style: none;
-    margin: 0 0 25px;
-    padding: 0;
-}
-
-.plan li {
-    position: relative;
-
-    padding: 8px 0 8px 26px;
-    border-bottom: 1px solid #f1ebe3;
-
-    color: #687386;
-    font-size: 12px;
-    line-height: 1.45;
-}
-
-.plan li:last-child {
-    border-bottom: none;
-}
-
-.plan li::before {
-    content: "✓";
-    position: absolute;
-    left: 0;
-    top: 8px;
-
-    color: #20b83a;
-    font-weight: 900;
-}
-
-.plan li > strong {
-    color: #273247;
-}
-
-.plan-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    width: 100%;
-    min-height: 52px;
-    margin-top: auto;
-    padding: 15px 14px;
-
-    border-radius: 10px;
-
-    text-decoration: none;
-    text-align: center;
-
-    font-size: 11px;
-    font-weight: 800;
-    letter-spacing: 0.2px;
-
-    transition:
-        transform 0.2s ease,
-        background 0.2s ease,
-        box-shadow 0.2s ease;
-}
-
-.basic-button {
-    background: #172033;
-    color: #ffffff;
-}
-
-.basic-button:hover {
-    background: #273247;
-    transform: translateY(-2px);
-    box-shadow: 0 10px 25px rgba(23, 32, 51, 0.18);
-}
-
-.complete-button {
-    background: #d13622;
-    color: #ffffff;
-    box-shadow: 0 8px 22px rgba(209, 54, 34, 0.2);
-}
-
-.complete-button:hover {
-    background: #b82c1c;
-    transform: translateY(-2px);
-    box-shadow: 0 12px 28px rgba(209, 54, 34, 0.27);
-}
-
-.plan-button:active {
-    transform: scale(0.98);
-}
-
-.plan-button:focus-visible {
-    outline: 3px solid rgba(209, 54, 34, 0.3);
-    outline-offset: 4px;
-}
-
-.plan-security {
-    margin-top: 13px;
-
-    color: #a2aab5;
-    font-size: 9px;
-    line-height: 1.4;
-    text-align: center;
-}
-
-.guarantee {
-    width: 100%;
-    max-width: 700px;
-    margin: 35px auto 0;
-    padding: 18px 22px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 14px;
-
-    background: rgba(255, 255, 255, 0.72);
-    border: 1px solid #eadfd2;
-    border-radius: 14px;
-
-    text-align: left;
-}
-
-.guarantee-icon {
-    flex: 0 0 38px;
-
-    width: 38px;
-    height: 38px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    border-radius: 50%;
-
-    background: #e8f7ec;
-    color: #20a33a;
-
-    font-size: 18px;
-    font-weight: 900;
-}
-
-.guarantee strong {
-    display: block;
-    margin-bottom: 4px;
-
-    color: #172033;
-    font-size: 12px;
-}
-
-.guarantee p {
-    color: #7c8799;
-    font-size: 10px;
-    line-height: 1.5;
-}
-
-footer {
-    padding: 32px 20px;
-
-    background: #172033;
-    color: #aeb5c2;
-
-    text-align: center;
-    font-size: 10px;
-    line-height: 1.5;
-}
-
-@media (max-width: 900px) {
-    .offer {
-        padding-top: 55px;
-    }
-
-    .offer h1 {
-        font-size: 42px;
-    }
-
-    .plans {
-        gap: 18px;
-    }
-
-    .plan {
-        padding: 27px;
-    }
-}
-
-@media (max-width: 700px) {
-    .header {
-        min-height: 58px;
-        padding: 9px 15px;
-    }
-
-    .logo {
-        font-size: 24px;
-    }
-
-    .secure {
-        font-size: 9px;
-    }
-
-    .offer {
-        min-height: auto;
-        padding: 42px 15px 55px;
-    }
-
-    .badge {
-        max-width: 100%;
-        padding: 7px 10px;
-        font-size: 8px;
-        letter-spacing: 0.6px;
-    }
-
-    .offer h1 {
-        margin-top: 16px;
-        font-size: 33px;
-        letter-spacing: -0.7px;
-    }
-
-    .subtitle {
-        font-size: 13px;
-        line-height: 1.6;
-    }
-
-    .plans {
-        grid-template-columns: 1fr;
-        max-width: 500px;
-        margin-top: 38px;
-        gap: 30px;
-    }
-
-    .plan {
-        padding: 26px 21px;
-        border-radius: 18px;
-    }
-
-    .plan.complete {
-        margin-top: 8px;
-    }
-
-    .plan h2 {
-        font-size: 21px;
-    }
-
-    .plan-description {
-        min-height: auto;
-        font-size: 12px;
-    }
-
-    .plan-price {
-        font-size: 33px;
-    }
-
-    .guarantee {
-        max-width: 500px;
-        margin-top: 28px;
-        padding: 16px;
-    }
-}
-
-@media (max-width: 480px) {
-    .header {
-        padding: 8px 12px;
-    }
-
-    .logo {
-        font-size: 21px;
-    }
-
-    .secure {
-        font-size: 8px;
-    }
-
-    .offer {
-        padding: 35px 12px 45px;
-    }
-
-    .offer h1 {
-        font-size: 28px;
-        line-height: 1.13;
-    }
-
-    .subtitle {
-        font-size: 12px;
-    }
-
-    .plans {
-        margin-top: 32px;
-        gap: 27px;
-    }
-
-    .plan {
-        padding: 23px 17px;
-        border-radius: 16px;
-    }
-
-    .popular {
-        right: 17px;
-        padding: 6px 10px;
-        font-size: 8px;
-    }
-
-    .plan-label {
-        font-size: 8px;
-    }
-
-    .plan h2 {
-        font-size: 19px;
-    }
-
-    .plan li {
-        font-size: 10px;
-        padding-top: 7px;
-        padding-bottom: 7px;
-    }
-
-    .plan li::before {
-        top: 7px;
-    }
-
-    .plan-price {
-        font-size: 30px;
-    }
-
-    .plan-button {
-        min-height: 50px;
-        font-size: 9px;
-    }
-
-    .guarantee {
-        align-items: flex-start;
-        gap: 10px;
-    }
-
-    .guarantee-icon {
-        flex-basis: 34px;
-        width: 34px;
-        height: 34px;
-    }
-
-    footer {
-        padding: 28px 12px;
-        font-size: 8px;
-    }
-}
-
-@media (max-width: 360px) {
-    .logo {
-        font-size: 19px;
-    }
-
-    .secure {
-        font-size: 7px;
-    }
-
-    .offer h1 {
-        font-size: 25px;
-    }
-
-    .plan h2 {
-        font-size: 18px;
-    }
-
-    .plan-price {
-        font-size: 28px;
-    }
-
-    .plan li {
-        font-size: 9px;
-    }
-}
-
-@media (prefers-reduced-motion: reduce) {
-    html {
-        scroll-behavior: auto;
-    }
-
-    *,
-    *::before,
-    *::after {
-        transition-duration: 0.01ms !important;
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-    }
-}
-
-/* ================= IMAGEM DO E-BOOK ================= */
+/* ================================================= */
+/* ================= IMAGEM EBOOK ================== */
+/* ================================================= */
 
 .plan-image {
+
     width: 100%;
+
     max-width: 220px;
+
     margin: 0 auto 22px;
 
     display: flex;
+
     justify-content: center;
 }
 
+
 .plan-image img {
+
     display: block;
+
     width: 100%;
+
     height: auto;
 
     border-radius: 12px;
@@ -657,40 +317,843 @@ footer {
         box-shadow 0.3s ease;
 }
 
-/* Efeito ao passar o mouse na capa */
+
 .plan:hover .plan-image img {
-    transform: translateY(-5px) scale(1.02);
+
+    transform:
+        translateY(-5px)
+        scale(1.02);
 
     box-shadow:
         0 20px 40px rgba(23, 32, 51, 0.20);
 }
 
-/* No card completo, deixa a capa um pouco maior */
+
 .complete .plan-image {
+
     max-width: 240px;
 }
 
-@media (max-width: 700px) {
 
-    .plan-image {
-        max-width: 190px;
-        margin-bottom: 18px;
+
+/* ================================================= */
+/* ================= LABEL ========================= */
+/* ================================================= */
+
+.plan-label {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    width: fit-content;
+
+    margin-bottom: 14px;
+
+    padding: 6px 10px;
+
+    border-radius: 7px;
+
+    background: #f8f1e6;
+
+    color: #7c8799;
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    letter-spacing: 0.8px;
+}
+
+
+.complete .plan-label {
+
+    background: #f7dddd;
+
+    color: #d13622;
+}
+
+
+
+/* ================================================= */
+/* ================= TÍTULO CARD =================== */
+/* ================================================= */
+
+.plan h2 {
+
+    margin-bottom: 12px;
+
+    color: #172033;
+
+    font-size: 24px;
+
+    line-height: 1.2;
+
+    font-weight: 800;
+}
+
+
+
+/* ================================================= */
+/* ================= DESCRIÇÃO ===================== */
+/* ================================================= */
+
+.plan-description {
+
+    min-height: 70px;
+
+    margin-bottom: 22px;
+
+    color: #697386;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+}
+
+
+
+/* ================================================= */
+/* ================= PREÇO ========================= */
+/* ================================================= */
+
+.plan-price {
+
+    margin-bottom: 25px;
+
+    color: #d13622;
+
+    font-size: 36px;
+
+    line-height: 1;
+
+    font-weight: 800;
+}
+
+
+.plan-price small {
+
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #7c8799;
+
+    font-size: 10px;
+
+    line-height: 1.4;
+
+    font-weight: 600;
+}
+
+
+
+/* ================================================= */
+/* ================= RECEBE ======================== */
+/* ================================================= */
+
+.includes-title {
+
+    margin-bottom: 12px;
+
+    color: #172033;
+
+    font-size: 13px;
+
+    font-weight: 800;
+}
+
+
+
+/* ================================================= */
+/* ================= LISTA ========================= */
+/* ================================================= */
+
+.plan ul {
+
+    list-style: none;
+
+    margin: 0 0 25px;
+
+    padding: 0;
+}
+
+
+.plan li {
+
+    position: relative;
+
+    padding: 8px 0 8px 26px;
+
+    border-bottom:
+        1px solid #f1ebe3;
+
+    color: #687386;
+
+    font-size: 12px;
+
+    line-height: 1.45;
+}
+
+
+.plan li:last-child {
+
+    border-bottom: none;
+}
+
+
+.plan li::before {
+
+    content: "✓";
+
+    position: absolute;
+
+    left: 0;
+
+    top: 8px;
+
+    color: #20b83a;
+
+    font-weight: 900;
+}
+
+
+.plan li strong {
+
+    color: #273247;
+}
+
+
+
+/* ================================================= */
+/* ================= BOTÕES ======================= */
+/* ================================================= */
+
+.plan-button {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 100%;
+
+    min-height: 52px;
+
+    margin-top: auto;
+
+    padding: 15px 14px;
+
+    border-radius: 10px;
+
+    text-decoration: none;
+
+    text-align: center;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 0.2px;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+
+/* BOTÃO EBOOK */
+
+.basic-button {
+
+    background: #172033;
+
+    color: #ffffff;
+}
+
+
+.basic-button:hover {
+
+    background: #d13622;
+
+    transform:
+        translateY(-3px)
+        scale(1.01);
+
+    box-shadow:
+        0 12px 30px
+        rgba(209, 54, 34, 0.25);
+}
+
+
+
+/* BOTÃO KIT */
+
+.complete-button {
+
+    background: #d13622;
+
+    color: #ffffff;
+
+    box-shadow:
+        0 8px 22px
+        rgba(209, 54, 34, 0.20);
+}
+
+
+.complete-button:hover {
+
+    background: #b82c1c;
+
+    transform:
+        translateY(-3px)
+        scale(1.01);
+
+    box-shadow:
+        0 14px 32px
+        rgba(209, 54, 34, 0.35);
+}
+
+
+
+/* QUANDO CLICAR */
+
+.plan-button:active {
+
+    transform:
+        translateY(1px)
+        scale(0.97);
+
+    box-shadow:
+        0 4px 10px
+        rgba(23, 32, 51, 0.15);
+}
+
+
+
+/* FOCO */
+
+.plan-button:focus-visible {
+
+    outline:
+        3px solid
+        rgba(209, 54, 34, 0.30);
+
+    outline-offset: 4px;
+}
+
+
+
+/* ================================================= */
+/* ================= SEGURANÇA ===================== */
+/* ================================================= */
+
+.plan-security {
+
+    margin-top: 13px;
+
+    color: #a2aab5;
+
+    font-size: 9px;
+
+    line-height: 1.4;
+
+    text-align: center;
+}
+
+
+
+/* ================================================= */
+/* ================= GARANTIA ====================== */
+/* ================================================= */
+
+.guarantee {
+
+    width: 100%;
+
+    max-width: 700px;
+
+    margin: 35px auto 0;
+
+    padding: 18px 22px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 14px;
+
+    background:
+        rgba(255, 255, 255, 0.72);
+
+    border:
+        1px solid #eadfd2;
+
+    border-radius: 14px;
+
+    text-align: left;
+}
+
+
+.guarantee-icon {
+
+    flex: 0 0 38px;
+
+    width: 38px;
+
+    height: 38px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #e8f7ec;
+
+    color: #20a33a;
+
+    font-size: 18px;
+
+    font-weight: 900;
+}
+
+
+.guarantee strong {
+
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #172033;
+
+    font-size: 12px;
+}
+
+
+.guarantee p {
+
+    color: #7c8799;
+
+    font-size: 10px;
+
+    line-height: 1.5;
+}
+
+
+
+/* ================================================= */
+/* ================= FOOTER ======================== */
+/* ================================================= */
+
+footer {
+
+    padding: 40px 20px;
+
+    background: #172033;
+
+    color: #aeb5c2;
+
+    text-align: center;
+}
+
+
+.footer-logo {
+
+    margin-bottom: 10px;
+
+    color: #ffffff;
+
+    font-size: 30px;
+
+    font-weight: 800;
+}
+
+
+.footer-logo span {
+
+    color: #d13622;
+}
+
+
+footer p {
+
+    font-size: 10px;
+
+    line-height: 1.5;
+}
+
+
+
+/* ================================================= */
+/* ================= TABLET ======================== */
+/* ================================================= */
+
+@media (max-width: 900px) {
+
+    .offer {
+
+        padding-top: 55px;
     }
 
-    .complete .plan-image {
-        max-width: 210px;
+
+    .offer h1 {
+
+        font-size: 42px;
+    }
+
+
+    .plans {
+
+        gap: 18px;
+    }
+
+
+    .plan {
+
+        padding: 27px;
     }
 
 }
 
-@media (max-width: 480px) {
+
+
+/* ================================================= */
+/* ================= CELULAR ======================= */
+/* ================================================= */
+
+@media (max-width: 700px) {
+
+    .offer {
+
+        min-height: auto;
+
+        padding:
+            42px 15px 55px;
+    }
+
+
+    .badge {
+
+        max-width: 100%;
+
+        padding:
+            7px 10px;
+
+        font-size: 8px;
+
+        letter-spacing: 0.6px;
+    }
+
+
+    .offer h1 {
+
+        margin-top: 16px;
+
+        font-size: 33px;
+
+        letter-spacing: -0.7px;
+    }
+
+
+    .subtitle {
+
+        font-size: 13px;
+
+        line-height: 1.6;
+    }
+
+
+    .plans {
+
+        grid-template-columns: 1fr;
+
+        max-width: 500px;
+
+        margin-top: 38px;
+
+        gap: 30px;
+    }
+
+
+    .plan {
+
+        padding:
+            26px 21px;
+
+        border-radius: 18px;
+    }
+
+
+    .plan.complete {
+
+        margin-top: 8px;
+    }
+
 
     .plan-image {
+
+        max-width: 190px;
+
+        margin-bottom: 18px;
+    }
+
+
+    .complete .plan-image {
+
+        max-width: 210px;
+    }
+
+
+    .plan h2 {
+
+        font-size: 21px;
+    }
+
+
+    .plan-description {
+
+        min-height: auto;
+
+        font-size: 12px;
+    }
+
+
+    .plan-price {
+
+        font-size: 33px;
+    }
+
+
+    .guarantee {
+
+        max-width: 500px;
+
+        margin-top: 28px;
+
+        padding: 16px;
+    }
+
+}
+
+
+
+/* ================================================= */
+/* ================= CELULAR PEQUENO ============== */
+/* ================================================= */
+
+@media (max-width: 480px) {
+
+    .offer {
+
+        padding:
+            35px 12px 45px;
+    }
+
+
+    .offer h1 {
+
+        font-size: 28px;
+
+        line-height: 1.13;
+    }
+
+
+    .subtitle {
+
+        font-size: 12px;
+    }
+
+
+    .plans {
+
+        margin-top: 32px;
+
+        gap: 27px;
+    }
+
+
+    .plan {
+
+        padding:
+            23px 17px;
+
+        border-radius: 16px;
+    }
+
+
+    .popular {
+
+        right: 17px;
+
+        padding:
+            6px 10px;
+
+        font-size: 8px;
+    }
+
+
+    .plan-image {
+
         max-width: 170px;
     }
 
+
     .complete .plan-image {
+
         max-width: 185px;
+    }
+
+
+    .plan-label {
+
+        font-size: 8px;
+    }
+
+
+    .plan h2 {
+
+        font-size: 19px;
+    }
+
+
+    .plan li {
+
+        font-size: 10px;
+
+        padding-top: 7px;
+
+        padding-bottom: 7px;
+    }
+
+
+    .plan li::before {
+
+        top: 7px;
+    }
+
+
+    .plan-price {
+
+        font-size: 30px;
+    }
+
+
+    .plan-button {
+
+        min-height: 50px;
+
+        font-size: 9px;
+    }
+
+
+    .guarantee {
+
+        align-items:
+            flex-start;
+
+        gap: 10px;
+    }
+
+
+    .guarantee-icon {
+
+        flex-basis: 34px;
+
+        width: 34px;
+
+        height: 34px;
+    }
+
+
+    footer {
+
+        padding:
+            30px 12px;
+    }
+
+
+    .footer-logo {
+
+        font-size: 25px;
+    }
+
+
+    footer p {
+
+        font-size: 8px;
+    }
+
+}
+
+
+
+/* ================================================= */
+/* ================= MUITO PEQUENO ================= */
+/* ================================================= */
+
+@media (max-width: 360px) {
+
+    .offer h1 {
+
+        font-size: 25px;
+    }
+
+
+    .plan h2 {
+
+        font-size: 18px;
+    }
+
+
+    .plan-price {
+
+        font-size: 28px;
+    }
+
+
+    .plan li {
+
+        font-size: 9px;
+    }
+
+}
+
+
+
+/* ================================================= */
+/* ================= ACESSIBILIDADE ================ */
+/* ================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+
+        scroll-behavior: auto;
+    }
+
+
+    *,
+    *::before,
+    *::after {
+
+        transition-duration:
+            0.01ms !important;
+
+        animation-duration:
+            0.01ms !important;
+
+        animation-iteration-count:
+            1 !important;
     }
 
 }
