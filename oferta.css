@@ -1,0 +1,622 @@
+/* ================= RESET ================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+
+/* ================================ */
+/* FONTE DOS TÍTULOS DOS EBOOKS */
+/* ================================ */
+
+.plan h2 {
+    font-family: 'Anton', sans-serif;
+    font-weight: 200;
+    letter-spacing: 0.5px;
+    line-height: 1.15;
+    text-transform: uppercase;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #ffffff;
+
+    color: #172033;
+}
+
+
+
+/* ================= HEADER ================= */
+
+.header {
+
+    height: 60px;
+
+    border-bottom: 1px solid #f0dddd;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 30px;
+
+    background: #ffffff;
+}
+
+
+.logo {
+    font-size: 40px;
+    font-weight: 800;
+    color: #172033;
+    margin-left: 190px;
+}
+
+
+.logo span {
+
+    color: #D13622;
+}
+
+
+.secure {
+
+    font-size: 10px;
+
+    color: #7f8997;
+}
+
+
+
+/* ================= OFFER ================= */
+
+.offer {
+
+    padding: 45px 20px 60px;
+}
+
+
+.offer-container {
+
+    max-width: 950px;
+
+    margin: auto;
+
+    text-align: center;
+}
+
+
+.badge {
+
+    display: inline-block;
+
+    background: #F7EBEB;
+
+    color: #D13622;
+
+    padding: 7px 13px;
+
+    border-radius: 20px;
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    letter-spacing: 0.8px;
+
+    margin-bottom: 18px;
+}
+
+
+.offer h1 {
+
+    font-size: 34px;
+
+    line-height: 1.2;
+
+    margin-bottom: 12px;
+
+    color: #172033;
+}
+
+
+.offer h1 span {
+
+    color: #D13622;
+}
+
+
+.subtitle {
+
+    max-width: 550px;
+
+    margin: auto;
+
+    color: #7c8797;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+
+    margin-bottom: 35px;
+}
+
+
+
+/* ================= PLANOS ================= */
+
+.plans {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+
+    text-align: left;
+
+    align-items: stretch;
+}
+
+
+.plan {
+
+    position: relative;
+
+    background: #ffffff;
+
+    border-radius: 16px;
+
+    padding: 28px;
+
+    border: 1px solid #eeeeee;
+
+    box-shadow:
+        0 12px 35px rgba(209, 54, 34, 0.09);
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.plan-label {
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    color: #929aa5;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 12px;
+}
+
+
+.plan h2 {
+
+    font-size: 22px;
+
+    line-height: 1.2;
+
+    color: #172033;
+
+    margin-bottom: 12px;
+}
+
+
+.plan-description {
+
+    font-size: 12px;
+
+    line-height: 1.55;
+
+    color: #7b8593;
+
+    min-height: 57px;
+
+    margin-bottom: 18px;
+}
+
+
+
+/* ================= PREÇO ================= */
+
+.plan-price {
+
+    font-size: 30px;
+
+    font-weight: 800;
+
+    color: #D13622;
+
+    margin-bottom: 20px;
+}
+
+
+.plan-price small {
+
+    display: block;
+
+    font-size: 10px;
+
+    font-weight: 500;
+
+    color: #8b94a1;
+
+    margin-bottom: 3px;
+}
+
+
+
+/* ================= LISTA ================= */
+
+.includes-title {
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    color: #172033;
+
+    margin-bottom: 12px;
+}
+
+
+.plan ul {
+
+    list-style: none;
+
+    margin-bottom: 22px;
+
+    flex: 1;
+}
+
+
+.plan li {
+
+    font-size: 11px;
+
+    color: #1d232f;
+
+    margin-bottom: 10px;
+
+    line-height: 1.35;
+}
+
+
+.plan li::first-letter {
+
+    color: #51d122;
+}
+
+
+
+/* ================= BOTÕES ================= */
+
+.plan-button {
+
+    display: block;
+
+    width: 100%;
+
+    padding: 15px 10px;
+
+    border-radius: 9px;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    transition:
+        0.2s ease;
+}
+
+
+/* ================= BOTÃO EBOOK ================= */
+
+.basic-button {
+
+    border: 2px solid #D13622;
+
+    color: #D13622;
+
+    background: #ffffff;
+}
+
+
+.basic-button:hover {
+
+    background: #51d122;
+
+    border-color: #51d122;
+
+    color: #ffffff;
+
+    transform: translateY(-2px);
+}
+
+
+/* ================= BOTÃO KIT ================= */
+
+.complete-button {
+
+    background: #D13622;
+
+    color: #ffffff;
+
+    border: 2px solid #D13622;
+
+    box-shadow:
+        0 8px 20px rgba(209, 54, 34, 0.22);
+}
+
+
+.complete-button:hover {
+
+    background: #51d122;
+
+    border-color: #51d122;
+
+    color: #ffffff;
+
+    transform: translateY(-2px);
+}
+
+
+/* ================= EFEITO AO CLICAR ================= */
+
+.basic-button:active,
+.complete-button:active {
+
+    background: #3fa91b;
+
+    border-color: #3fa91b;
+
+    color: #ffffff;
+
+    transform: scale(0.97);
+}
+
+
+.plan-security {
+
+    text-align: center;
+
+    font-size: 9px;
+
+    color: #a0a8b3;
+
+    margin-top: 11px;
+}
+
+
+
+/* ================= KIT DESTAQUE ================= */
+
+.complete {
+
+    border: 2px solid #D13622;
+
+    background: linear-gradient(
+        180deg,
+        #fffafa 0%,
+        #ffffff 100%
+    );
+
+    transform: scale(1.02);
+}
+
+
+.popular {
+
+    position: absolute;
+
+    top: -12px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    background: #D13622;
+
+    color: #ffffff;
+
+    padding: 6px 16px;
+
+    border-radius: 20px;
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    letter-spacing: 0.5px;
+
+    white-space: nowrap;
+}
+
+
+
+/* ================= GARANTIA ================= */
+
+.guarantee {
+
+    max-width: 500px;
+
+    margin: 30px auto 0;
+
+    padding: 15px 20px;
+
+    background: #F7EBEB;
+
+    border-radius: 10px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    text-align: left;
+}
+
+
+.guarantee-icon {
+
+    width: 30px;
+
+    height: 30px;
+
+    border-radius: 50%;
+
+    background: #D13622;
+
+    color: #ffffff;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-weight: bold;
+}
+
+
+.guarantee strong {
+
+    font-size: 11px;
+
+    color: #172033;
+}
+
+
+.guarantee p {
+
+    font-size: 9px;
+
+    color: #7d8794;
+
+    margin-top: 3px;
+
+    line-height: 1.4;
+}
+
+
+
+/* ================= FOOTER ================= */
+
+footer {
+
+    border-top: 1px solid #eeeeee;
+
+    padding: 22px;
+
+    text-align: center;
+
+    font-size: 9px;
+
+    color: #9aa2ad;
+}
+
+
+
+/* ================= RESPONSIVO ================= */
+
+@media (max-width: 750px) {
+
+    .offer {
+
+        padding: 35px 15px 45px;
+    }
+
+
+    .offer h1 {
+
+        font-size: 28px;
+    }
+
+
+    .plans {
+
+        grid-template-columns: 1fr;
+
+        max-width: 480px;
+
+        margin: auto;
+    }
+
+
+    .complete {
+
+        transform: none;
+
+        order: -1;
+    }
+
+
+    .basic {
+
+        order: 2;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .header {
+
+        padding: 0 18px;
+    }
+
+
+    .secure {
+
+        font-size: 9px;
+    }
+
+
+    .offer h1 {
+
+        font-size: 25px;
+    }
+
+
+    .subtitle {
+
+        font-size: 12px;
+    }
+
+
+    .plan {
+
+        padding: 24px 20px;
+    }
+
+
+    .plan h2 {
+
+        font-size: 20px;
+    }
+
+
+    .plan-price {
+
+        font-size: 28px;
+    }
+
+}
