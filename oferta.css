@@ -1,1134 +1,632 @@
-/* ================= RESET ================= */
-
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
-
-
-/* ================= FONTE DOS TÍTULOS ================= */
-
-.plan h2 {
-    font-family: 'Anton', sans-serif;
-    font-weight: 200;
-    letter-spacing: 0.5px;
-    line-height: 1.15;
-    text-transform: uppercase;
-}
-
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
 html {
-    width: 100%;
-    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
-
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: #ffffff;
+    background: #f8f1e6;
     color: #172033;
-    width: 100%;
     overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
 }
 
+a {
+    color: inherit;
+}
 
-
-/* ================= HEADER ================= */
+a,
+button {
+    -webkit-tap-highlight-color: transparent;
+}
 
 .header {
-
-    min-height: 60px;
-
-    border-bottom: 1px solid #f0dddd;
+    width: 100%;
+    min-height: 64px;
+    padding: 10px 25px;
+    background: #ffffff;
+    border-bottom: 1px solid #eadfd2;
 
     display: flex;
-
     align-items: center;
-
     justify-content: space-between;
-
-    padding: 10px 30px;
-
-    background: #ffffff;
-
-    width: 100%;
+    gap: 20px;
 }
-
 
 .logo {
-
-    font-size: 40px;
-
+    font-size: 30px;
     font-weight: 800;
-
+    letter-spacing: -0.7px;
     color: #172033;
-
-    margin-left: 190px;
-
-    white-space: nowrap;
 }
-
 
 .logo span {
-
-    color: #D13622;
+    color: #d13622;
 }
-
 
 .secure {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
 
-    font-size: 10px;
-
-    color: #7f8997;
-
+    color: #697386;
+    font-size: 11px;
+    font-weight: 700;
     white-space: nowrap;
 }
-
-
-
-/* ================= OFFER ================= */
 
 .offer {
+    min-height: calc(100vh - 64px);
+    padding: 65px 20px 75px;
 
-    padding: 45px 20px 60px;
-
-    width: 100%;
+    background:
+        radial-gradient(circle at 10% 10%, rgba(209, 54, 34, 0.06), transparent 28%),
+        radial-gradient(circle at 90% 80%, rgba(23, 32, 51, 0.05), transparent 30%),
+        #f8f1e6;
 }
-
 
 .offer-container {
-
     width: 100%;
-
-    max-width: 950px;
-
-    margin: auto;
-
+    max-width: 1080px;
+    margin: 0 auto;
     text-align: center;
 }
-
 
 .badge {
-
-    display: inline-block;
-
-    background: #F7EBEB;
-
-    color: #D13622;
-
-    padding: 7px 13px;
-
-    border-radius: 20px;
-
-    font-size: 9px;
-
-    font-weight: 800;
-
-    letter-spacing: 0.8px;
-
-    margin-bottom: 18px;
-
-    max-width: 100%;
-}
-
-
-.offer h1 {
-
-    font-size: 34px;
-
-    line-height: 1.2;
-
-    margin-bottom: 12px;
-
-    color: #172033;
-}
-
-
-.offer h1 span {
-
-    color: #D13622;
-
-    display: inline;
-}
-
-
-.subtitle {
-
-    max-width: 550px;
-
-    margin: auto;
-
-    color: #7c8797;
-
-    font-size: 13px;
-
-    line-height: 1.6;
-
-    margin-bottom: 35px;
-}
-
-
-
-/* ================= PLANOS ================= */
-
-.plans {
-
-    display: grid;
-
-    grid-template-columns: 1fr 1fr;
-
-    gap: 20px;
-
-    text-align: left;
-
-    align-items: stretch;
-
-    width: 100%;
-}
-
-
-.plan {
-
-    position: relative;
-
-    background: #ffffff;
-
-    border-radius: 16px;
-
-    padding: 28px;
-
-    border: 1px solid #eeeeee;
-
-    box-shadow:
-        0 12px 35px rgba(209, 54, 34, 0.09);
-
-    display: flex;
-
-    flex-direction: column;
-
-    min-width: 0;
-}
-
-
-.plan-label {
-
-    font-size: 9px;
-
-    font-weight: 800;
-
-    color: #929aa5;
-
-    letter-spacing: 1px;
-
-    margin-bottom: 12px;
-}
-
-
-.plan h2 {
-
-    font-size: 22px;
-
-    line-height: 1.2;
-
-    color: #172033;
-
-    margin-bottom: 12px;
-
-    word-wrap: break-word;
-}
-
-
-.plan-description {
-
-    font-size: 12px;
-
-    line-height: 1.55;
-
-    color: #7b8593;
-
-    min-height: 57px;
-
-    margin-bottom: 18px;
-}
-
-
-
-/* ================= PREÇO ================= */
-
-.plan-price {
-
-    font-size: 30px;
-
-    font-weight: 800;
-
-    color: #D13622;
-
-    margin-bottom: 20px;
-}
-
-
-.plan-price small {
-
-    display: block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 8px 15px;
+    border-radius: 30px;
+
+    background: #f7dddd;
+    color: #d13622;
 
     font-size: 10px;
-
-    font-weight: 500;
-
-    color: #8b94a1;
-
-    margin-bottom: 3px;
+    font-weight: 800;
+    letter-spacing: 1px;
 }
 
+.offer h1 {
+    max-width: 800px;
+    margin: 20px auto 15px;
 
-
-/* ================= LISTA ================= */
-
-.includes-title {
-
-    font-size: 11px;
-
+    font-size: 48px;
+    line-height: 1.08;
+    letter-spacing: -1.2px;
     font-weight: 800;
-
     color: #172033;
-
-    margin-bottom: 12px;
 }
 
-
-.plan ul {
-
-    list-style: none;
-
-    margin-bottom: 22px;
-
-    padding: 0;
-
-    flex: 1;
-}
-
-
-.plan li {
-
-    font-size: 11px;
-
-    color: #1d232f;
-
-    margin-bottom: 10px;
-
-    line-height: 1.35;
-}
-
-
-.plan li::first-letter {
-
-    color: #51d122;
-}
-
-
-
-/* ================= BOTÕES ================= */
-
-.plan-button {
-
+.offer h1 span {
     display: block;
+    color: #d13622;
+}
 
+.subtitle {
+    max-width: 620px;
+    margin: 0 auto;
+
+    color: #697386;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.plans {
     width: 100%;
+    max-width: 940px;
+    margin: 45px auto 0;
 
-    padding: 15px 10px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
 
-    border-radius: 9px;
-
-    text-align: center;
-
-    text-decoration: none;
-
-    font-size: 11px;
-
-    font-weight: 800;
-
-    transition: 0.2s ease;
-
-    cursor: pointer;
+    align-items: stretch;
+    text-align: left;
 }
 
+.plan {
+    position: relative;
 
-
-/* ================= BOTÃO EBOOK ================= */
-
-.basic-button {
-
-    border: 2px solid #D13622;
-
-    color: #D13622;
-
+    padding: 32px;
+    border-radius: 22px;
     background: #ffffff;
+
+    border: 1px solid #eadfd2;
+
+    box-shadow: 0 18px 45px rgba(23, 32, 51, 0.09);
+
+    display: flex;
+    flex-direction: column;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
 }
 
-
-.basic-button:hover {
-
-    background: #51d122;
-
-    border-color: #51d122;
-
-    color: #ffffff;
-
-    transform: translateY(-2px);
+.plan:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 24px 55px rgba(23, 32, 51, 0.13);
 }
 
-
-
-/* ================= BOTÃO KIT ================= */
-
-.complete-button {
-
-    background: #D13622;
-
-    color: #ffffff;
-
-    border: 2px solid #D13622;
-
-    box-shadow:
-        0 8px 20px rgba(209, 54, 34, 0.22);
+.plan.basic {
+    border-top: 4px solid #d13622;
 }
 
-
-.complete-button:hover {
-
-    background: #51d122;
-
-    border-color: #51d122;
-
-    color: #ffffff;
-
-    transform: translateY(-2px);
+.plan.complete {
+    border: 2px solid #d13622;
+    box-shadow: 0 22px 55px rgba(209, 54, 34, 0.14);
 }
-
-
-
-/* ================= EFEITO AO CLICAR ================= */
-
-.basic-button:active,
-.complete-button:active {
-
-    background: #3fa91b;
-
-    border-color: #3fa91b;
-
-    color: #ffffff;
-
-    transform: scale(0.97);
-}
-
-
-
-/* ================= SEGURANÇA ================= */
-
-.plan-security {
-
-    text-align: center;
-
-    font-size: 9px;
-
-    color: #a0a8b3;
-
-    margin-top: 11px;
-}
-
-
-
-/* ================= KIT DESTAQUE ================= */
-
-.complete {
-
-    border: 2px solid #D13622;
-
-    background: linear-gradient(
-        180deg,
-        #fffafa 0%,
-        #ffffff 100%
-    );
-
-    transform: scale(1.02);
-}
-
 
 .popular {
-
     position: absolute;
+    top: 0;
+    right: 25px;
 
-    top: -12px;
+    transform: translateY(-50%);
 
-    left: 50%;
+    padding: 7px 13px;
+    border-radius: 30px;
 
-    transform: translateX(-50%);
-
-    background: #D13622;
-
+    background: #d13622;
     color: #ffffff;
 
-    padding: 6px 16px;
-
-    border-radius: 20px;
-
     font-size: 9px;
-
     font-weight: 800;
-
-    letter-spacing: 0.5px;
-
-    white-space: nowrap;
-
-    z-index: 2;
+    letter-spacing: 0.8px;
 }
 
+.plan-label {
+    display: inline-flex;
+    align-items: center;
 
+    width: fit-content;
+    margin-bottom: 14px;
 
-/* ================= GARANTIA ================= */
+    padding: 6px 10px;
+    border-radius: 7px;
 
-.guarantee {
+    background: #f8f1e6;
+    color: #7c8799;
 
-    max-width: 500px;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 0.8px;
+}
 
-    margin: 30px auto 0;
+.complete .plan-label {
+    background: #f7dddd;
+    color: #d13622;
+}
 
-    padding: 15px 20px;
+.plan h2 {
+    margin-bottom: 12px;
 
-    background: #F7EBEB;
+    color: #172033;
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 800;
+}
+
+.plan-description {
+    min-height: 70px;
+    margin-bottom: 22px;
+
+    color: #697386;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.plan-price {
+    margin-bottom: 25px;
+
+    color: #d13622;
+    font-size: 36px;
+    line-height: 1;
+    font-weight: 800;
+}
+
+.plan-price small {
+    display: block;
+    margin-bottom: 7px;
+
+    color: #7c8799;
+    font-size: 10px;
+    line-height: 1.4;
+    font-weight: 600;
+}
+
+.includes-title {
+    margin-bottom: 12px;
+
+    color: #172033;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.plan ul {
+    list-style: none;
+    margin: 0 0 25px;
+    padding: 0;
+}
+
+.plan li {
+    position: relative;
+
+    padding: 8px 0 8px 26px;
+    border-bottom: 1px solid #f1ebe3;
+
+    color: #687386;
+    font-size: 12px;
+    line-height: 1.45;
+}
+
+.plan li:last-child {
+    border-bottom: none;
+}
+
+.plan li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 8px;
+
+    color: #20b83a;
+    font-weight: 900;
+}
+
+.plan li > strong {
+    color: #273247;
+}
+
+.plan-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    min-height: 52px;
+    margin-top: auto;
+    padding: 15px 14px;
 
     border-radius: 10px;
 
-    display: flex;
+    text-decoration: none;
+    text-align: center;
 
-    align-items: center;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.2px;
 
-    gap: 13px;
-
-    text-align: left;
-
-    width: 100%;
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        box-shadow 0.2s ease;
 }
 
+.basic-button {
+    background: #172033;
+    color: #ffffff;
+}
+
+.basic-button:hover {
+    background: #273247;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(23, 32, 51, 0.18);
+}
+
+.complete-button {
+    background: #d13622;
+    color: #ffffff;
+    box-shadow: 0 8px 22px rgba(209, 54, 34, 0.2);
+}
+
+.complete-button:hover {
+    background: #b82c1c;
+    transform: translateY(-2px);
+    box-shadow: 0 12px 28px rgba(209, 54, 34, 0.27);
+}
+
+.plan-button:active {
+    transform: scale(0.98);
+}
+
+.plan-button:focus-visible {
+    outline: 3px solid rgba(209, 54, 34, 0.3);
+    outline-offset: 4px;
+}
+
+.plan-security {
+    margin-top: 13px;
+
+    color: #a2aab5;
+    font-size: 9px;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.guarantee {
+    width: 100%;
+    max-width: 700px;
+    margin: 35px auto 0;
+    padding: 18px 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+
+    background: rgba(255, 255, 255, 0.72);
+    border: 1px solid #eadfd2;
+    border-radius: 14px;
+
+    text-align: left;
+}
 
 .guarantee-icon {
+    flex: 0 0 38px;
 
-    width: 30px;
+    width: 38px;
+    height: 38px;
 
-    height: 30px;
-
-    min-width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     border-radius: 50%;
 
-    background: #D13622;
+    background: #e8f7ec;
+    color: #20a33a;
 
-    color: #ffffff;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    font-weight: bold;
+    font-size: 18px;
+    font-weight: 900;
 }
-
 
 .guarantee strong {
-
-    font-size: 11px;
+    display: block;
+    margin-bottom: 4px;
 
     color: #172033;
+    font-size: 12px;
 }
-
 
 .guarantee p {
-
-    font-size: 9px;
-
-    color: #7d8794;
-
-    margin-top: 3px;
-
-    line-height: 1.4;
+    color: #7c8799;
+    font-size: 10px;
+    line-height: 1.5;
 }
-
-
-
-/* ================= FOOTER ================= */
 
 footer {
+    padding: 32px 20px;
 
-    border-top: 1px solid #eeeeee;
-
-    padding: 22px;
+    background: #172033;
+    color: #aeb5c2;
 
     text-align: center;
-
-    font-size: 9px;
-
-    color: #9aa2ad;
-
-    width: 100%;
+    font-size: 10px;
+    line-height: 1.5;
 }
-
-
-
-/* ================================================= */
-/* ================= TABLET ======================== */
-/* ================================================= */
 
 @media (max-width: 900px) {
-
-    .header {
-
-        padding: 10px 25px;
-
-    }
-
-
-    .logo {
-
-        margin-left: 20px;
-
-        font-size: 34px;
-
-    }
-
-
     .offer {
-
-        padding: 40px 20px 50px;
-
+        padding-top: 55px;
     }
-
-
-    .plans {
-
-        gap: 15px;
-
-    }
-
-
-    .plan {
-
-        padding: 24px;
-
-    }
-
-
-    .plan h2 {
-
-        font-size: 21px;
-
-    }
-
-}
-
-
-
-/* ================================================= */
-/* ================= CELULAR ======================= */
-/* ================================================= */
-
-@media (max-width: 750px) {
-
-    .header {
-
-        min-height: 60px;
-
-        padding: 10px 18px;
-
-        gap: 10px;
-
-    }
-
-
-    .logo {
-
-        margin-left: 0;
-
-        font-size: 30px;
-
-    }
-
-
-    .secure {
-
-        font-size: 9px;
-
-    }
-
-
-    .offer {
-
-        padding: 35px 15px 45px;
-
-    }
-
-
-    .offer-container {
-
-        width: 100%;
-
-    }
-
-
-    .badge {
-
-        font-size: 8px;
-
-        padding: 7px 11px;
-
-    }
-
 
     .offer h1 {
-
-        font-size: 28px;
-
-        line-height: 1.2;
-
+        font-size: 42px;
     }
-
-
-    .offer h1 span {
-
-        display: block;
-
-        margin-top: 3px;
-
-    }
-
-
-    .subtitle {
-
-        font-size: 12px;
-
-        line-height: 1.55;
-
-        margin-bottom: 30px;
-
-        padding: 0 5px;
-
-    }
-
-
-    /* CARDS UM EMBAIXO DO OUTRO */
 
     .plans {
-
-        grid-template-columns: 1fr;
-
-        width: 100%;
-
-        max-width: 480px;
-
-        margin: auto;
-
-        gap: 25px;
-
+        gap: 18px;
     }
-
 
     .plan {
-
-        width: 100%;
-
-        padding: 25px 20px;
-
-        border-radius: 15px;
-
+        padding: 27px;
     }
-
-
-    /* KIT PRIMEIRO NO CELULAR */
-
-    .complete {
-
-        transform: none;
-
-        order: -1;
-
-    }
-
-
-    .basic {
-
-        order: 2;
-
-    }
-
-
-    .plan-label {
-
-        font-size: 9px;
-
-        margin-bottom: 10px;
-
-    }
-
-
-    .plan h2 {
-
-        font-size: 21px;
-
-        line-height: 1.2;
-
-    }
-
-
-    .plan-description {
-
-        font-size: 12px;
-
-        min-height: auto;
-
-        margin-bottom: 18px;
-
-    }
-
-
-    .plan-price {
-
-        font-size: 29px;
-
-        margin-bottom: 20px;
-
-    }
-
-
-    .plan-price small {
-
-        font-size: 10px;
-
-    }
-
-
-    .includes-title {
-
-        font-size: 11px;
-
-    }
-
-
-    .plan li {
-
-        font-size: 11px;
-
-        margin-bottom: 10px;
-
-    }
-
-
-    .plan-button {
-
-        padding: 16px 10px;
-
-        font-size: 11px;
-
-    }
-
-
-    .plan-security {
-
-        font-size: 9px;
-
-    }
-
-
-    .popular {
-
-        top: -11px;
-
-        font-size: 8px;
-
-        padding: 6px 14px;
-
-    }
-
-
-    .guarantee {
-
-        width: 100%;
-
-        max-width: 480px;
-
-        padding: 14px 15px;
-
-        margin-top: 25px;
-
-    }
-
-
-    footer {
-
-        padding: 20px 15px;
-
-        line-height: 1.5;
-
-    }
-
 }
 
+@media (max-width: 700px) {
+    .header {
+        min-height: 58px;
+        padding: 9px 15px;
+    }
 
+    .logo {
+        font-size: 24px;
+    }
 
-/* ================================================= */
-/* ================ CELULAR PEQUENO =============== */
-/* ================================================= */
+    .secure {
+        font-size: 9px;
+    }
+
+    .offer {
+        min-height: auto;
+        padding: 42px 15px 55px;
+    }
+
+    .badge {
+        max-width: 100%;
+        padding: 7px 10px;
+        font-size: 8px;
+        letter-spacing: 0.6px;
+    }
+
+    .offer h1 {
+        margin-top: 16px;
+        font-size: 33px;
+        letter-spacing: -0.7px;
+    }
+
+    .subtitle {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    .plans {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+        margin-top: 38px;
+        gap: 30px;
+    }
+
+    .plan {
+        padding: 26px 21px;
+        border-radius: 18px;
+    }
+
+    .plan.complete {
+        margin-top: 8px;
+    }
+
+    .plan h2 {
+        font-size: 21px;
+    }
+
+    .plan-description {
+        min-height: auto;
+        font-size: 12px;
+    }
+
+    .plan-price {
+        font-size: 33px;
+    }
+
+    .guarantee {
+        max-width: 500px;
+        margin-top: 28px;
+        padding: 16px;
+    }
+}
 
 @media (max-width: 480px) {
-
     .header {
-
-        min-height: 55px;
-
-        padding: 8px 15px;
-
+        padding: 8px 12px;
     }
-
 
     .logo {
-
-        font-size: 25px;
-
+        font-size: 21px;
     }
-
 
     .secure {
-
         font-size: 8px;
-
     }
-
 
     .offer {
-
-        padding: 30px 12px 40px;
-
+        padding: 35px 12px 45px;
     }
-
-
-    .badge {
-
-        font-size: 7px;
-
-        letter-spacing: 0.5px;
-
-        padding: 6px 10px;
-
-        margin-bottom: 15px;
-
-    }
-
 
     .offer h1 {
-
-        font-size: 24px;
-
+        font-size: 28px;
+        line-height: 1.13;
     }
-
 
     .subtitle {
-
-        font-size: 11px;
-
-        padding: 0 8px;
-
-        margin-bottom: 28px;
-
+        font-size: 12px;
     }
-
 
     .plans {
-
-        max-width: 100%;
-
-        gap: 22px;
-
+        margin-top: 32px;
+        gap: 27px;
     }
-
 
     .plan {
-
-        padding: 23px 18px;
-
-        border-radius: 14px;
-
+        padding: 23px 17px;
+        border-radius: 16px;
     }
 
+    .popular {
+        right: 17px;
+        padding: 6px 10px;
+        font-size: 8px;
+    }
+
+    .plan-label {
+        font-size: 8px;
+    }
 
     .plan h2 {
-
-        font-size: 20px;
-
+        font-size: 19px;
     }
-
-
-    .plan-description {
-
-        font-size: 11px;
-
-        line-height: 1.55;
-
-    }
-
-
-    .plan-price {
-
-        font-size: 27px;
-
-    }
-
 
     .plan li {
-
-        font-size: 11px;
-
-        line-height: 1.4;
-
-    }
-
-
-    .plan-button {
-
-        padding: 15px 8px;
-
         font-size: 10px;
-
+        padding-top: 7px;
+        padding-bottom: 7px;
     }
 
-
-    .plan-security {
-
-        font-size: 8px;
-
+    .plan li::before {
+        top: 7px;
     }
-
-
-    .guarantee {
-
-        padding: 13px;
-
-        gap: 10px;
-
-    }
-
-
-    .guarantee-icon {
-
-        width: 28px;
-
-        height: 28px;
-
-        min-width: 28px;
-
-        font-size: 12px;
-
-    }
-
-
-    .guarantee strong {
-
-        font-size: 10px;
-
-    }
-
-
-    .guarantee p {
-
-        font-size: 8px;
-
-    }
-
-
-    footer {
-
-        font-size: 8px;
-
-        padding: 18px 10px;
-
-    }
-
-}
-
-
-
-/* ================================================= */
-/* ============ CELULARES MUITO PEQUENOS =========== */
-/* ================================================= */
-
-@media (max-width: 360px) {
-
-    .header {
-
-        padding: 8px 10px;
-
-    }
-
-
-    .logo {
-
-        font-size: 22px;
-
-    }
-
-
-    .secure {
-
-        font-size: 7px;
-
-    }
-
-
-    .offer {
-
-        padding-left: 10px;
-
-        padding-right: 10px;
-
-    }
-
-
-    .offer h1 {
-
-        font-size: 22px;
-
-    }
-
-
-    .plan {
-
-        padding: 20px 15px;
-
-    }
-
-
-    .plan h2 {
-
-        font-size: 18px;
-
-    }
-
 
     .plan-price {
-
-        font-size: 25px;
-
+        font-size: 30px;
     }
-
 
     .plan-button {
-
+        min-height: 50px;
         font-size: 9px;
-
-        padding: 14px 6px;
-
     }
 
+    .guarantee {
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .guarantee-icon {
+        flex-basis: 34px;
+        width: 34px;
+        height: 34px;
+    }
+
+    footer {
+        padding: 28px 12px;
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 360px) {
+    .logo {
+        font-size: 19px;
+    }
+
+    .secure {
+        font-size: 7px;
+    }
+
+    .offer h1 {
+        font-size: 25px;
+    }
+
+    .plan h2 {
+        font-size: 18px;
+    }
+
+    .plan-price {
+        font-size: 28px;
+    }
+
+    .plan li {
+        font-size: 9px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+    }
 }
