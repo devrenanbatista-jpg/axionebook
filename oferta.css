@@ -630,3 +630,67 @@ footer {
         animation-iteration-count: 1 !important;
     }
 }
+
+/* ================= IMAGEM DO E-BOOK ================= */
+
+.plan-image {
+    width: 100%;
+    max-width: 220px;
+    margin: 0 auto 22px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.plan-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 15px 35px rgba(23, 32, 51, 0.15);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+/* Efeito ao passar o mouse na capa */
+.plan:hover .plan-image img {
+    transform: translateY(-5px) scale(1.02);
+
+    box-shadow:
+        0 20px 40px rgba(23, 32, 51, 0.20);
+}
+
+/* No card completo, deixa a capa um pouco maior */
+.complete .plan-image {
+    max-width: 240px;
+}
+
+@media (max-width: 700px) {
+
+    .plan-image {
+        max-width: 190px;
+        margin-bottom: 18px;
+    }
+
+    .complete .plan-image {
+        max-width: 210px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .plan-image {
+        max-width: 170px;
+    }
+
+    .complete .plan-image {
+        max-width: 185px;
+    }
+
+}
