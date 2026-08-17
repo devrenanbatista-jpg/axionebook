@@ -14,6 +14,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background: #ffffff;
     color: #172033;
+    overflow-x: hidden;
 }
 
 
@@ -28,19 +29,20 @@ body {
 .header-container {
     max-width: 1120px;
     margin: auto;
-    height: 58px;
+    min-height: 58px;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    padding: 0 25px;
+    padding: 8px 25px;
 }
 
 .logo {
     font-size: 40px;
     font-weight: 800;
     color: #172033;
+    white-space: nowrap;
 }
 
 .logo span {
@@ -50,6 +52,7 @@ body {
 .menu {
     display: flex;
     gap: 30px;
+    align-items: center;
 }
 
 .menu a {
@@ -57,6 +60,7 @@ body {
     font-size: 11px;
     color: #7c8799;
     font-weight: 500;
+    white-space: nowrap;
 }
 
 .menu a:hover {
@@ -92,6 +96,8 @@ body {
     letter-spacing: 1px;
 
     margin-bottom: 18px;
+
+    max-width: 100%;
 }
 
 .hero h1 {
@@ -271,13 +277,19 @@ body {
 
     font-weight: 800;
 
-    transition: 0.2s;
+    transition: 0.2s ease;
 }
 
 .buy-button:hover {
     background: #1eb833;
 
     transform: translateY(-1px);
+}
+
+.buy-button:active {
+    background: #159426;
+
+    transform: scale(0.98);
 }
 
 .security {
@@ -300,6 +312,8 @@ body {
 
     margin-left: auto;
     margin-right: auto;
+
+    padding: 0 10px;
 }
 
 .content-grid {
@@ -374,31 +388,39 @@ footer {
     color: #9aa2ae;
 
     border-top: 1px solid #f1dddd;
+
+    margin-top: 30px;
 }
 
 
-/* ================= RESPONSIVO ================= */
+/* ================================================= */
+/* ================= TABLET ======================== */
+/* ================================================= */
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
 
     .header-container {
-        height: 55px;
+        padding: 0 20px;
+    }
+
+    .logo {
+        font-size: 34px;
     }
 
     .menu {
-        gap: 15px;
+        gap: 18px;
     }
 
     .menu a {
-        font-size: 9px;
+        font-size: 10px;
     }
 
     .hero {
-        padding-top: 30px;
+        padding-top: 32px;
     }
 
     .hero h1 {
-        font-size: 30px;
+        font-size: 34px;
     }
 
     .hero-description {
@@ -406,37 +428,42 @@ footer {
     }
 
     .product-area {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
 
-        max-width: 500px;
+        gap: 20px;
 
-        gap: 25px;
+        max-width: 850px;
     }
 
-    .product-left {
-        order: 1;
-    }
-
-    .product-right {
-        order: 2;
+    .purchase-card {
+        padding: 24px;
     }
 
     .content-grid {
         grid-template-columns:
-            repeat(2, 1fr);
+            repeat(3, 1fr);
     }
-
 }
 
 
-@media (max-width: 480px) {
+/* ================================================= */
+/* ================= CELULAR ======================= */
+/* ================================================= */
+
+@media (max-width: 700px) {
+
+    /* HEADER */
 
     .header-container {
-        padding: 0 18px;
+        min-height: 55px;
+
+        padding: 8px 15px;
+
+        gap: 10px;
     }
 
     .logo {
-        font-size: 13px;
+        font-size: 26px;
     }
 
     .menu {
@@ -447,32 +474,146 @@ footer {
         font-size: 8px;
     }
 
+
+    /* HERO */
+
     .hero {
-        padding: 28px 15px 40px;
+        padding: 30px 15px 40px;
+    }
+
+    .badge {
+        font-size: 8px;
+
+        padding: 6px 10px;
+
+        letter-spacing: 0.6px;
+
+        margin-bottom: 15px;
     }
 
     .hero h1 {
-        font-size: 27px;
+        font-size: 29px;
+
+        line-height: 1.2;
+
+        margin-bottom: 12px;
+    }
+
+    .hero h1 span {
+        display: block;
+
+        margin-top: 3px;
     }
 
     .hero-description {
         font-size: 12px;
+
+        line-height: 1.55;
+
+        max-width: 500px;
     }
 
+
+    /* PRODUTO */
+
     .product-area {
+        grid-template-columns: 1fr;
+
+        max-width: 500px;
+
+        gap: 25px;
+
         margin-top: 28px;
     }
 
+    .product-left {
+        order: 1;
+    }
+
+    .product-right {
+        order: 2;
+    }
+
+    .book-wrapper {
+        max-width: 420px;
+
+        padding: 9px;
+
+        border-radius: 15px;
+    }
+
+    .book-image {
+        border-radius: 10px;
+    }
+
+
+    /* CARD */
+
     .purchase-card {
-        padding: 22px 18px;
+        width: 100%;
+
+        padding: 23px 20px;
+
+        border-radius: 14px;
     }
 
     .small-title {
         font-size: 18px;
+
+        line-height: 1.25;
+    }
+
+    .access {
+        font-size: 11px;
+
+        line-height: 1.5;
     }
 
     .price {
-        font-size: 28px;
+        font-size: 29px;
+
+        margin-bottom: 20px;
+    }
+
+
+    /* BENEFÍCIOS */
+
+    .benefit {
+        gap: 8px;
+
+        margin-bottom: 12px;
+    }
+
+    .benefit span {
+        font-size: 12px;
+    }
+
+    .benefit p {
+        font-size: 11px;
+
+        line-height: 1.5;
+    }
+
+
+    /* BOTÃO */
+
+    .buy-button {
+        padding: 16px 10px;
+
+        font-size: 10px;
+    }
+
+    .security {
+        font-size: 8px;
+    }
+
+
+    /* CONTEÚDO */
+
+    .content-section {
+        padding: 0;
+
+        margin-top: 25px;
     }
 
     .content-grid {
@@ -484,6 +625,220 @@ footer {
 
     .content-item {
         min-height: 82px;
+
+        padding: 11px 9px;
     }
 
+    .icon {
+        font-size: 14px;
+
+        margin-bottom: 6px;
+    }
+
+    .content-item strong {
+        font-size: 9px;
+    }
+
+    .content-item span {
+        font-size: 7px;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        padding: 20px 15px;
+
+        font-size: 8px;
+
+        line-height: 1.5;
+    }
+}
+
+
+/* ================================================= */
+/* ============== CELULAR PEQUENO ================== */
+/* ================================================= */
+
+@media (max-width: 480px) {
+
+    .header-container {
+        min-height: 52px;
+
+        padding: 8px 12px;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .menu {
+        gap: 8px;
+    }
+
+    .menu a {
+        font-size: 7px;
+    }
+
+
+    .hero {
+        padding: 27px 12px 35px;
+    }
+
+    .badge {
+        font-size: 7px;
+
+        padding: 6px 9px;
+    }
+
+    .hero h1 {
+        font-size: 25px;
+    }
+
+    .hero-description {
+        font-size: 11px;
+
+        line-height: 1.55;
+    }
+
+
+    .product-area {
+        margin-top: 25px;
+
+        gap: 20px;
+    }
+
+    .book-wrapper {
+        padding: 7px;
+
+        border-radius: 13px;
+    }
+
+
+    .purchase-card {
+        padding: 21px 17px;
+
+        border-radius: 13px;
+    }
+
+    .small-title {
+        font-size: 17px;
+    }
+
+    .access {
+        font-size: 10px;
+    }
+
+    .price {
+        font-size: 27px;
+    }
+
+    .benefit p {
+        font-size: 10px;
+    }
+
+    .buy-button {
+        padding: 15px 8px;
+
+        font-size: 9px;
+    }
+
+
+    .content-grid {
+        gap: 6px;
+    }
+
+    .content-item {
+        min-height: 80px;
+
+        padding: 10px 8px;
+    }
+
+    .content-item strong {
+        font-size: 8px;
+    }
+
+    .content-item span {
+        font-size: 7px;
+    }
+
+
+    footer {
+        font-size: 7px;
+
+        padding: 18px 10px;
+    }
+}
+
+
+/* ================================================= */
+/* ============ CELULAR MUITO PEQUENO ============= */
+/* ================================================= */
+
+@media (max-width: 360px) {
+
+    .header-container {
+        padding: 7px 10px;
+    }
+
+    .logo {
+        font-size: 19px;
+    }
+
+    .menu {
+        gap: 6px;
+    }
+
+    .menu a {
+        font-size: 6px;
+    }
+
+
+    .hero {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .hero h1 {
+        font-size: 22px;
+    }
+
+    .hero-description {
+        font-size: 10px;
+    }
+
+
+    .purchase-card {
+        padding: 19px 14px;
+    }
+
+    .small-title {
+        font-size: 16px;
+    }
+
+    .price {
+        font-size: 25px;
+    }
+
+    .benefit p {
+        font-size: 9px;
+    }
+
+    .buy-button {
+        font-size: 8px;
+        padding: 14px 6px;
+    }
+
+
+    .content-item {
+        min-height: 78px;
+    }
+
+    .content-item strong {
+        font-size: 8px;
+    }
+
+    .content-item span {
+        font-size: 6px;
+    }
 }
