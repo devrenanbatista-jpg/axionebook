@@ -1,4 +1,4 @@
-```css id="q3v7mx"
+```css
 * {
     margin: 0;
     padding: 0;
@@ -7,6 +7,7 @@
 
 html {
     scroll-behavior: smooth;
+    width: 100%;
 }
 
 body {
@@ -14,10 +15,24 @@ body {
     background: #ffffff;
     color: #172033;
     overflow-x: hidden;
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a,
+button {
+    -webkit-tap-highlight-color: transparent;
 }
 
 
-/* ================= HEADER ================= */
+/* ================================================= */
+/* ================= HEADER ======================== */
+/* ================================================= */
 
 .header {
     width: 100%;
@@ -26,6 +41,7 @@ body {
 }
 
 .header-container {
+    width: 100%;
     max-width: 1120px;
     min-height: 58px;
 
@@ -35,12 +51,15 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    gap: 20px;
 }
 
 .logo {
     font-size: 32px;
     font-weight: 800;
     color: #172033;
+    white-space: nowrap;
 }
 
 .logo span {
@@ -56,6 +75,7 @@ body {
     color: #7c8799;
     text-decoration: none;
     font-size: 12px;
+    white-space: nowrap;
 }
 
 .menu a:hover {
@@ -63,23 +83,25 @@ body {
 }
 
 
-/* ================= HERO ================= */
+/* ================================================= */
+/* ================= HERO ========================== */
+/* ================================================= */
 
 .hero {
+    width: 100%;
     padding: 55px 20px 75px;
     background: #f8f1e6;
 }
 
 .hero-container {
+    width: 100%;
     max-width: 1120px;
     margin: auto;
     text-align: center;
 }
 
-
-/* ================= BADGE ================= */
-
-.badge {
+.badge,
+.section-badge {
     display: inline-block;
 
     padding: 7px 14px;
@@ -93,21 +115,17 @@ body {
     font-weight: 800;
 
     letter-spacing: 1px;
-
-    margin-bottom: 20px;
 }
 
-
-/* ================= TÍTULO ================= */
+.badge {
+    margin-bottom: 20px;
+}
 
 .hero h1 {
     font-size: 50px;
     line-height: 1.1;
-
     font-weight: 800;
-
     color: #172033;
-
     margin-bottom: 20px;
 }
 
@@ -115,10 +133,8 @@ body {
     color: #d13622;
 }
 
-
-/* ================= DESCRIÇÃO ================= */
-
 .hero-description {
+    width: 100%;
     max-width: 650px;
 
     margin: auto;
@@ -130,30 +146,35 @@ body {
 }
 
 
-/* ================= PRODUTO ================= */
+/* ================================================= */
+/* ================= PRODUTO ======================= */
+/* ================================================= */
 
 .product-area {
+    width: 100%;
     max-width: 1000px;
 
     margin: 50px auto 0;
 
     display: grid;
-
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
 
     gap: 45px;
 
     align-items: center;
-
     text-align: left;
 }
 
-
-/* ================= CAPA ================= */
-
 .product-left {
+    width: 100%;
+
     display: flex;
     justify-content: center;
+}
+
+.product-right {
+    width: 100%;
+    min-width: 0;
 }
 
 .book-wrapper {
@@ -171,21 +192,20 @@ body {
 }
 
 .book-image {
-    display: block;
-
     width: 100%;
+    height: auto;
 
     border-radius: 14px;
 }
 
 
-/* ================= CARD DE COMPRA ================= */
-
-.product-right {
-    width: 100%;
-}
+/* ================================================= */
+/* ================= CARD DE COMPRA =============== */
+/* ================================================= */
 
 .purchase-card {
+    width: 100%;
+
     background: #ffffff;
 
     border-radius: 20px;
@@ -233,7 +253,9 @@ body {
 }
 
 
-/* ================= BENEFÍCIOS ================= */
+/* ================================================= */
+/* ================= BENEFÍCIOS ==================== */
+/* ================================================= */
 
 .benefits {
     margin-bottom: 25px;
@@ -250,6 +272,8 @@ body {
 }
 
 .benefit span {
+    flex-shrink: 0;
+
     color: #20b83a;
 
     font-size: 15px;
@@ -258,6 +282,8 @@ body {
 }
 
 .benefit p {
+    min-width: 0;
+
     font-size: 13px;
 
     line-height: 1.55;
@@ -266,14 +292,19 @@ body {
 }
 
 
-/* ================= BOTÃO ================= */
+/* ================================================= */
+/* ================= BOTÕES ======================== */
+/* ================================================= */
 
 .buy-button {
-    display: block;
-
     width: 100%;
+    min-height: 52px;
 
-    padding: 17px 14px;
+    padding: 15px 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     border-radius: 10px;
 
@@ -286,20 +317,38 @@ body {
     text-align: center;
 
     font-size: 12px;
-
     font-weight: 800;
 
-    transition: 0.2s ease;
+    line-height: 1.2;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+
+    cursor: pointer;
+
+    user-select: none;
+
+    -webkit-user-select: none;
 }
 
 .buy-button:hover {
     background: #b82c1c;
 
     transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px rgba(209, 54, 34, 0.20);
 }
 
 .buy-button:active {
     transform: scale(0.98);
+}
+
+.buy-button:focus-visible {
+    outline: 3px solid rgba(209, 54, 34, 0.35);
+    outline-offset: 4px;
 }
 
 .security {
@@ -314,13 +363,60 @@ body {
 
 
 /* ================================================= */
-/* ================= CONTEÚDO ===================== */
+/* ================= SEÇÕES ======================== */
+/* ================================================= */
+
+.content-container,
+.audience-container,
+.faq-container,
+.offer-container,
+.impact-container {
+    width: 100%;
+    max-width: 1120px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-heading {
+    width: 100%;
+    max-width: 760px;
+
+    margin: 0 auto 45px;
+
+    text-align: center;
+}
+
+.section-heading h2 {
+    margin: 15px 0;
+
+    font-size: 36px;
+
+    line-height: 1.15;
+
+    color: #172033;
+}
+
+.section-heading p {
+    width: 100%;
+    max-width: 680px;
+
+    margin: 0 auto;
+
+    color: #697386;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+}
+
+
+/* ================================================= */
+/* ================= CONTEÚDO ====================== */
 /* ================================================= */
 
 .content-section {
-    max-width: none;
-
-    margin: 0;
+    width: 100%;
 
     padding: 85px 20px;
 
@@ -328,13 +424,14 @@ body {
 }
 
 .content-grid {
+    width: 100%;
     max-width: 1050px;
 
     margin: auto;
 
     display: grid;
 
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(5, minmax(0, 1fr));
 
     gap: 14px;
 
@@ -342,6 +439,7 @@ body {
 }
 
 .content-item {
+    min-width: 0;
     min-height: 150px;
 
     background: #f8f1e6;
@@ -396,32 +494,29 @@ body {
 /* ================================================= */
 
 .audience-section {
+    width: 100%;
+
     padding: 90px 20px;
 
     background: #f8f1e6;
 }
 
-.audience-container {
-    width: 100%;
-
-    max-width: 1000px;
-
-    margin: 0 auto;
-}
-
 .audience-list {
+    width: 100%;
     max-width: 800px;
 
     margin: 0 auto;
 
     display: grid;
 
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
 
     gap: 15px;
 }
 
 .audience-item {
+    min-width: 0;
+
     display: flex;
 
     align-items: center;
@@ -472,6 +567,8 @@ body {
 }
 
 .audience-item p {
+    min-width: 0;
+
     color: #273247;
 
     font-size: 14px;
@@ -483,10 +580,12 @@ body {
 
 
 /* ================================================= */
-/* ================= FRASE DE IMPACTO ============= */
+/* ================= IMPACTO ======================= */
 /* ================================================= */
 
 .impact-section {
+    width: 100%;
+
     padding: 90px 20px;
 
     background: #172033;
@@ -528,24 +627,20 @@ body {
 
 
 /* ================================================= */
-/* ===================== FAQ ======================= */
+/* ================= FAQ =========================== */
 /* ================================================= */
 
 .faq-section {
+    width: 100%;
+
     padding: 90px 20px;
 
     background: #ffffff;
 }
 
-.faq-container {
+.faq-list {
     width: 100%;
 
-    max-width: 900px;
-
-    margin: 0 auto;
-}
-
-.faq-list {
     display: flex;
 
     flex-direction: column;
@@ -554,6 +649,8 @@ body {
 }
 
 .faq-item {
+    width: 100%;
+
     padding: 25px 28px;
 
     background: #f8f1e6;
@@ -596,6 +693,8 @@ body {
 /* ================================================= */
 
 .offer-section {
+    width: 100%;
+
     padding: 90px 20px;
 
     background: #f8f1e6;
@@ -604,11 +703,17 @@ body {
 .offer-container {
     display: grid;
 
-    grid-template-columns: 1.1fr 0.9fr;
+    grid-template-columns:
+        minmax(0, 1.1fr)
+        minmax(0, 0.9fr);
 
     gap: 60px;
 
     align-items: center;
+}
+
+.offer-text {
+    min-width: 0;
 }
 
 .offer-text h2 {
@@ -622,6 +727,7 @@ body {
 }
 
 .offer-text p {
+    width: 100%;
     max-width: 620px;
 
     margin: 0 0 28px;
@@ -634,6 +740,8 @@ body {
 }
 
 .offer-product {
+    width: 100%;
+
     display: flex;
 
     justify-content: center;
@@ -645,10 +753,12 @@ body {
 
 
 /* ================================================= */
-/* ==================== FOOTER ==================== */
+/* ================= FOOTER ======================== */
 /* ================================================= */
 
 footer {
+    width: 100%;
+
     text-align: center;
 
     padding: 40px 20px;
@@ -656,10 +766,6 @@ footer {
     background: #172033;
 
     color: #aeb5c2;
-
-    border-top: none;
-
-    margin-top: 0;
 }
 
 .footer-logo {
@@ -684,96 +790,7 @@ footer p {
 
 
 /* ================================================= */
-/* ================= AJUSTES FINAIS =============== */
-/* ================================================= */
-
-img {
-    max-width: 100%;
-
-    height: auto;
-}
-
-a,
-button {
-    -webkit-tap-highlight-color: transparent;
-}
-
-.buy-button {
-    cursor: pointer;
-
-    user-select: none;
-}
-
-.buy-button:focus-visible,
-.menu a:focus-visible {
-    outline: 3px solid rgba(209, 54, 34, 0.35);
-
-    outline-offset: 4px;
-}
-
-.content-container,
-.offer-container,
-.impact-container {
-    width: 100%;
-
-    max-width: 1120px;
-
-    margin-left: auto;
-
-    margin-right: auto;
-}
-
-.section-heading {
-    max-width: 760px;
-
-    margin: 0 auto 45px;
-
-    text-align: center;
-}
-
-.section-heading h2 {
-    margin: 15px 0;
-
-    font-size: 36px;
-
-    line-height: 1.15;
-
-    color: #172033;
-}
-
-.section-heading p {
-    max-width: 680px;
-
-    margin: 0 auto;
-
-    color: #697386;
-
-    font-size: 15px;
-
-    line-height: 1.7;
-}
-
-.section-badge {
-    display: inline-block;
-
-    padding: 7px 14px;
-
-    border-radius: 30px;
-
-    background: #f7dddd;
-
-    color: #d13622;
-
-    font-size: 10px;
-
-    font-weight: 800;
-
-    letter-spacing: 1px;
-}
-
-
-/* ================================================= */
-/* ===================== TABLET ==================== */
+/* ================= TABLET ======================== */
 /* ================================================= */
 
 @media (max-width: 900px) {
@@ -803,11 +820,7 @@ button {
     }
 
     .product-area {
-        grid-template-columns: 1fr 1fr;
-
         gap: 25px;
-
-        max-width: 850px;
     }
 
     .purchase-card {
@@ -815,7 +828,7 @@ button {
     }
 
     .content-grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 
     .section-heading h2,
@@ -837,7 +850,6 @@ button {
 
     .offer-text p {
         margin-left: auto;
-
         margin-right: auto;
     }
 
@@ -845,18 +857,13 @@ button {
         max-width: 500px;
 
         margin-left: auto;
-
         margin-right: auto;
-    }
-
-    .audience-list {
-        max-width: 750px;
     }
 }
 
 
 /* ================================================= */
-/* ===================== CELULAR =================== */
+/* ================= CELULAR ======================= */
 /* ================================================= */
 
 @media (max-width: 700px) {
@@ -920,8 +927,6 @@ button {
     .product-area {
         grid-template-columns: 1fr;
 
-        max-width: 500px;
-
         gap: 28px;
 
         margin-top: 35px;
@@ -951,8 +956,6 @@ button {
     /* CARD */
 
     .purchase-card {
-        width: 100%;
-
         padding: 27px 21px;
 
         border-radius: 17px;
@@ -996,12 +999,20 @@ button {
     }
 
 
-    /* BOTÃO */
+    /* BOTÕES */
 
     .buy-button {
-        padding: 17px 10px;
+        width: 100%;
+
+        min-height: 54px;
+
+        padding: 16px 12px;
+
+        border-radius: 10px;
 
         font-size: 10px;
+
+        line-height: 1.25;
     }
 
     .security {
@@ -1016,7 +1027,7 @@ button {
     }
 
     .content-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, minmax(0, 1fr));
 
         gap: 10px;
     }
@@ -1044,7 +1055,7 @@ button {
     }
 
 
-    /* ================= PARA QUEM É ================= */
+    /* PARA QUEM É */
 
     .audience-section {
         padding: 65px 15px;
@@ -1075,7 +1086,7 @@ button {
     }
 
 
-    /* ================= IMPACTO ================= */
+    /* IMPACTO */
 
     .impact-section {
         padding: 65px 15px;
@@ -1090,7 +1101,7 @@ button {
     }
 
 
-    /* ================= FAQ ================= */
+    /* FAQ */
 
     .faq-section {
         padding: 65px 15px;
@@ -1121,10 +1132,14 @@ button {
     }
 
 
-    /* ================= OFERTA ================= */
+    /* OFERTA */
 
     .offer-section {
         padding: 65px 15px;
+    }
+
+    .offer-container {
+        gap: 35px;
     }
 
     .section-heading {
@@ -1139,6 +1154,10 @@ button {
     .section-heading p,
     .offer-text p {
         font-size: 13px;
+    }
+
+    .offer-product .book-wrapper {
+        max-width: 430px;
     }
 
 
@@ -1159,7 +1178,7 @@ button {
 
 
 /* ================================================= */
-/* ================= CELULAR PEQUENO =============== */
+/* ================= 480 PX ======================== */
 /* ================================================= */
 
 @media (max-width: 480px) {
@@ -1168,6 +1187,8 @@ button {
         min-height: 52px;
 
         padding: 8px 12px;
+
+        gap: 6px;
     }
 
     .logo {
@@ -1183,6 +1204,8 @@ button {
     }
 
 
+    /* HERO */
+
     .hero {
         padding: 30px 12px 45px;
     }
@@ -1196,6 +1219,8 @@ button {
     }
 
 
+    /* PRODUTO */
+
     .product-area {
         margin-top: 28px;
 
@@ -1208,6 +1233,8 @@ button {
         border-radius: 14px;
     }
 
+
+    /* CARD */
 
     .purchase-card {
         padding: 23px 17px;
@@ -1227,16 +1254,30 @@ button {
         font-size: 31px;
     }
 
+
+    /* BENEFÍCIOS */
+
     .benefit p {
         font-size: 10px;
     }
 
+
+    /* BOTÃO */
+
     .buy-button {
-        padding: 16px 8px;
+        width: 100%;
+
+        min-height: 52px;
+
+        padding: 15px 8px;
 
         font-size: 9px;
+
+        border-radius: 9px;
     }
 
+
+    /* CONTEÚDO */
 
     .content-section {
         padding: 55px 12px;
@@ -1265,7 +1306,7 @@ button {
     }
 
 
-    /* ================= PARA QUEM É ================= */
+    /* PARA QUEM É */
 
     .audience-section {
         padding: 55px 12px;
@@ -1277,6 +1318,8 @@ button {
 
     .audience-item {
         padding: 14px 12px;
+
+        border-radius: 12px;
     }
 
     .audience-item span {
@@ -1292,14 +1335,20 @@ button {
     }
 
 
-    /* ================= FAQ ================= */
+    /* FAQ */
 
     .faq-section {
         padding: 55px 12px;
     }
 
+    .faq-list {
+        gap: 8px;
+    }
+
     .faq-item {
         padding: 17px 14px;
+
+        border-radius: 11px;
     }
 
     .faq-item h3 {
@@ -1311,24 +1360,44 @@ button {
     }
 
 
-    /* ================= IMPACTO ================= */
+    /* IMPACTO */
+
+    .impact-section {
+        padding: 55px 12px;
+    }
 
     .impact-section h2 {
         font-size: 22px;
     }
 
 
-    /* ================= TÍTULOS ================= */
+    /* TÍTULOS */
 
     .section-heading h2,
     .offer-text h2 {
         font-size: 24px;
     }
 
+    .section-heading p,
+    .offer-text p {
+        font-size: 12px;
+    }
+
     .section-badge {
         font-size: 8px;
 
         padding: 6px 10px;
+    }
+
+
+    /* OFERTA */
+
+    .offer-section {
+        padding: 55px 12px;
+    }
+
+    .offer-container {
+        gap: 28px;
     }
 
     .offer-product .book-wrapper {
@@ -1353,10 +1422,14 @@ button {
 
 
 /* ================================================= */
-/* ================= MUITO PEQUENO ================= */
+/* ================= 360 PX ======================== */
 /* ================================================= */
 
 @media (max-width: 360px) {
+
+    .header-container {
+        padding: 8px 10px;
+    }
 
     .logo {
         font-size: 18px;
@@ -1370,6 +1443,13 @@ button {
         font-size: 6px;
     }
 
+
+    /* HERO */
+
+    .hero {
+        padding: 28px 10px 40px;
+    }
+
     .hero h1 {
         font-size: 26px;
     }
@@ -1378,17 +1458,48 @@ button {
         font-size: 11px;
     }
 
+
+    /* CARD */
+
+    .purchase-card {
+        padding: 21px 14px;
+    }
+
     .small-title {
         font-size: 17px;
+    }
+
+    .access {
+        font-size: 10px;
     }
 
     .price {
         font-size: 28px;
     }
 
+    .benefit {
+        gap: 7px;
+    }
+
     .benefit p {
         font-size: 9px;
     }
+
+
+    /* BOTÃO */
+
+    .buy-button {
+        min-height: 50px;
+
+        padding: 14px 6px;
+
+        font-size: 8px;
+
+        border-radius: 8px;
+    }
+
+
+    /* CONTEÚDO */
 
     .content-item {
         min-height: 130px;
@@ -1399,14 +1510,30 @@ button {
     }
 
 
-    /* ================= PARA QUEM É ================= */
+    /* PARA QUEM É */
+
+    .audience-item {
+        padding: 12px 10px;
+    }
+
+    .audience-item span {
+        width: 23px;
+
+        height: 23px;
+
+        font-size: 11px;
+    }
 
     .audience-item p {
         font-size: 9px;
     }
 
 
-    /* ================= FAQ ================= */
+    /* FAQ */
+
+    .faq-item {
+        padding: 15px 12px;
+    }
 
     .faq-item h3 {
         font-size: 11px;
@@ -1415,11 +1542,29 @@ button {
     .faq-item p {
         font-size: 9px;
     }
+
+
+    /* IMPACTO */
+
+    .impact-section h2 {
+        font-size: 20px;
+    }
+
+
+    /* FOOTER */
+
+    .footer-logo {
+        font-size: 21px;
+    }
+
+    footer p {
+        font-size: 6px;
+    }
 }
 
 
 /* ================================================= */
-/* ================= ACESSIBILIDADE ================ */
+/* ================ REDUÇÃO DE MOVIMENTO =========== */
 /* ================================================= */
 
 @media (prefers-reduced-motion: reduce) {
@@ -1432,9 +1577,7 @@ button {
     *::before,
     *::after {
         transition-duration: 0.01ms !important;
-
         animation-duration: 0.01ms !important;
-
         animation-iteration-count: 1 !important;
     }
 }
