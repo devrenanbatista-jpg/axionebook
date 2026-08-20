@@ -14,6 +14,7 @@ html {
 
 body {
     width: 100%;
+    min-width: 0;
     font-family: Arial, Helvetica, sans-serif;
     background: #f8f1e6;
     color: #172033;
@@ -22,8 +23,9 @@ body {
 }
 
 img {
-    max-width: 100%;
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 a {
@@ -51,13 +53,11 @@ button {
             rgba(209, 54, 34, 0.06),
             transparent 28%
         ),
-
         radial-gradient(
             circle at 90% 80%,
             rgba(23, 32, 51, 0.05),
             transparent 30%
         ),
-
         #f8f1e6;
 }
 
@@ -90,6 +90,7 @@ button {
     font-size: 10px;
     font-weight: 800;
     letter-spacing: 1px;
+    line-height: 1.4;
 
     text-align: center;
 }
@@ -147,9 +148,7 @@ button {
     margin: 45px auto 0;
 
     display: grid;
-
-    grid-template-columns:
-        repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
 
     gap: 24px;
 
@@ -178,7 +177,8 @@ button {
     display: flex;
     flex-direction: column;
 
-    overflow: hidden;
+    /* IMPORTANTE: não cortar o selo */
+    overflow: visible;
 
     transition:
         transform 0.25s ease,
@@ -239,6 +239,8 @@ button {
     letter-spacing: 0.8px;
 
     white-space: nowrap;
+
+    z-index: 10;
 }
 
 
@@ -257,8 +259,6 @@ button {
 }
 
 .plan-image img {
-    display: block;
-
     width: 100%;
     height: auto;
 
@@ -309,6 +309,7 @@ button {
     font-size: 9px;
     font-weight: 800;
     letter-spacing: 0.8px;
+    line-height: 1.4;
 }
 
 .complete .plan-label {
@@ -412,9 +413,7 @@ button {
 }
 
 .plan li {
-    position: relative;
-
-    padding: 8px 0 8px 26px;
+    padding: 8px 0;
 
     border-bottom:
         1px solid #f1ebe3;
@@ -431,17 +430,10 @@ button {
     border-bottom: none;
 }
 
+/* Remove o segundo ✓ criado pelo CSS */
+
 .plan li::before {
-    content: "✓";
-
-    position: absolute;
-
-    left: 0;
-    top: 8px;
-
-    color: #20b83a;
-
-    font-weight: 900;
+    content: none;
 }
 
 .plan li strong {
@@ -732,14 +724,9 @@ footer p {
     .offer-container {
         width: 100%;
         max-width: 100%;
-
-        margin: 0 auto;
     }
 
     .badge {
-        width: auto;
-        max-width: 100%;
-
         padding: 7px 10px;
 
         font-size: 8px;
@@ -749,8 +736,6 @@ footer p {
     }
 
     .offer h1 {
-        width: 100%;
-
         margin: 16px auto 15px;
 
         font-size: clamp(28px, 8vw, 36px);
@@ -761,9 +746,6 @@ footer p {
     }
 
     .subtitle {
-        width: 100%;
-        max-width: 100%;
-
         font-size: 13px;
         line-height: 1.6;
     }
@@ -782,8 +764,6 @@ footer p {
 
     .plan {
         width: 100%;
-        max-width: 100%;
-        min-width: 0;
 
         padding: 26px 21px;
 
@@ -795,12 +775,12 @@ footer p {
     }
 
     .popular {
-        top: 0;
         right: 17px;
 
         padding: 6px 10px;
 
         font-size: 8px;
+        letter-spacing: 0.5px;
     }
 
     .plan-image {
@@ -808,7 +788,7 @@ footer p {
 
         max-width: 190px;
 
-        margin-bottom: 18px;
+        margin: 0 auto 18px;
     }
 
     .complete .plan-image {
@@ -816,8 +796,6 @@ footer p {
     }
 
     .plan h2 {
-        width: 100%;
-
         font-size: 21px;
         line-height: 1.25;
     }
@@ -826,6 +804,7 @@ footer p {
         min-height: auto;
 
         font-size: 12px;
+        line-height: 1.6;
     }
 
     .plan-price {
@@ -834,11 +813,12 @@ footer p {
 
     .plan li {
         font-size: 11px;
+
+        padding: 9px 0;
     }
 
     .plan-button {
         width: 100%;
-        max-width: 100%;
 
         min-height: 52px;
 
@@ -926,12 +906,8 @@ footer p {
     .plan li {
         font-size: 10px;
 
-        padding-top: 7px;
-        padding-bottom: 7px;
-    }
-
-    .plan li::before {
-        top: 7px;
+        padding-top: 8px;
+        padding-bottom: 8px;
     }
 
     .plan-price {
@@ -939,19 +915,19 @@ footer p {
     }
 
     .plan-button {
-        width: 100%;
-
         min-height: 50px;
 
         padding: 12px 8px;
 
-        font-size: 9px;
+        font-size: 10px;
     }
 
     .guarantee {
         align-items: flex-start;
 
         gap: 10px;
+
+        padding: 14px;
     }
 
     .guarantee-icon {
@@ -959,6 +935,8 @@ footer p {
 
         width: 34px;
         height: 34px;
+
+        font-size: 16px;
     }
 
     footer {
@@ -1009,6 +987,7 @@ footer p {
 
     .popular {
         right: 10px;
+        font-size: 6px;
     }
 
 }
@@ -1028,14 +1007,11 @@ footer p {
     *::before,
     *::after {
 
-        transition-duration:
-            0.01ms !important;
+        transition-duration: 0.01ms !important;
 
-        animation-duration:
-            0.01ms !important;
+        animation-duration: 0.01ms !important;
 
-        animation-iteration-count:
-            1 !important;
+        animation-iteration-count: 1 !important;
     }
 
-}
+}s
