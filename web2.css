@@ -1,17 +1,1663 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    width: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+    color: #172033;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+
+/* ================================================= */
+/* ================= IMAGENS ======================= */
+/* ================================================= */
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a,
+button {
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+/* ================================================= */
+/* ================= HEADER ======================== */
+/* ================================================= */
+
+.header {
+    width: 100%;
+    background: #ffffff;
+
+    border-top: 1px solid #eadfd2;
+    border-bottom: 1px solid #eadfd2;
+}
+
+.header-container {
+    width: 100%;
+    max-width: 1120px;
+
+    min-height: 58px;
+
+    margin: auto;
+    padding: 8px 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: 800;
+    color: #172033;
+    white-space: nowrap;
+}
+
+.logo span {
+    color: #d13622;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+}
+
+.menu a {
+    color: #7c8799;
+    text-decoration: none;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.menu a:hover {
+    color: #d13622;
+}
+
+
+/* ================================================= */
+/* ================= HERO ========================== */
+/* ================================================= */
+
+.hero {
+    width: 100%;
+
+    padding: 55px 20px 75px;
+
+    background: #f8f1e6;
+}
+
+.hero-container {
+    width: 100%;
+    max-width: 1120px;
+
+    margin: auto;
+
+    text-align: center;
+}
+
+
+/* ================================================= */
+/* ================= BADGE ========================= */
+/* ================================================= */
+
+.badge {
+    display: inline-block;
+
+    padding: 7px 14px;
+
+    border-radius: 30px;
+
+    background: #f7dddd;
+
+    color: #d13622;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 20px;
+}
+
+
+/* ================================================= */
+/* ================= TÍTULO ======================== */
+/* ================================================= */
+
+.hero h1 {
+    font-size: 50px;
+
+    line-height: 1.1;
+
+    font-weight: 800;
+
+    color: #172033;
+
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #d13622;
+}
+
+
+/* ================================================= */
+/* ================= DESCRIÇÃO ===================== */
+/* ================================================= */
+
+.hero-description {
+    width: 100%;
+    max-width: 650px;
+
+    margin: auto;
+
+    color: #697386;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+}
+
+
+/* ================================================= */
+/* ================= PRODUTO ======================= */
+/* ================================================= */
+
+.product-area {
+    width: 100%;
+    max-width: 1000px;
+
+    margin: 50px auto 0;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr)
+        minmax(0, 1fr);
+
+    gap: 45px;
+
+    align-items: center;
+
+    text-align: left;
+}
+
+.product-left {
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+}
+
+.product-right {
+    width: 100%;
+
+    min-width: 0;
+}
+
+
+/* ================================================= */
+/* ================= CAPA ========================== */
+/* ================================================= */
+
+.book-wrapper {
+    width: 100%;
+    max-width: 470px;
+
+    padding: 13px;
+
+    background: #ffffff;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 20px 50px rgba(23, 32, 51, 0.12);
+}
+
+.book-image {
+    width: 100%;
+
+    height: auto;
+
+    border-radius: 14px;
+}
+
+
+/* ================================================= */
+/* ================= CARD COMPRA =================== */
+/* ================================================= */
+
+.purchase-card {
+    width: 100%;
+
+    background: #ffffff;
+
+    border-radius: 20px;
+
+    padding: 32px;
+
+    border: 1px solid #eadfd2;
+
+    box-shadow:
+        0 15px 40px rgba(23, 32, 51, 0.10);
+}
+
+.small-title {
+    font-size: 23px;
+
+    line-height: 1.25;
+
+    font-weight: 800;
+
+    color: #172033;
+
+    margin-bottom: 10px;
+}
+
+.access {
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    color: #7c8799;
+
+    margin-bottom: 20px;
+}
+
+.price {
+    font-size: 38px;
+
+    line-height: 1;
+
+    font-weight: 800;
+
+    color: #d13622;
+
+    margin-bottom: 25px;
+}
+
+
+/* ================================================= */
+/* ================= BENEFÍCIOS ==================== */
+/* ================================================= */
+
+.benefits {
+    margin-bottom: 25px;
+}
+
+.benefit {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 10px;
+
+    margin-bottom: 15px;
+}
+
+.benefit span {
+    flex-shrink: 0;
+
+    color: #20b83a;
+
+    font-size: 15px;
+
+    font-weight: bold;
+}
+
+.benefit p {
+    min-width: 0;
+
+    font-size: 13px;
+
+    line-height: 1.55;
+
+    color: #687386;
+}
+
+
+/* ================================================= */
+/* ================= BOTÕES ======================== */
+/* ================================================= */
+
+.buy-button {
+    width: 100%;
+
+    min-height: 52px;
+
+    padding: 15px 18px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 10px;
+
+    background: #d13622;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    text-align: center;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    line-height: 1.2;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+
+    cursor: pointer;
+
+    user-select: none;
+}
+
+.buy-button:hover {
+    background: #b82c1c;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px rgba(209, 54, 34, 0.20);
+}
+
+.buy-button:active {
+    transform: scale(0.98);
+}
+
+.buy-button:focus-visible {
+    outline: 3px solid rgba(209, 54, 34, 0.35);
+
+    outline-offset: 4px;
+}
+
+.security {
+    text-align: center;
+
+    margin-top: 14px;
+
+    font-size: 10px;
+
+    color: #a2aab5;
+}
+
+
+/* ================================================= */
+/* ================= CONTAINERS ==================== */
+/* ================================================= */
+
+.content-container,
+.audience-container,
+.faq-container,
+.offer-container,
+.impact-container {
+    width: 100%;
+
+    max-width: 1120px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* ================================================= */
+/* ================= TÍTULOS SEÇÕES ================ */
+/* ================================================= */
+
+.section-heading {
+    width: 100%;
+
+    max-width: 760px;
+
+    margin: 0 auto 45px;
+
+    text-align: center;
+}
+
+.section-heading h2 {
+    margin: 15px 0;
+
+    font-size: 36px;
+
+    line-height: 1.15;
+
+    color: #172033;
+}
+
+.section-heading p {
+    width: 100%;
+
+    max-width: 680px;
+
+    margin: 0 auto;
+
+    color: #697386;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+}
+
+.section-badge {
+    display: inline-block;
+
+    padding: 7px 14px;
+
+    border-radius: 30px;
+
+    background: #f7dddd;
+
+    color: #d13622;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+
+/* ================================================= */
+/* ================= CONTEÚDO ====================== */
+/* ================================================= */
+
+.content-section {
+    width: 100%;
+
+    padding: 85px 20px;
+
+    background: #ffffff;
+}
+
+.content-grid {
+    width: 100%;
+
+    max-width: 1050px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(5, minmax(0, 1fr));
+
+    gap: 14px;
+
+    text-align: left;
+}
+
+.content-item {
+    min-width: 0;
+
+    min-height: 150px;
+
+    background: #f8f1e6;
+
+    border-radius: 14px;
+
+    padding: 20px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    border: 1px solid #eadfd2;
+
+    transition: 0.2s ease;
+}
+
+.content-item:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 10px 25px rgba(23, 32, 51, 0.08);
+}
+
+.icon {
+    font-size: 24px;
+
+    margin-bottom: 10px;
+}
+
+.content-item strong {
+    font-size: 15px;
+
+    color: #273247;
+
+    margin-bottom: 7px;
+}
+
+.content-item span {
+    font-size: 12px;
+
+    color: #7c8799;
+
+    line-height: 1.5;
+}
+
+
+/* ================================================= */
+/* ================= PARA QUEM É ================== */
+/* ================================================= */
+
+.audience-section {
+    width: 100%;
+
+    padding: 90px 20px;
+
+    background: #f8f1e6;
+}
+
+.audience-list {
+    width: 100%;
+
+    max-width: 800px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 15px;
+}
+
+.audience-item {
+    min-width: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    padding: 20px;
+
+    background: #ffffff;
+
+    border: 1px solid #eadfd2;
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 8px 25px rgba(23, 32, 51, 0.06);
+
+    transition: 0.2s ease;
+}
+
+.audience-item:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 12px 28px rgba(23, 32, 51, 0.09);
+}
+
+.audience-item span {
+    flex-shrink: 0;
+
+    width: 30px;
+
+    height: 30px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #e7f7e9;
+
+    color: #20b83a;
+
+    font-size: 15px;
+
+    font-weight: 800;
+}
+
+.audience-item p {
+    min-width: 0;
+
+    color: #273247;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+
+    font-weight: 600;
+}
+
+
+/* ================================================= */
+/* ================= IMPACTO ======================= */
+/* ================================================= */
+
+.impact-section {
+    width: 100%;
+
+    padding: 90px 20px;
+
+    background: #172033;
+
+    text-align: center;
+}
+
+.impact-container {
+    max-width: 850px;
+}
+
+.impact-mark {
+    margin-bottom: 15px;
+
+    font-size: 60px;
+
+    line-height: 1;
+
+    color: #d13622;
+}
+
+.impact-section h2 {
+    margin: 0;
+
+    font-size: 38px;
+
+    line-height: 1.2;
+
+    color: #ffffff;
+}
+
+.impact-section h2 span {
+    display: block;
+
+    margin-top: 8px;
+
+    color: #d13622;
+}
+
+
+/* ================================================= */
+/* ================= FAQ =========================== */
+/* ================================================= */
+
+.faq-section {
+    width: 100%;
+
+    padding: 90px 20px;
+
+    background: #ffffff;
+}
+
+.faq-list {
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 14px;
+}
+
+.faq-item {
+    width: 100%;
+
+    padding: 25px 28px;
+
+    background: #f8f1e6;
+
+    border: 1px solid #eadfd2;
+
+    border-radius: 14px;
+
+    transition: 0.2s ease;
+}
+
+.faq-item:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 10px 25px rgba(23, 32, 51, 0.07);
+}
+
+.faq-item h3 {
+    margin-bottom: 9px;
+
+    color: #172033;
+
+    font-size: 17px;
+
+    line-height: 1.4;
+}
+
+.faq-item p {
+    color: #697386;
+
+    font-size: 13px;
+
+    line-height: 1.65;
+}
+
+
+/* ================================================= */
+/* ================= NOVA OFERTA ================== */
+/* ================================================= */
+
+.offer-section {
+    width: 100%;
+
+    padding: 90px 20px;
+
+    background: #f8f1e6;
+}
+
+.offer-container {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.1fr)
+        minmax(0, 0.9fr);
+
+    gap: 60px;
+
+    align-items: center;
+}
+
+.offer-text {
+    min-width: 0;
+}
+
+.offer-text h2 {
+    margin: 18px 0;
+
+    font-size: 38px;
+
+    line-height: 1.15;
+
+    color: #172033;
+}
+
+.offer-text p {
+    width: 100%;
+
+    max-width: 620px;
+
+    margin: 0 0 28px;
+
+    color: #697386;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+}
+
+.offer-product {
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+}
+
+.offer-product .book-wrapper {
+    max-width: 390px;
+}
+
+
+/* ================================================= */
+/* ================= FOOTER ======================== */
+/* ================================================= */
+
+footer {
+    width: 100%;
+
+    text-align: center;
+
+    padding: 40px 20px;
+
+    background: #172033;
+
+    color: #aeb5c2;
+
+    border-top: 1px solid #283247;
+
+    border-bottom: 1px solid #0f1625;
+}
+
+.footer-logo {
+    font-size: 30px;
+
+    font-weight: 800;
+
+    color: #ffffff;
+
+    margin-bottom: 10px;
+}
+
+.footer-logo span {
+    color: #d13622;
+}
+
+footer p {
+    font-size: 10px;
+
+    line-height: 1.5;
+}
+
+
+/* ================================================= */
+/* ================= TABLET ======================== */
+/* ================================================= */
+
+@media (max-width: 900px) {
+
+    .header-container {
+        padding: 8px 20px;
+    }
+
+    .logo {
+        font-size: 28px;
+    }
+
+    .menu {
+        gap: 18px;
+    }
+
+    .menu a {
+        font-size: 10px;
+    }
+
+    .hero h1 {
+        font-size: 44px;
+    }
+
+    .hero-description {
+        font-size: 15px;
+    }
+
+    .product-area {
+        gap: 25px;
+    }
+
+    .purchase-card {
+        padding: 26px;
+    }
+
+    .content-grid {
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr));
+    }
+
+    .audience-list {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+    .section-heading h2,
+    .offer-text h2 {
+        font-size: 32px;
+    }
+
+    .impact-section h2 {
+        font-size: 32px;
+    }
+
+    .offer-container {
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+
+        text-align: center;
+    }
+
+    .offer-text p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .offer-text .buy-button {
+        max-width: 500px;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+/* ================================================= */
+/* ================= CELULAR ======================= */
+/* ================================================= */
+
+@media (max-width: 700px) {
+
+    /* HEADER */
+
+    .header-container {
+        min-height: 55px;
+
+        padding: 8px 15px;
+
+        gap: 10px;
+    }
+
+    .logo {
+        font-size: 23px;
+    }
+
+    .menu {
+        gap: 9px;
+    }
+
+    .menu a {
+        font-size: 8px;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        padding: 38px 15px 55px;
+    }
+
+    .badge {
+        font-size: 8px;
+
+        padding: 6px 10px;
+
+        letter-spacing: 0.6px;
+
+        margin-bottom: 15px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+
+        line-height: 1.15;
+
+        margin-bottom: 15px;
+    }
+
+    .hero-description {
+        font-size: 13px;
+
+        line-height: 1.6;
+    }
+
+
+    /* PRODUTO */
+
+    .product-area {
+        grid-template-columns: 1fr;
+
+        gap: 28px;
+
+        margin-top: 35px;
+    }
+
+    .product-left {
+        order: 1;
+    }
+
+    .product-right {
+        order: 2;
+    }
+
+    .book-wrapper {
+        max-width: 430px;
+
+        padding: 10px;
+
+        border-radius: 16px;
+    }
+
+    .book-image {
+        border-radius: 11px;
+    }
+
+
+    /* CARD */
+
+    .purchase-card {
+        padding: 27px 21px;
+
+        border-radius: 17px;
+    }
+
+    .small-title {
+        font-size: 21px;
+
+        line-height: 1.3;
+    }
+
+    .access {
+        font-size: 12px;
+
+        line-height: 1.55;
+    }
+
+    .price {
+        font-size: 34px;
+
+        margin-bottom: 22px;
+    }
+
+
+    /* BENEFÍCIOS */
+
+    .benefit {
+        gap: 8px;
+
+        margin-bottom: 13px;
+    }
+
+    .benefit span {
+        font-size: 13px;
+    }
+
+    .benefit p {
+        font-size: 11px;
+
+        line-height: 1.5;
+    }
+
+
+    /* BOTÕES */
+
+    .buy-button {
+        width: 100%;
+
+        min-height: 54px;
+
+        padding: 16px 12px;
+
+        border-radius: 10px;
+
+        font-size: 10px;
+
+        line-height: 1.25;
+    }
+
+
+    .security {
+        font-size: 8px;
+    }
+
+
+    /* CONTEÚDO */
+
+    .content-section {
+        padding: 65px 15px;
+    }
+
+    .content-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 10px;
+    }
+
+    .content-item {
+        min-height: 140px;
+
+        padding: 16px 13px;
+    }
+
+    .icon {
+        font-size: 21px;
+
+        margin-bottom: 8px;
+    }
+
+    .content-item strong {
+        font-size: 12px;
+    }
+
+    .content-item span {
+        font-size: 9px;
+
+        line-height: 1.45;
+    }
+
+
+    /* PARA QUEM É */
+
+    .audience-section {
+        padding: 65px 15px;
+    }
+
+    .audience-list {
+        grid-template-columns: 1fr;
+
+        gap: 10px;
+    }
+
+    .audience-item {
+        padding: 16px;
+
+        gap: 11px;
+    }
+
+    .audience-item span {
+        width: 27px;
+
+        height: 27px;
+
+        font-size: 13px;
+    }
+
+    .audience-item p {
+        font-size: 12px;
+    }
+
+
+    /* IMPACTO */
+
+    .impact-section {
+        padding: 65px 15px;
+    }
+
+    .impact-mark {
+        font-size: 48px;
+    }
+
+    .impact-section h2 {
+        font-size: 26px;
+    }
+
+
+    /* FAQ */
+
+    .faq-section {
+        padding: 65px 15px;
+    }
+
+    .faq-list {
+        gap: 10px;
+    }
+
+    .faq-item {
+        padding: 19px 17px;
+
+        border-radius: 12px;
+    }
+
+    .faq-item h3 {
+        font-size: 14px;
+
+        line-height: 1.4;
+
+        margin-bottom: 7px;
+    }
+
+    .faq-item p {
+        font-size: 11px;
+
+        line-height: 1.55;
+    }
+
+
+    /* OFERTA */
+
+    .offer-section {
+        padding: 65px 15px;
+    }
+
+    .offer-container {
+        gap: 35px;
+    }
+
+    .section-heading {
+        margin-bottom: 30px;
+    }
+
+    .section-heading h2,
+    .offer-text h2 {
+        font-size: 27px;
+    }
+
+    .section-heading p,
+    .offer-text p {
+        font-size: 13px;
+    }
+
+    .offer-product .book-wrapper {
+        max-width: 430px;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        padding: 35px 15px;
+    }
+
+    .footer-logo {
+        font-size: 26px;
+    }
+
+    footer p {
+        font-size: 8px;
+    }
+}
+
+
+/* ================================================= */
+/* ================= 480 PX ======================== */
+/* ================================================= */
+
+@media (max-width: 480px) {
+
+    .header-container {
+        min-height: 52px;
+
+        padding: 8px 12px;
+
+        gap: 6px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .menu {
+        gap: 6px;
+    }
+
+    .menu a {
+        font-size: 7px;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        padding: 30px 12px 45px;
+    }
+
+    .hero h1 {
+        font-size: 29px;
+    }
+
+    .hero-description {
+        font-size: 12px;
+    }
+
+
+    /* PRODUTO */
+
+    .product-area {
+        margin-top: 28px;
+
+        gap: 23px;
+    }
+
+    .book-wrapper {
+        padding: 8px;
+
+        border-radius: 14px;
+    }
+
+
+    /* CARD */
+
+    .purchase-card {
+        padding: 23px 17px;
+
+        border-radius: 14px;
+    }
+
+    .small-title {
+        font-size: 19px;
+    }
+
+    .access {
+        font-size: 11px;
+    }
+
+    .price {
+        font-size: 31px;
+    }
+
+
+    /* BENEFÍCIOS */
+
+    .benefit p {
+        font-size: 10px;
+    }
+
+
+    /* BOTÃO */
+
+    .buy-button {
+        width: 100%;
+
+        min-height: 52px;
+
+        padding: 15px 8px;
+
+        font-size: 9px;
+
+        border-radius: 9px;
+    }
+
+
+    /* CONTEÚDO */
+
+    .content-section {
+        padding: 55px 12px;
+    }
+
+    .content-grid {
+        gap: 8px;
+    }
+
+    .content-item {
+        min-height: 135px;
+
+        padding: 13px 10px;
+    }
+
+    .icon {
+        font-size: 19px;
+    }
+
+    .content-item strong {
+        font-size: 11px;
+    }
+
+    .content-item span {
+        font-size: 8px;
+    }
+
+
+    /* PARA QUEM É */
+
+    .audience-section {
+        padding: 55px 12px;
+    }
+
+    .audience-list {
+        gap: 8px;
+    }
+
+    .audience-item {
+        padding: 14px 12px;
+
+        border-radius: 12px;
+    }
+
+    .audience-item span {
+        width: 25px;
+
+        height: 25px;
+
+        font-size: 12px;
+    }
+
+    .audience-item p {
+        font-size: 10px;
+    }
+
+
+    /* FAQ */
+
+    .faq-section {
+        padding: 55px 12px;
+    }
+
+    .faq-list {
+        gap: 8px;
+    }
+
+    .faq-item {
+        padding: 17px 14px;
+
+        border-radius: 11px;
+    }
+
+    .faq-item h3 {
+        font-size: 12px;
+    }
+
+    .faq-item p {
+        font-size: 10px;
+    }
+
+
+    /* IMPACTO */
+
+    .impact-section {
+        padding: 55px 12px;
+    }
+
+    .impact-section h2 {
+        font-size: 22px;
+    }
+
+
+    /* TÍTULOS */
+
+    .section-heading h2,
+    .offer-text h2 {
+        font-size: 24px;
+    }
+
+    .section-heading p,
+    .offer-text p {
+        font-size: 12px;
+    }
+
+    .section-badge {
+        font-size: 8px;
+
+        padding: 6px 10px;
+    }
+
+
+    /* OFERTA */
+
+    .offer-section {
+        padding: 55px 12px;
+    }
+
+    .offer-container {
+        gap: 28px;
+    }
+
+    .offer-product .book-wrapper {
+        max-width: 330px;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        padding: 30px 10px;
+    }
+
+    .footer-logo {
+        font-size: 23px;
+    }
+
+    footer p {
+        font-size: 7px;
+    }
+}
+
+
+/* ================================================= */
+/* ================= 360 PX ======================== */
+/* ================================================= */
+
+@media (max-width: 360px) {
+
+    .header-container {
+        padding: 8px 10px;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .menu {
+        gap: 5px;
+    }
+
+    .menu a {
+        font-size: 6px;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        padding: 28px 10px 40px;
+    }
+
+    .hero h1 {
+        font-size: 26px;
+    }
+
+    .hero-description {
+        font-size: 11px;
+    }
+
+
+    /* CARD */
+
+    .purchase-card {
+        padding: 21px 14px;
+    }
+
+    .small-title {
+        font-size: 17px;
+    }
+
+    .access {
+        font-size: 10px;
+    }
+
+    .price {
+        font-size: 28px;
+    }
+
+    .benefit {
+        gap: 7px;
+    }
+
+    .benefit p {
+        font-size: 9px;
+    }
+
+
+    /* BOTÃO */
+
+    .buy-button {
+        min-height: 50px;
+
+        padding: 14px 6px;
+
+        font-size: 8px;
+
+        border-radius: 8px;
+    }
+
+
+    /* CONTEÚDO */
+
+    .content-item {
+        min-height: 130px;
+    }
+
+    .content-item span {
+        font-size: 7px;
+    }
+
+
+    /* PARA QUEM É */
+
+    .audience-item {
+        padding: 12px 10px;
+    }
+
+    .audience-item span {
+        width: 23px;
+
+        height: 23px;
+
+        font-size: 11px;
+    }
+
+    .audience-item p {
+        font-size: 9px;
+    }
+
+
+    /* FAQ */
+
+    .faq-item {
+        padding: 15px 12px;
+    }
+
+    .faq-item h3 {
+        font-size: 11px;
+    }
+
+    .faq-item p {
+        font-size: 9px;
+    }
+
+
+    /* IMPACTO */
+
+    .impact-section h2 {
+        font-size: 20px;
+    }
+
+
+    /* FOOTER */
+
+    .footer-logo {
+        font-size: 21px;
+    }
+
+    footer p {
+        font-size: 6px;
+    }
+}
+
+
 /* ================================================= */
 /* ============== PREENCHER LARGURA ================= */
 /* ================================================= */
 
-html,
-body {
-    width: 100%;
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-}
-
-/* Todas as seções ocupam a tela inteira */
 main,
 section,
 footer {
@@ -19,7 +1665,6 @@ footer {
     max-width: 100%;
 }
 
-/* Fundos preenchendo completamente as laterais */
 .hero,
 .content-section,
 .audience-section,
@@ -32,55 +1677,24 @@ footer {
     margin-right: 0;
 }
 
-/* O conteúdo continua centralizado */
-.hero-container,
-.content-container,
-.audience-container,
-.faq-container,
-.impact-container,
-.offer-container {
-    width: 100%;
-    max-width: 1120px;
-    margin-left: auto;
-    margin-right: auto;
-}
 
-/* No celular, elimina qualquer espaço lateral indesejado */
-@media (max-width: 700px) {
+/* ================================================= */
+/* ============ ACESSIBILIDADE / MOVIMENTO ========= */
+/* ================================================= */
 
-    .hero,
-    .content-section,
-    .audience-section,
-    .impact-section,
-    .faq-section,
-    .offer-section,
-    footer {
-        width: 100%;
-        padding-left: 15px;
-        padding-right: 15px;
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
     }
 
-    .hero-container,
-    .content-container,
-    .audience-container,
-    .faq-container,
-    .impact-container,
-    .offer-container {
-        width: 100%;
-        max-width: 100%;
-    }
-}
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
 
-@media (max-width: 480px) {
+        animation-duration: 0.01ms !important;
 
-    .hero,
-    .content-section,
-    .audience-section,
-    .impact-section,
-    .faq-section,
-    .offer-section,
-    footer {
-        padding-left: 12px;
-        padding-right: 12px;
+        animation-iteration-count: 1 !important;
     }
 }
