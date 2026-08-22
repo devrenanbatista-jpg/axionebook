@@ -10,7 +10,7 @@ html {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: #ffffff;
+    background: #f4f0e7;
     color: #111F28;
     overflow-x: hidden;
 }
@@ -19,9 +19,9 @@ body {
 
 .header {
     width: 100%;
-    background: #ffffff;
-    border-top: 1px solid #FFFFFF;
-    border-bottom: 1px solid #FFFFFF;
+    background: #f4f0e7;
+    border-top: 1px solid #F3F0EB;
+    border-bottom: 1px solid #F3F0EB;
 }
 
 .header-container {
@@ -42,7 +42,7 @@ body {
 }
 
 .logo span {
-    color: #F74B35;
+    color: #EF4936;
 }
 
 .menu {
@@ -51,13 +51,13 @@ body {
 }
 
 .menu a {
-    color: #111F28;
+    color: #7A858D;
     text-decoration: none;
     font-size: 12px;
 }
 
 .menu a:hover {
-    color: #F74B35;
+    color: #EF4936;
 }
 
 
@@ -65,7 +65,7 @@ body {
 
 .hero {
     padding: 55px 20px 75px;
-    background: #FFFFFF;
+    background: #F3E7E3;
 }
 
 .hero-container {
@@ -84,8 +84,8 @@ body {
 
     border-radius: 30px;
 
-    background: #ffffff;
-    color: #F74B35;
+    background: #f4f0e7;
+    color: #EF4936;
 
     font-size: 10px;
     font-weight: 800;
@@ -110,7 +110,7 @@ body {
 }
 
 .hero h1 span {
-    color: #F74B35;
+    color: #EF4936;
 }
 
 
@@ -121,7 +121,7 @@ body {
 
     margin: auto;
 
-    color: #111F28;
+    color: #6F7A82;
 
     font-size: 16px;
     line-height: 1.7;
@@ -160,7 +160,7 @@ body {
 
     padding: 13px;
 
-    background: #ffffff;
+    background: #f4f0e7;
 
     border-radius: 20px;
 
@@ -184,13 +184,13 @@ body {
 }
 
 .purchase-card {
-    background: #ffffff;
+    background: #f4f0e7;
 
     border-radius: 20px;
 
     padding: 32px;
 
-    border: 1px solid #FFFFFF;
+    border: 1px solid #F3F0EB;
 
     box-shadow:
         0 15px 40px rgba(17, 31, 40, 0.10);
@@ -213,7 +213,7 @@ body {
 
     line-height: 1.6;
 
-    color: #111F28;
+    color: #7A858D;
 
     margin-bottom: 20px;
 }
@@ -225,7 +225,7 @@ body {
 
     font-weight: 800;
 
-    color: #F74B35;
+    color: #EF4936;
 
     margin-bottom: 25px;
 }
@@ -248,7 +248,7 @@ body {
 }
 
 .benefit span {
-    color: #F74B35;
+    color: #EF4936;
 
     font-size: 15px;
 
@@ -260,7 +260,7 @@ body {
 
     line-height: 1.55;
 
-    color: #111F28;
+    color: #68747B;
 }
 
 
@@ -275,9 +275,9 @@ body {
 
     border-radius: 10px;
 
-    background: #F74B35;
+    background: #EF4936;
 
-    color: #ffffff;
+    color: #f4f0e7;
 
     text-decoration: none;
 
@@ -295,7 +295,7 @@ body {
 }
 
 .buy-button:hover {
-    background: #F74B35;
+    background: #D83D2D;
 
     transform: translateY(-2px);
 }
@@ -311,7 +311,7 @@ body {
 
     font-size: 10px;
 
-    color: #FFFFFF;
+    color: #9AA5AB;
 }
 
 
@@ -324,7 +324,7 @@ body {
 
     padding: 85px 20px;
 
-    background: #ffffff;
+    background: #f4f0e7;
 }
 
 .content-container {
@@ -358,7 +358,7 @@ body {
 
     margin: 0 auto;
 
-    color: #111F28;
+    color: #6F7A82;
 
     font-size: 15px;
 
@@ -372,9 +372,9 @@ body {
 
     border-radius: 30px;
 
-    background: #FFFFFF;
+    background: #F3E7E3;
 
-    color: #F74B35;
+    color: #EF4936;
 
     font-size: 10px;
 
@@ -403,7 +403,7 @@ body {
 .content-item {
     min-height: 150px;
 
-    background: #FFFFFF;
+    background: #F3F0EB;
 
     border-radius: 14px;
 
@@ -415,7 +415,7 @@ body {
 
     justify-content: center;
 
-    border: 1px solid #FFFFFF;
+    border: 1px solid #F3F0EB;
 
     transition: 0.2s ease;
 }
@@ -436,7 +436,7 @@ body {
 .content-item strong {
     font-size: 15px;
 
-    color: #111F28;
+    color: #24343D;
 
     margin-bottom: 7px;
 }
@@ -444,7 +444,7 @@ body {
 .content-item span {
     font-size: 12px;
 
-    color: #111F28;
+    color: #7A858D;
 
     line-height: 1.5;
 }
@@ -459,7 +459,7 @@ body {
 
     padding: 85px 20px;
 
-    background: #FFFFFF;
+    background: #F3E7E3;
 }
 
 .audience-container {
@@ -489,7 +489,7 @@ body {
 }
 
 .audience-heading p {
-    color: #111F28;
+    color: #6F7A82;
 
     font-size: 15px;
 
@@ -505,9 +505,9 @@ body {
 }
 
 .audience-item {
-    background: #ffffff;
+    background: #f4f0e7;
 
-    border: 1px solid #FFFFFF;
+    border: 1px solid #F3F0EB;
 
     border-radius: 15px;
 
@@ -540,7 +540,7 @@ body {
 
     line-height: 1.55;
 
-    color: #111F28;
+    color: #68747B;
 }
 
 .audience-item span::before {
@@ -548,7 +548,7 @@ body {
 
     flex-shrink: 0;
 
-    color: #F74B35;
+    color: #EF4936;
 
     font-weight: 800;
 
@@ -583,7 +583,7 @@ body {
 
     line-height: 1;
 
-    color: #F74B35;
+    color: #EF4936;
 }
 
 .impact-section h2 {
@@ -593,7 +593,7 @@ body {
 
     line-height: 1.2;
 
-    color: #ffffff;
+    color: #f4f0e7;
 }
 
 .impact-section h2 span {
@@ -601,7 +601,7 @@ body {
 
     margin-top: 8px;
 
-    color: #F74B35;
+    color: #EF4936;
 }
 
 
@@ -612,7 +612,7 @@ body {
 .offer-section {
     padding: 90px 20px;
 
-    background: #FFFFFF;
+    background: #F3E7E3;
 }
 
 .offer-container {
@@ -646,7 +646,7 @@ body {
 
     margin: 0 0 28px;
 
-    color: #111F28;
+    color: #6F7A82;
 
     font-size: 15px;
 
@@ -677,7 +677,7 @@ body {
 
     padding: 85px 20px;
 
-    background: #ffffff;
+    background: #f4f0e7;
 }
 
 .faq-container {
@@ -705,7 +705,7 @@ body {
 }
 
 .faq-heading p {
-    color: #111F28;
+    color: #6F7A82;
 
     font-size: 15px;
 
@@ -721,9 +721,9 @@ body {
 }
 
 .faq-item {
-    background: #FFFFFF;
+    background: #F3F0EB;
 
-    border: 1px solid #FFFFFF;
+    border: 1px solid #F3F0EB;
 
     border-radius: 14px;
 
@@ -754,7 +754,7 @@ body {
 
     line-height: 1.6;
 
-    color: #111F28;
+    color: #6F7A82;
 }
 
 
@@ -771,11 +771,11 @@ footer {
 
     background: #111F28;
 
-    color: #FFFFFF;
+    color: #B9C1C7;
 
-    border-top: 1px solid #F74B35;
+    border-top: 1px solid #EF4936;
 
-    border-bottom: 1px solid #F74B35;
+    border-bottom: 1px solid #EF4936;
 
     margin-top: 0;
 }
@@ -785,13 +785,13 @@ footer {
 
     font-weight: 800;
 
-    color: #ffffff;
+    color: #f4f0e7;
 
     margin-bottom: 10px;
 }
 
 .footer-logo span {
-    color: #F74B35;
+    color: #EF4936;
 }
 
 footer p {
@@ -1443,8 +1443,8 @@ footer p {
     footer {
         padding: 30px 10px;
 
-        border-top: 1px solid #F74B35;
-        border-bottom: 1px solid #F74B35;
+        border-top: 1px solid #EF4936;
+        border-bottom: 1px solid #EF4936;
     }
 
     .footer-logo {
@@ -1579,7 +1579,7 @@ button {
 .preview-section {
     width: 100%;
     padding: 85px 20px;
-    background: #ffffff;
+    background: #f4f0e7;
 }
 
 .preview-container {
@@ -1604,9 +1604,9 @@ button {
 
     border-radius: 30px;
 
-    background: #FFFFFF;
+    background: #F3E7E3;
 
-    color: #F74B35;
+    color: #EF4936;
 
     font-size: 10px;
 
@@ -1630,7 +1630,7 @@ button {
 
     margin: 0 auto;
 
-    color: #111F28;
+    color: #6F7A82;
 
     font-size: 15px;
 
@@ -1654,9 +1654,9 @@ button {
 /* ================= CARD ================= */
 
 .preview-card {
-    background: #ffffff;
+    background: #f4f0e7;
 
-    border: 1px solid #111F28;
+    border: 1px solid #E3E0DB;
 
     border-radius: 18px;
 
@@ -1687,7 +1687,7 @@ button {
 
     font-weight: 800;
 
-    color: #F74B35;
+    color: #EF4936;
 
     letter-spacing: 0.5px;
 }
@@ -1708,7 +1708,7 @@ button {
 
     justify-content: center;
 
-    background: #FFFFFF;
+    background: #F3F0EB;
 
     border-radius: 12px;
 }
@@ -1745,7 +1745,7 @@ button {
 
     line-height: 1.6;
 
-    color: #111F28;
+    color: #6F7A82;
 }
 
 
@@ -1766,7 +1766,7 @@ button {
 
     gap: 22px;
 
-    background: #FFFFFF;
+    background: #F3E7E3;
 
     border-radius: 18px;
 }
@@ -1789,7 +1789,7 @@ button {
 
     align-items: flex-start;
 
-    background: #ffffff;
+    background: #f4f0e7;
 
     border-radius: 9px;
 
@@ -1831,7 +1831,7 @@ button {
 
     line-height: 1.6;
 
-    color: #111F28;
+    color: #6F7A82;
 }
 
 
@@ -2113,219 +2113,4 @@ button {
         font-size: 8px;
     }
 
-}
-
-
-/* ================================================= */
-/* ============ PALETA FINAL — BALANCEADA ========== */
-/* ================================================= */
-
-/*
-   Azul escuro: #102A43
-   Azul principal: #243B53
-   Fundo claro: #F7F9FC
-   Branco: #FFFFFF
-   Destaque coral: #E85D4A
-*/
-
-/* ================= HERO ================= */
-
-.hero {
-    background: #102A43;
-}
-
-.hero h1,
-.hero-description,
-.hero-container {
-    color: #FFFFFF;
-}
-
-.hero h1 span {
-    color: #E85D4A;
-}
-
-
-/* ================= HEADER ================= */
-
-.header {
-    background: #FFFFFF;
-    border-top-color: #E6ECF2;
-    border-bottom-color: #E6ECF2;
-}
-
-.logo,
-.menu a {
-    color: #102A43;
-}
-
-.logo span,
-.menu a:hover {
-    color: #E85D4A;
-}
-
-
-/* ================= BADGES ================= */
-
-.badge,
-.section-badge,
-.preview-section .section-badge {
-    background: #F1F5F9;
-    color: #E85D4A;
-}
-
-
-/* ================= SEÇÕES CLARAS ================= */
-
-.content-section,
-.offer-section,
-.faq-section,
-.preview-section {
-    background: #F7F9FC;
-}
-
-
-/* ================= CARDS ================= */
-
-.book-wrapper,
-.purchase-card,
-.content-item,
-.audience-item,
-.faq-item,
-.preview-card {
-    background: #FFFFFF;
-    border-color: #E2E8F0;
-}
-
-
-/* ================= TEXTOS ================= */
-
-body,
-.logo,
-.menu a,
-.small-title,
-.access,
-.benefit p,
-.section-heading h2,
-.section-heading p,
-.content-item strong,
-.content-item span,
-.audience-heading h2,
-.audience-heading p,
-.offer-text h2,
-.offer-text p,
-.faq-heading h2,
-.faq-heading p,
-.faq-item h3,
-.faq-item p,
-.preview-card h3,
-.preview-card p {
-    color: #243B53;
-}
-
-
-/* ================= DESTAQUES ================= */
-
-.price,
-.benefit span,
-.audience-item span::before,
-.preview-label,
-.impact-mark {
-    color: #E85D4A;
-}
-
-
-/* ================= SEÇÃO PÚBLICO ================= */
-
-.audience-section {
-    background: #243B53 !important;
-    color: #FFFFFF !important;
-}
-
-.audience-section h2,
-.audience-section h3,
-.audience-section p,
-.audience-section span {
-    color: #FFFFFF !important;
-}
-
-.audience-section span::before {
-    color: #E85D4A !important;
-}
-
-
-/* ================= IMPACTO ================= */
-
-.impact-section {
-    background: #102A43;
-}
-
-.impact-section h2 {
-    color: #FFFFFF;
-}
-
-.impact-section h2 span {
-    color: #E85D4A;
-}
-
-
-/* ================= PREVIEW ================= */
-
-.preview-card {
-    background: #FFFFFF;
-    border-color: #E2E8F0;
-}
-
-.preview-image-wrapper {
-    background: #F7F9FC;
-}
-
-.preview-bottom {
-    background: #243B53;
-}
-
-.preview-bottom-text strong,
-.preview-bottom-text span {
-    color: #FFFFFF;
-}
-
-
-/* ================= BOTÕES ================= */
-
-.buy-button,
-.offer-button {
-    background: #E85D4A;
-    border-color: #E85D4A;
-    color: #FFFFFF;
-}
-
-.buy-button:hover,
-.offer-button:hover {
-    background: #C94738;
-    border-color: #C94738;
-}
-
-
-/* ================= FOOTER ================= */
-
-footer {
-    background: #102A43;
-    color: #FFFFFF;
-    border-top-color: #E85D4A;
-    border-bottom-color: #E85D4A;
-}
-
-.footer-logo {
-    color: #FFFFFF;
-}
-
-.footer-logo span {
-    color: #E85D4A;
-}
-
-
-/* ================= FOCUS ================= */
-
-.buy-button:focus-visible,
-.menu a:focus-visible {
-    outline-color: #E85D4A;
 }
