@@ -1,2116 +1,3084 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+Texto colado (6).txt
+Documento
+Textos colados (2)(1).txt
+Documento
+não quero que vc açtere nada no codigo,apenas mude a sessão (esse guia é pra vc se:) pela sessão que eu mandei na foto,quero exatamente ingual
+
+Sim. Vou alterar somente a seção “ESSE GUIA É PARA VOCÊ” e manter todo o restante do seu código exatamente como está. A seção atual está nessa parte do HTML.
+
+Substitua apenas esse bloco pelo código abaixo:
+
+<!-- ================= POR QUE ESTE MATERIAL? ================= -->
+
+<section class="audience-section" style="
+    width: 100%;
+    padding: 38px 23px 105px;
+    background: #111f28;
+    color: #ffffff;
+">
+
+    <div style="
+        width: 100%;
+        max-width: 1050px;
+        margin: 0 auto;
+    ">
+
+        <div style="
+            margin-bottom: 65px;
+        ">
+
+            <div style="
+                font-size: 12px;
+                font-weight: 800;
+                letter-spacing: 1.4px;
+                color: #ef4936;
+                margin-bottom: 20px;
+            ">
+                POR QUE ESTE MATERIAL?
+            </div>
+
+            <h2 style="
+                margin: 0;
+                font-size: 50px;
+                line-height: 1.05;
+                font-weight: 400;
+                letter-spacing: -2px;
+                color: #ffffff;
+            ">
+                Menos ansiedade.<br>
+
+                <span style="
+                    color: #ef4936;
+                ">
+                    Mais liberdade.
+                </span>
+            </h2>
+
+        </div>
+
+
+        <div style="
+            width: 100%;
+            height: 1px;
+            background: rgba(255,255,255,0.18);
+            margin-bottom: 36px;
+        "></div>
+
+
+        <div style="
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 70px;
+        ">
+
+
+            <!-- 01 -->
+
+            <div>
+
+                <div style="
+                    font-size: 12px;
+                    font-weight: 500;
+                    color: #ef4936;
+                    margin-bottom: 31px;
+                ">
+                    01
+                </div>
+
+                <h3 style="
+                    margin: 0 0 18px;
+                    font-size: 21px;
+                    line-height: 1.2;
+                    font-weight: 400;
+                    color: #ffffff;
+                ">
+                    Prático de verdade
+                </h3>
+
+                <p style="
+                    margin: 0;
+                    max-width: 270px;
+                    font-size: 14px;
+                    line-height: 1.65;
+                    font-weight: 400;
+                    color: #b9c1c7;
+                ">
+                    Frases prontas separadas por situação
+                    para você encontrar exatamente o que
+                    precisa.
+                </p>
+
+            </div>
+
+
+            <!-- 02 -->
+
+            <div>
+
+                <div style="
+                    font-size: 12px;
+                    font-weight: 500;
+                    color: #ef4936;
+                    margin-bottom: 31px;
+                ">
+                    02
+                </div>
+
+                <h3 style="
+                    margin: 0 0 18px;
+                    font-size: 21px;
+                    line-height: 1.2;
+                    font-weight: 400;
+                    color: #ffffff;
+                ">
+                    Feito para iniciantes
+                </h3>
+
+                <p style="
+                    margin: 0;
+                    max-width: 270px;
+                    font-size: 14px;
+                    line-height: 1.65;
+                    font-weight: 400;
+                    color: #b9c1c7;
+                ">
+                    Sem palavras difíceis ou explicações
+                    intermináveis. Aprenda pelo contexto e use
+                    na hora.
+                </p>
+
+            </div>
+
+
+            <!-- 03 -->
+
+            <div>
+
+                <div style="
+                    font-size: 12px;
+                    font-weight: 500;
+                    color: #ef4936;
+                    margin-bottom: 31px;
+                ">
+                    03
+                </div>
+
+                <h3 style="
+                    margin: 0 0 18px;
+                    font-size: 21px;
+                    line-height: 1.2;
+                    font-weight: 400;
+                    color: #ffffff;
+                ">
+                    Seu guia de bolso
+                </h3>
+
+                <p style="
+                    margin: 0;
+                    max-width: 270px;
+                    font-size: 14px;
+                    line-height: 1.65;
+                    font-weight: 400;
+                    color: #b9c1c7;
+                ">
+                    Consulte pelo celular antes ou durante a
+                    viagem, no seu ritmo e onde estiver.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+Importante: não mexa no CSS geral. Esse código usa os estilos dentro da própria seção, então o restante da sua landing page continua igual. O resultado fica com o fundo azul-escuro, título grande, vermelho, linha divisória e os 3 blocos exatamente no formato da imagem.
+
+mande o codigo completo 
+
+Claro. Fiz o HTML completo, mantendo o restante do código e alterando somente a seção para ficar igual à imagem que você mandou.
+
+Baixar o HTML completo com a alteração
+
+A única seção modificada foi “Esse guia é para você” → “POR QUE ESTE MATERIAL?”. O restante foi mantido como estava.
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+    <title>Inglês sem Travar na Viagem</title>
+
+    <link rel="stylesheet" href="web2.css">
+
+<style>
+/* ================= VEJA POR DENTRO ================= */
+.preview-section{padding:90px 20px;background:#f7f8fa}.preview-container{width:min(1180px,100%);margin:0 auto}.preview-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:45px}.preview-card{background:#fff;border-radius:22px;padding:18px;box-shadow:0 15px 45px rgba(0,0,0,.08);overflow:hidden}.preview-label{font-size:13px;font-weight:800;letter-spacing:.4px;margin:4px 4px 16px}.preview-image-wrapper{width:100%;height:500px;overflow:hidden;border-radius:14px;background:#eceff3}.preview-image{display:block;width:100%;height:100%;object-fit:contain;object-position:top center}.preview-card h3{margin:20px 4px 8px;font-size:21px;line-height:1.2}.preview-card p{margin:0 4px 8px;line-height:1.6;color:#5f6368}.preview-bottom{display:flex;align-items:center;gap:28px;margin-top:35px;padding:25px;background:#fff;border-radius:22px;box-shadow:0 15px 45px rgba(0,0,0,.06)}.preview-mini{width:120px;height:160px;flex:0 0 120px;overflow:hidden;border-radius:10px;background:#eceff3}.preview-mini img{width:100%;height:100%;object-fit:contain}.preview-bottom-text{display:flex;flex-direction:column;gap:8px}.preview-bottom-text strong{font-size:20px}.preview-bottom-text span{color:#656a70;line-height:1.5}@media(max-width:900px){.preview-grid{grid-template-columns:1fr;max-width:600px;margin-left:auto;margin-right:auto}.preview-image-wrapper{height:auto;max-height:720px}.preview-image{height:auto;max-height:720px}}@media(max-width:600px){.preview-section{padding:65px 16px}.preview-grid{gap:20px;margin-top:30px}.preview-card{padding:13px;border-radius:18px}.preview-bottom{align-items:flex-start;padding:18px;gap:16px}.preview-mini{width:80px;height:110px;flex-basis:80px}.preview-bottom-text strong{font-size:17px}.preview-bottom-text span{font-size:14px}}
+</style>
+</head>
+
+<body>
+
+    <!-- ================= HERO ================= -->
+
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-container">
+
+                <div class="badge">
+                    GUIA DIGITAL PARA SUA VIAGEM
+                </div>
+
+                <h1>
+                    Inglês <span>Sem Travar</span> na Viagem
+                </h1>
+
+                <p class="hero-description">
+                    Saiba exatamente o que falar em inglês nas situações que mais podem acontecer durante sua viagem — com frases prontas, tradução, pronúncia e exemplos práticos.
+                </p>
+
+
+                <!-- ================= PRODUTO ================= -->
+
+                <div class="product-area">
+
+                    <!-- CAPA -->
+
+                    <div class="product-left">
+
+                        <div class="book-wrapper">
+
+                            <img
+                                src="capa oficial.png"
+                                alt="Ebook Inglês sem Travar na Viagem"
+                                class="book-image"
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- CARD DE COMPRA -->
+
+                    <div class="product-right" id="comprar">
+
+                        <div class="purchase-card">
+
+                            <div class="small-title">
+                                Você já imaginou chegar à imigração e não entender o que o agente está perguntando?
+                            </div>
+
+                            <div class="access">
+                                Tenha acesso imediato ao guia e consulte as frases quando precisar.
+                            </div>
+
+                            <div class="price">
+                                R$ 24,99
+                            </div>
+
+
+                            <div class="benefits" id="beneficios">
+
+                                <div class="benefit">
+
+                                    <span>✓</span>
+
+                                    <p>
+                                        Viaje com mais segurança para lidar com situações comuns em inglês.
+                                    </p>
+
+                                </div>
+
+
+                                <div class="benefit">
+
+                                    <span>✓</span>
+
+                                    <p>
+                                        Tenha frases prontas para consultar antes ou durante a viagem.
+                                    </p>
+
+                                </div>
+
+
+                                <div class="benefit">
+
+                                    <span>✓</span>
+
+                                    <p>
+                                        Prepare-se para aeroporto, imigração, hotel, restaurante, transporte e muito mais.
+                                    </p>
+
+                                </div>
+
+
+                                <div class="benefit">
+
+                                    <span>✓</span>
+
+                                    <p>
+                                        Evite aquele momento de nervosismo sem saber o que responder ou perguntar.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- BOTÃO -->
+
+                            <a
+                                href="index (2).html"
+                                class="buy-button"
+                                aria-label="Quero viajar mais preparado"
+                            >
+                                QUERO VIAJAR MAIS PREPARADO
+                            </a>
+
+
+                            <div class="security">
+                                🔒 Compra segura • Acesso digital
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= VEJA POR DENTRO ================= -->
+
+        <section class="preview-section" id="veja-por-dentro">
+
+            <div class="preview-container">
+
+                <div class="section-heading">
+                    <div class="section-badge">
+                        VEJA POR DENTRO DO GUIA
+                    </div>
+
+                    <h2>
+                        Veja algumas páginas reais do seu material.
+                    </h2>
+
+                    <p>
+                        Não é apenas um ebook de inglês. Você encontra frases, tradução, pronúncia e exemplos práticos para situações reais da viagem.
+                    </p>
+                </div>
+
+                <div class="preview-grid">
+
+                    <article class="preview-card">
+                        <div class="preview-label">✈️ AEROPORTO E IMIGRAÇÃO</div>
+                        <div class="preview-image-wrapper">
+                            <img src="page_9.png" alt="Página real do ebook sobre Aeroporto e Imigração" class="preview-image" loading="lazy">
+                        </div>
+                        <h3>Saiba o que responder na imigração</h3>
+                        <p>Perguntas comuns do oficial e exemplos de respostas para você se preparar antes da viagem.</p>
+                    </article>
+
+                    <article class="preview-card">
+                        <div class="preview-label">🏨 HOTEL</div>
+                        <div class="preview-image-wrapper">
+                            <img src="page_16.png" alt="Página real do ebook sobre Hotel" class="preview-image" loading="lazy">
+                        </div>
+                        <h3>Resolva situações no hotel</h3>
+                        <p>Frases para check-in, problemas no quarto, Wi-Fi, ar-condicionado e outras situações.</p>
+                    </article>
+
+                    <article class="preview-card">
+                        <div class="preview-label">🍽️ RESTAURANTES</div>
+                        <div class="preview-image-wrapper">
+                            <img src="page_20.png" alt="Página real do ebook sobre Restaurantes" class="preview-image" loading="lazy">
+                        </div>
+                        <h3>Peça sua comida sem travar</h3>
+                        <p>Aprenda frases para pedir comida, falar sobre restrições alimentares e pedir a conta.</p>
+                    </article>
+
+                </div>
+
+                <div class="preview-bottom">
+                  
+            </div>
+
+        </section>
+
+
+        <!-- ================= CONTEÚDO ================= -->
+
+        <section class="content-section" id="conteudo">
+
+            <div class="content-container">
+
+                <div class="section-heading">
+
+                    <div class="section-badge">
+                        PREPARE-SE PARA A VIAGEM
+                    </div>
+
+                    <h2>
+                        Tenha frases prontas para as situações que realmente importam.
+                    </h2>
+
+                    <p>
+                        Consulte o guia quando precisar e saiba o que falar em diferentes momentos da sua viagem.
+                    </p>
+
+                </div>
+
+
+                <div class="content-grid">
+
+
+                    <div class="content-item">
+
+                        <div class="icon">
+                            🧳
+                        </div>
+
+                        <strong>
+                            Aeroporto
+                        </strong>
+
+                        <span>
+                            Saiba o que falar no check-in, embarque e durante sua passagem pelo aeroporto.
+                        </span>
+
+                    </div>
+
+
+                    <div class="content-item">
+
+                        <div class="icon">
+                            🛃
+                        </div>
+
+                        <strong>
+                            Imigração
+                        </strong>
+
+                        <span>
+                            Prepare-se para responder perguntas comuns de forma mais tranquila.
+                        </span>
+
+                    </div>
+
+
+                    <div class="content-item">
+
+                        <div class="icon">
+                            🛎️
+                        </div>
+
+                        <strong>
+                            Hotel
+                        </strong>
+
+                        <span>
+                            Aprenda frases para fazer check-in, pedir informações e resolver situações.
+                        </span>
+
+                    </div>
+
+
+                    <div class="content-item">
+
+                        <div class="icon">
+                            🥂
+                        </div>
+
+                        <strong>
+                            Restaurante
+                        </strong>
+
+                        <span>
+                            Saiba pedir sua comida, perguntar sobre o cardápio e lidar com a conta.
+                        </span>
+
+                    </div>
+
+
+                    <div class="content-item">
+
+                        <div class="icon">
+                            🗺️
+                        </div>
+
+                        <strong>
+                            Transporte
+                        </strong>
+
+                        <span>
+                            Tenha frases úteis para táxis, aplicativos, ônibus e para pedir direções.
+                        </span>
+
+                    </div>
+
+
+                    <div class="content-item">
+
+                        <div class="icon">
+                            💳
+                        </div>
+
+                        <strong>
+                            Compras
+                        </strong>
+
+                        <span>
+                            Aprenda a perguntar preços, tamanhos, disponibilidade e formas de pagamento.
+                        </span>
+
+                    </div>
+
+
+                    <div class="content-item">
+
+                        <div class="icon">
+                            🗽
+                        </div>
+
+                        <strong>
+                            Passeios
+                        </strong>
+
+                        <span>
+                            Prepare-se para pedir informações e aproveitar melhor os lugares que visitar.
+                        </span>
+
+                    </div>
+
+
+                    <div class="content-item">
+
+                        <div class="icon">
+                            🆘
+                        </div>
+
+                        <strong>
+                            Emergência
+                        </strong>
+
+                        <span>
+                            Tenha frases importantes para pedir ajuda quando surgir uma situação inesperada.
+                        </span>
+
+                    </div>
+
+
+                    <div class="content-item">
+
+                        <div class="icon">
+                            🗣️
+                        </div>
+
+                        <strong>
+                            Frases práticas
+                        </strong>
+
+                        <span>
+                            Consulte expressões úteis para situações reais do dia a dia.
+                        </span>
+
+                    </div>
+
+
+                    <div class="content-item">
+
+                        <div class="icon">
+                            📖
+                        </div>
+
+                        <strong>
+                            Exercícios
+                        </strong>
+
+                        <span>
+                            Pratique as frases e chegue mais preparado para sua viagem.
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= POR QUE ESTE MATERIAL? ================= -->
+
+        <section class="audience-section" style="
+            width: 100%;
+            padding: 38px 23px 105px;
+            background: #111f28;
+            color: #ffffff;
+        ">
+
+            <div style="
+                width: 100%;
+                max-width: 1050px;
+                margin: 0 auto;
+            ">
+
+                <div style="margin-bottom: 65px;">
+
+                    <div style="
+                        font-size: 12px;
+                        font-weight: 800;
+                        letter-spacing: 1.4px;
+                        color: #ef4936;
+                        margin-bottom: 20px;
+                    ">
+                        POR QUE ESTE MATERIAL?
+                    </div>
+
+                    <h2 style="
+                        margin: 0;
+                        font-size: 50px;
+                        line-height: 1.05;
+                        font-weight: 400;
+                        letter-spacing: -2px;
+                        color: #ffffff;
+                    ">
+                        Menos ansiedade.<br>
+                        <span style="color: #ef4936;">Mais liberdade.</span>
+                    </h2>
+
+                </div>
+
+                <div style="
+                    width: 100%;
+                    height: 1px;
+                    background: rgba(255,255,255,0.18);
+                    margin-bottom: 36px;
+                "></div>
+
+                <div style="
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: 70px;
+                ">
+
+                    <div>
+                        <div style="font-size: 12px; font-weight: 500; color: #ef4936; margin-bottom: 31px;">01</div>
+                        <h3 style="margin: 0 0 18px; font-size: 21px; line-height: 1.2; font-weight: 400; color: #ffffff;">Prático de verdade</h3>
+                        <p style="margin: 0; max-width: 270px; font-size: 14px; line-height: 1.65; font-weight: 400; color: #b9c1c7;">Frases prontas separadas por situação para você encontrar exatamente o que precisa.</p>
+                    </div>
+
+                    <div>
+                        <div style="font-size: 12px; font-weight: 500; color: #ef4936; margin-bottom: 31px;">02</div>
+                        <h3 style="margin: 0 0 18px; font-size: 21px; line-height: 1.2; font-weight: 400; color: #ffffff;">Feito para iniciantes</h3>
+                        <p style="margin: 0; max-width: 270px; font-size: 14px; line-height: 1.65; font-weight: 400; color: #b9c1c7;">Sem palavras difíceis ou explicações intermináveis. Aprenda pelo contexto e use na hora.</p>
+                    </div>
+
+                    <div>
+                        <div style="font-size: 12px; font-weight: 500; color: #ef4936; margin-bottom: 31px;">03</div>
+                        <h3 style="margin: 0 0 18px; font-size: 21px; line-height: 1.2; font-weight: 400; color: #ffffff;">Seu guia de bolso</h3>
+                        <p style="margin: 0; max-width: 270px; font-size: 14px; line-height: 1.65; font-weight: 400; color: #b9c1c7;">Consulte pelo celular antes ou durante a viagem, no seu ritmo e onde estiver.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FRASE DE IMPACTO ================= -->
+
+        <section class="impact-section">
+
+            <div class="impact-container">
+
+                <div class="impact-mark">
+                    “
+                </div>
+
+                <h2>
+                    Você não precisa falar inglês perfeitamente.
+                    <span>Precisa saber o que dizer quando realmente precisar.</span>
+                </h2>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= FAQ ================= -->
+
+        <section class="faq-section">
+
+            <div class="faq-container">
+
+                <div class="section-heading">
+
+                    <div class="section-badge">
+                        PERGUNTAS FREQUENTES
+                    </div>
+
+                    <h2>
+                        Ainda ficou com alguma dúvida?
+                    </h2>
+
+                    <p>
+                        Confira as respostas para as perguntas mais comuns sobre o guia.
+                    </p>
+
+                </div>
+
+
+                <div class="faq-list">
+
+
+                    <div class="faq-item">
+
+                        <h3>
+                            Preciso saber inglês para usar o guia?
+                        </h3>
+
+                        <p>
+                            Não. O material foi pensado para quem possui conhecimento básico ou pouca confiança.
+                        </p>
+
+                    </div>
+
+
+                    <div class="faq-item">
+
+                        <h3>
+                            O produto é físico?
+                        </h3>
+
+                        <p>
+                            Não. É um produto digital.
+                        </p>
+
+                    </div>
+
+
+                    <div class="faq-item">
+
+                        <h3>
+                            Como recebo o material?
+                        </h3>
+
+                        <p>
+                            Acesso digital após a confirmação do pagamento.
+                        </p>
+
+                    </div>
+
+
+                    <div class="faq-item">
+
+                        <h3>
+                            Posso usar durante a viagem?
+                        </h3>
+
+                        <p>
+                            Sim. O material foi estruturado para consulta rápida.
+                        </p>
+
+                    </div>
+
+
+                    <div class="faq-item">
+
+                        <h3>
+                            O guia serve para qualquer país?
+                        </h3>
+
+                        <p>
+                            Ele é focado em situações comuns de viagens internacionais em inglês.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= NOVA OFERTA ================= -->
+
+        <section class="offer-section">
+
+            <div class="offer-container">
+
+                <div class="offer-text">
+
+                    <div class="section-badge">
+                        VIAJE MAIS PREPARADO
+                    </div>
+
+                    <h2>
+                        Tenha o inglês necessário para aproveitar sua viagem com mais tranquilidade.
+                    </h2>
+
+                    <p>
+                        Em vez de tentar memorizar centenas de palavras, tenha acesso a frases práticas para consultar exatamente quando precisar.
+                    </p>
+
+                    <a
+                        href="index (2).html"
+                        class="buy-button offer-button"
+                        aria-label="Quero viajar mais preparado"
+                    >
+                        QUERO VIAJAR MAIS PREPARADO
+                    </a>
+
+                </div>
+
+
+                <div class="offer-product">
+
+                    <div class="book-wrapper">
+
+                        <img
+                            src="capa oficial.png"
+                            alt="Ebook Inglês sem Travar na Viagem"
+                            class="book-image"
+                        >
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- ================= RODAPÉ ================= -->
+
+    <footer>
+
+        <div class="footer-logo">
+            Axion<span>Corp</span>
+        </div>
+
+        <p>
+            © 2026 Inglês sem Travar na Viagem • Todos os direitos reservados.
+        </p>
+
+    </footer>
+
+
+
+    <script src="web3.js"></script>
+
+</body>
+
+</html>
+index_completo_secao_alterada.html
+HTML
+Anúncio
+tem como muda a pela de cores do css,seguindo as cores que tavam na img que eu te mandei,na altere nada so as cores,ceja as corem que combinam entre elas,pra cada sesação
+
+Sim. E fiz somente alterações de cores no CSS — não mexi em tamanho, espaçamento, fontes, grid, posicionamento ou estrutura.
+
+Segui a paleta da imagem que você mandou:
+
+🔵 Azul-marinho: #111F28
+🔴 Vermelho/coral: #EF4936
+🤍 Off-white: #F3F0EB
+🌸 Fundo suave: #F3E7E3
+⚪ Textos secundários: tons de cinza-azulado
+Os botões, títulos e destaques usam o vermelho de forma consistente.
+
+Também deixei as seções combinando entre si, em vez de simplesmente trocar todas as cores por uma única cor. A estrutura original do CSS foi preservada.
+
+CSS completo
+
+Baixar o web2.css com a nova paleta
+
+Você pode simplesmente substituir o seu web2.css atual por esse arquivo.
+
+web2.css
+Código
+
+Sponsored options
+Ad
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
 
 html {
-    scroll-behavior: smooth;
+scroll-behavior: smooth;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: #ffffff;
-    color: #111F28;
-    overflow-x: hidden;
+font-family: Arial, Helvetica, sans-serif;
+background: #ffffff;
+color: #172033;
+overflow-x: hidden;
 }
 
 /* ================= HEADER ================= */
 
 .header {
-    width: 100%;
-    background: #ffffff;
-    border-top: 1px solid #F3F0EB;
-    border-bottom: 1px solid #F3F0EB;
+width: 100%;
+background: #ffffff;
+border-top: 1px solid #f5f5f3;
+border-bottom: 1px solid #f5f5f3;
 }
 
 .header-container {
-    max-width: 1120px;
-    min-height: 58px;
-    margin: auto;
-    padding: 8px 25px;
+max-width: 1120px;
+min-height: 58px;
+margin: auto;
+padding: 8px 25px;
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+display: flex;
+align-items: center;
+justify-content: space-between;
+
 }
 
 .logo {
-    font-size: 32px;
-    font-weight: 800;
-    color: #111F28;
+font-size: 32px;
+font-weight: 800;
+color: #172033;
 }
 
 .logo span {
-    color: #EF4936;
+color: #d13622;
 }
 
 .menu {
-    display: flex;
-    gap: 30px;
+display: flex;
+gap: 30px;
 }
 
 .menu a {
-    color: #7A858D;
-    text-decoration: none;
-    font-size: 12px;
+color: #7c8799;
+text-decoration: none;
+font-size: 12px;
 }
 
-.menu a:hover {
-    color: #EF4936;
+.menu a {
+color: #d13622;
 }
-
 
 /* ================= HERO ================= */
 
 .hero {
-    padding: 55px 20px 75px;
-    background: #F3E7E3;
+padding: 55px 20px 75px;
+background: #f7ebeb;
 }
 
 .hero-container {
-    max-width: 1120px;
-    margin: auto;
-    text-align: center;
+max-width: 1120px;
+margin: auto;
+text-align: center;
 }
-
 
 /* ================= BADGE ================= */
 
 .badge {
-    display: inline-block;
+display: inline-block;
 
-    padding: 7px 14px;
+padding: 7px 14px;
 
-    border-radius: 30px;
+border-radius: 30px;
 
-    background: #ffffff;
-    color: #EF4936;
+background: #ffffff;
+color: #d13622;
 
-    font-size: 10px;
-    font-weight: 800;
+font-size: 10px;
+font-weight: 800;
 
-    letter-spacing: 1px;
+letter-spacing: 1px;
 
-    margin-bottom: 20px;
+margin-bottom: 20px;
+
 }
-
 
 /* ================= TÍTULO ================= */
 
 .hero h1 {
-    font-size: 50px;
-    line-height: 1.1;
+font-size: 50px;
+line-height: 1.1;
 
-    font-weight: 800;
+font-weight: 800;
 
-    color: #111F28;
+color: #172033;
 
-    margin-bottom: 20px;
+margin-bottom: 20px;
+
 }
 
 .hero h1 span {
-    color: #EF4936;
+color: #d13622;
 }
-
 
 /* ================= DESCRIÇÃO ================= */
 
 .hero-description {
-    max-width: 650px;
+max-width: 650px;
 
-    margin: auto;
+margin: auto;
 
-    color: #6F7A82;
+color: #697386;
 
-    font-size: 16px;
-    line-height: 1.7;
+font-size: 16px;
+line-height: 1.7;
+
 }
-
 
 /* ================= PRODUTO ================= */
 
 .product-area {
-    max-width: 1000px;
+max-width: 1000px;
 
-    margin: 50px auto 0;
+margin: 50px auto 0;
 
-    display: grid;
+display: grid;
 
-    grid-template-columns: 1fr 1fr;
+grid-template-columns: 1fr 1fr;
 
-    gap: 45px;
+gap: 45px;
 
-    align-items: center;
+align-items: center;
 
-    text-align: left;
+text-align: left;
+
 }
-
 
 /* ================= CAPA ================= */
 
 .product-left {
-    display: flex;
-    justify-content: center;
+display: flex;
+justify-content: center;
 }
 
 .book-wrapper {
-    width: 100%;
-    max-width: 470px;
+width: 100%;
+max-width: 470px;
 
-    padding: 13px;
+padding: 13px;
 
-    background: #ffffff;
+background: #ffffff;
 
-    border-radius: 20px;
+border-radius: 20px;
 
-    box-shadow:
-        0 20px 50px rgba(17, 31, 40, 0.12);
+box-shadow:
+    0 20px 50px rgba(23, 32, 51, 0.12);
+
 }
 
 .book-image {
-    display: block;
+display: block;
 
-    width: 100%;
+width: 100%;
 
-    border-radius: 14px;
+border-radius: 14px;
+
 }
-
 
 /* ================= CARD DE COMPRA ================= */
 
 .product-right {
-    width: 100%;
+width: 100%;
 }
 
 .purchase-card {
-    background: #ffffff;
+background: #ffffff;
 
-    border-radius: 20px;
+border-radius: 20px;
 
-    padding: 32px;
+padding: 32px;
 
-    border: 1px solid #F3F0EB;
+border: 1px solid #f5f5f3;
 
-    box-shadow:
-        0 15px 40px rgba(17, 31, 40, 0.10);
+box-shadow:
+    0 15px 40px rgba(23, 32, 51, 0.10);
+
 }
 
 .small-title {
-    font-size: 23px;
+font-size: 23px;
 
-    line-height: 1.25;
+line-height: 1.25;
 
-    font-weight: 800;
+font-weight: 800;
 
-    color: #111F28;
+color: #172033;
 
-    margin-bottom: 10px;
+margin-bottom: 10px;
+
 }
 
 .access {
-    font-size: 14px;
+font-size: 14px;
 
-    line-height: 1.6;
+line-height: 1.6;
 
-    color: #7A858D;
+color: #7c8799;
 
-    margin-bottom: 20px;
+margin-bottom: 20px;
+
 }
 
 .price {
-    font-size: 38px;
+font-size: 38px;
 
-    line-height: 1;
+line-height: 1;
 
-    font-weight: 800;
+font-weight: 800;
 
-    color: #EF4936;
+color: #d13622;
 
-    margin-bottom: 25px;
+margin-bottom: 25px;
+
 }
-
 
 /* ================= BENEFÍCIOS ================= */
 
 .benefits {
-    margin-bottom: 25px;
+margin-bottom: 25px;
 }
 
 .benefit {
-    display: flex;
+display: flex;
 
-    align-items: flex-start;
+align-items: flex-start;
 
-    gap: 10px;
+gap: 10px;
 
-    margin-bottom: 15px;
+margin-bottom: 15px;
+
 }
 
 .benefit span {
-    color: #EF4936;
+color: #20b83a;
 
-    font-size: 15px;
+font-size: 15px;
 
-    font-weight: bold;
+font-weight: bold;
+
 }
 
 .benefit p {
-    font-size: 13px;
+font-size: 13px;
 
-    line-height: 1.55;
+line-height: 1.55;
 
-    color: #68747B;
+color: #687386;
+
 }
-
 
 /* ================= BOTÃO ================= */
 
 .buy-button {
-    display: block;
+display: block;
 
-    width: 100%;
+width: 100%;
 
-    padding: 17px 14px;
+padding: 17px 14px;
 
-    border-radius: 10px;
+border-radius: 10px;
 
-    background: #EF4936;
+background: #d13622;
 
-    color: #ffffff;
+color: #ffffff;
 
-    text-decoration: none;
+text-decoration: none;
 
-    text-align: center;
+text-align: center;
 
-    font-size: 12px;
+font-size: 12px;
 
-    font-weight: 800;
+font-weight: 800;
 
-    transition: 0.2s ease;
+transition: 0.2s ease;
 
-    cursor: pointer;
+cursor: pointer;
 
-    user-select: none;
+user-select: none;
+
 }
 
-.buy-button:hover {
-    background: #D83D2D;
+.buy-button {
+background: #b82c1c;
 
-    transform: translateY(-2px);
+transform: translateY(-2px);
+
 }
 
-.buy-button:active {
-    transform: scale(0.98);
+.buy-button {
+transform: scale(0.98);
 }
 
 .security {
-    text-align: center;
+text-align: center;
 
-    margin-top: 14px;
+margin-top: 14px;
 
-    font-size: 10px;
+font-size: 10px;
 
-    color: #9AA5AB;
+color: #a2aab5;
+
 }
 
-
-/* ================================================= */
-/* ================= CONTEÚDO ====================== */
-/* ================================================= */
+/* ================================================= /
+/ ================= CONTEÚDO ====================== /
+/ ================================================= */
 
 .content-section {
-    width: 100%;
+width: 100%;
 
-    padding: 85px 20px;
+padding: 85px 20px;
 
-    background: #ffffff;
+background: #ffffff;
+
 }
 
 .content-container {
-    width: 100%;
-    max-width: 1120px;
+width: 100%;
+max-width: 1120px;
 
-    margin-left: auto;
-    margin-right: auto;
+margin-left: auto;
+margin-right: auto;
+
 }
 
 .section-heading {
-    max-width: 760px;
+max-width: 760px;
 
-    margin: 0 auto 45px;
+margin: 0 auto 45px;
 
-    text-align: center;
+text-align: center;
+
 }
 
 .section-heading h2 {
-    margin: 15px 0;
+margin: 15px 0;
 
-    font-size: 36px;
+font-size: 36px;
 
-    line-height: 1.15;
+line-height: 1.15;
 
-    color: #111F28;
+color: #172033;
+
 }
 
 .section-heading p {
-    max-width: 680px;
+max-width: 680px;
 
-    margin: 0 auto;
+margin: 0 auto;
 
-    color: #6F7A82;
+color: #697386;
 
-    font-size: 15px;
+font-size: 15px;
 
-    line-height: 1.7;
+line-height: 1.7;
+
 }
 
 .section-badge {
-    display: inline-block;
+display: inline-block;
 
-    padding: 7px 14px;
+padding: 7px 14px;
 
-    border-radius: 30px;
+border-radius: 30px;
 
-    background: #F3E7E3;
+background: #f7ebeb;
 
-    color: #EF4936;
+color: #d13622;
 
-    font-size: 10px;
+font-size: 10px;
 
-    font-weight: 800;
+font-weight: 800;
 
-    letter-spacing: 1px;
+letter-spacing: 1px;
+
 }
-
 
 /* ================= GRID DE CONTEÚDO ================= */
 
 .content-grid {
-    max-width: 1050px;
+max-width: 1050px;
 
-    margin: auto;
+margin: auto;
 
-    display: grid;
+display: grid;
 
-    grid-template-columns: repeat(5, 1fr);
+grid-template-columns: repeat(5, 1fr);
 
-    gap: 14px;
+gap: 14px;
 
-    text-align: left;
+text-align: left;
+
 }
 
 .content-item {
-    min-height: 150px;
+min-height: 150px;
 
-    background: #F3F0EB;
+background: #f5f5f3;
 
-    border-radius: 14px;
+border-radius: 14px;
 
-    padding: 20px;
+padding: 20px;
 
-    display: flex;
+display: flex;
 
-    flex-direction: column;
+flex-direction: column;
 
-    justify-content: center;
+justify-content: center;
 
-    border: 1px solid #F3F0EB;
+border: 1px solid #f5f5f3;
 
-    transition: 0.2s ease;
+transition: 0.2s ease;
+
 }
 
-.content-item:hover {
-    transform: translateY(-4px);
+.content-item {
+transform: translateY(-4px);
 
-    box-shadow:
-        0 10px 25px rgba(17, 31, 40, 0.08);
+box-shadow:
+    0 10px 25px rgba(23, 32, 51, 0.08);
+
 }
 
 .icon {
-    font-size: 24px;
+font-size: 24px;
 
-    margin-bottom: 10px;
+margin-bottom: 10px;
+
 }
 
 .content-item strong {
-    font-size: 15px;
+font-size: 15px;
 
-    color: #24343D;
+color: #273247;
 
-    margin-bottom: 7px;
+margin-bottom: 7px;
+
 }
 
 .content-item span {
-    font-size: 12px;
+font-size: 12px;
 
-    color: #7A858D;
+color: #7c8799;
 
-    line-height: 1.5;
+line-height: 1.5;
+
 }
 
-
-/* ================================================= */
-/* =========== SEÇÃO "ESSE GUIA É PARA VOCÊ" ====== */
-/* ================================================= */
+/* ================================================= /
+/ =========== SEÇÃO "ESSE GUIA É PARA VOCÊ" ====== /
+/ ================================================= */
 
 .audience-section {
-    width: 100%;
+width: 100%;
 
-    padding: 85px 20px;
+padding: 85px 20px;
 
-    background: #F3E7E3;
+background: #f7ebeb;
+
 }
 
 .audience-container {
-    width: 100%;
+width: 100%;
 
-    max-width: 1050px;
+max-width: 1050px;
 
-    margin: auto;
+margin: auto;
+
 }
 
 .audience-heading {
-    max-width: 750px;
+max-width: 750px;
 
-    margin: 0 auto 45px;
+margin: 0 auto 45px;
 
-    text-align: center;
+text-align: center;
+
 }
 
 .audience-heading h2 {
-    margin: 15px 0;
+margin: 15px 0;
 
-    font-size: 36px;
+font-size: 36px;
 
-    line-height: 1.15;
+line-height: 1.15;
 
-    color: #111F28;
+color: #172033;
+
 }
 
 .audience-heading p {
-    color: #6F7A82;
+color: #697386;
 
-    font-size: 15px;
+font-size: 15px;
 
-    line-height: 1.7;
+line-height: 1.7;
+
 }
 
 .audience-grid {
-    display: grid;
+display: grid;
 
-    grid-template-columns: repeat(5, 1fr);
+grid-template-columns: repeat(5, 1fr);
 
-    gap: 15px;
+gap: 15px;
+
 }
 
 .audience-item {
-    background: #ffffff;
+background: #ffffff;
 
-    border: 1px solid #F3F0EB;
+border: 1px solid #f5f5f3;
 
-    border-radius: 15px;
+border-radius: 15px;
 
-    padding: 25px 18px;
+padding: 25px 18px;
 
-    min-height: 150px;
+min-height: 150px;
 
-    display: flex;
+display: flex;
 
-    align-items: center;
+align-items: center;
 
-    transition: 0.2s ease;
+transition: 0.2s ease;
+
 }
 
-.audience-item:hover {
-    transform: translateY(-4px);
+.audience-item {
+transform: translateY(-4px);
 
-    box-shadow:
-        0 10px 25px rgba(17, 31, 40, 0.08);
+box-shadow:
+    0 10px 25px rgba(23, 32, 51, 0.08);
+
 }
 
 .audience-item span {
-    display: flex;
+display: flex;
 
-    align-items: flex-start;
+align-items: flex-start;
 
-    gap: 10px;
+gap: 10px;
 
-    font-size: 13px;
+font-size: 13px;
 
-    line-height: 1.55;
+line-height: 1.55;
 
-    color: #68747B;
+color: #687386;
+
 }
 
 .audience-item span::before {
-    content: "✓";
+content: "✓";
 
-    flex-shrink: 0;
+flex-shrink: 0;
 
-    color: #EF4936;
+color: #20b83a;
 
-    font-weight: 800;
+font-weight: 800;
 
-    font-size: 15px;
+font-size: 15px;
+
 }
 
-
-/* ================================================= */
-/* ================= FRASE DE IMPACTO ============== */
-/* ================================================= */
+/* ================================================= /
+/ ================= FRASE DE IMPACTO ============== /
+/ ================================================= */
 
 .impact-section {
-    padding: 90px 20px;
+padding: 90px 20px;
 
-    background: #111F28;
+background: #172033;
 
-    text-align: center;
+text-align: center;
+
 }
 
 .impact-container {
-    width: 100%;
+width: 100%;
 
-    max-width: 850px;
+max-width: 850px;
 
-    margin: auto;
+margin: auto;
+
 }
 
 .impact-mark {
-    margin-bottom: 15px;
+margin-bottom: 15px;
 
-    font-size: 60px;
+font-size: 60px;
 
-    line-height: 1;
+line-height: 1;
 
-    color: #EF4936;
+color: #d13622;
+
 }
 
 .impact-section h2 {
-    margin: 0;
+margin: 0;
 
-    font-size: 38px;
+font-size: 38px;
 
-    line-height: 1.2;
+line-height: 1.2;
 
-    color: #ffffff;
+color: #ffffff;
+
 }
 
 .impact-section h2 span {
-    display: block;
+display: block;
 
-    margin-top: 8px;
+margin-top: 8px;
 
-    color: #EF4936;
+color: #d13622;
+
 }
 
-
-/* ================================================= */
-/* ==================== OFERTA ===================== */
-/* ================================================= */
+/* ================================================= /
+/ ==================== OFERTA ===================== /
+/ ================================================= */
 
 .offer-section {
-    padding: 90px 20px;
+padding: 90px 20px;
 
-    background: #F3E7E3;
+background: #f7ebeb;
+
 }
 
 .offer-container {
-    width: 100%;
+width: 100%;
 
-    max-width: 1120px;
+max-width: 1120px;
 
-    margin: auto;
+margin: auto;
 
-    display: grid;
+display: grid;
 
-    grid-template-columns: 1.1fr 0.9fr;
+grid-template-columns: 1.1fr 0.9fr;
 
-    gap: 60px;
+gap: 60px;
 
-    align-items: center;
+align-items: center;
+
 }
 
 .offer-text h2 {
-    margin: 18px 0;
+margin: 18px 0;
 
-    font-size: 38px;
+font-size: 38px;
 
-    line-height: 1.15;
+line-height: 1.15;
 
-    color: #111F28;
+color: #172033;
+
 }
 
 .offer-text p {
-    max-width: 620px;
+max-width: 620px;
 
-    margin: 0 0 28px;
+margin: 0 0 28px;
 
-    color: #6F7A82;
+color: #697386;
 
-    font-size: 15px;
+font-size: 15px;
 
-    line-height: 1.7;
+line-height: 1.7;
+
 }
 
 .offer-product {
-    display: flex;
+display: flex;
 
-    justify-content: center;
+justify-content: center;
+
 }
 
 .offer-product .book-wrapper {
-    max-width: 390px;
+max-width: 390px;
 }
 
 .offer-button {
-    max-width: 500px;
+max-width: 500px;
 }
 
-
-/* ================================================= */
-/* ===================== FAQ ======================= */
-/* ================================================= */
+/* ================================================= /
+/ ===================== FAQ ======================= /
+/ ================================================= */
 
 .faq-section {
-    width: 100%;
+width: 100%;
 
-    padding: 85px 20px;
+padding: 85px 20px;
 
-    background: #ffffff;
+background: #ffffff;
+
 }
 
 .faq-container {
-    width: 100%;
+width: 100%;
 
-    max-width: 850px;
+max-width: 850px;
 
-    margin: auto;
+margin: auto;
+
 }
 
 .faq-heading {
-    text-align: center;
+text-align: center;
 
-    margin-bottom: 45px;
+margin-bottom: 45px;
+
 }
 
 .faq-heading h2 {
-    margin: 15px 0;
+margin: 15px 0;
 
-    font-size: 36px;
+font-size: 36px;
 
-    line-height: 1.15;
+line-height: 1.15;
 
-    color: #111F28;
+color: #172033;
+
 }
 
 .faq-heading p {
-    color: #6F7A82;
+color: #697386;
 
-    font-size: 15px;
+font-size: 15px;
 
-    line-height: 1.7;
+line-height: 1.7;
+
 }
 
 .faq-list {
-    display: flex;
+display: flex;
 
-    flex-direction: column;
+flex-direction: column;
 
-    gap: 12px;
+gap: 12px;
+
 }
 
 .faq-item {
-    background: #F3F0EB;
+background: #f5f5f3;
 
-    border: 1px solid #F3F0EB;
+border: 1px solid #f5f5f3;
 
-    border-radius: 14px;
+border-radius: 14px;
 
-    padding: 22px 25px;
+padding: 22px 25px;
 
-    transition: 0.2s ease;
+transition: 0.2s ease;
+
 }
 
-.faq-item:hover {
-    transform: translateY(-2px);
+.faq-item {
+transform: translateY(-2px);
 
-    box-shadow:
-        0 8px 20px rgba(17, 31, 40, 0.06);
+box-shadow:
+    0 8px 20px rgba(23, 32, 51, 0.06);
+
 }
 
 .faq-item h3 {
-    margin-bottom: 8px;
+margin-bottom: 8px;
 
-    font-size: 16px;
+font-size: 16px;
 
-    line-height: 1.4;
+line-height: 1.4;
 
-    color: #111F28;
+color: #172033;
+
 }
 
 .faq-item p {
-    font-size: 13px;
+font-size: 13px;
 
-    line-height: 1.6;
+line-height: 1.6;
 
-    color: #6F7A82;
+color: #697386;
+
 }
 
-
-/* ================================================= */
-/* ===================== FOOTER ==================== */
-/* ================================================= */
+/* ================================================= /
+/ ===================== FOOTER ==================== /
+/ ================================================= */
 
 footer {
-    width: 100%;
+width: 100%;
 
-    text-align: center;
+text-align: center;
 
-    padding: 40px 20px;
+padding: 40px 20px;
 
-    background: #111F28;
+background: #172033;
 
-    color: #B9C1C7;
+color: #aeb5c2;
 
-    border-top: 1px solid #EF4936;
+border-top: 1px solid #d13622;
 
-    border-bottom: 1px solid #EF4936;
+border-bottom: 1px solid #d13622;
 
-    margin-top: 0;
+margin-top: 0;
+
 }
 
 .footer-logo {
-    font-size: 30px;
+font-size: 30px;
 
-    font-weight: 800;
+font-weight: 800;
 
-    color: #ffffff;
+color: #ffffff;
 
-    margin-bottom: 10px;
+margin-bottom: 10px;
+
 }
 
 .footer-logo span {
-    color: #EF4936;
+color: #d13622;
 }
 
 footer p {
+font-size: 10px;
+
+line-height: 1.5;
+
+}
+
+/* ================================================= /
+/ ===================== TABLET ==================== /
+/ ================================================= */
+
+@media (max-width: 1000px) {
+
+.content-grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.audience-grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.product-area {
+    max-width: 900px;
+
+    gap: 30px;
+}
+
+}
+
+/* ================================================= /
+/ ===================== TABLET ==================== /
+/ ================================================= */
+
+@media (max-width: 900px) {
+
+.header-container {
+    padding: 8px 20px;
+}
+
+.logo {
+    font-size: 28px;
+}
+
+.menu {
+    gap: 18px;
+}
+
+.menu a {
     font-size: 10px;
+}
+
+.hero h1 {
+    font-size: 44px;
+}
+
+.hero-description {
+    font-size: 15px;
+}
+
+.product-area {
+    grid-template-columns: 1fr 1fr;
+
+    gap: 25px;
+
+    max-width: 850px;
+}
+
+.purchase-card {
+    padding: 26px;
+}
+
+.section-heading h2,
+.audience-heading h2,
+.faq-heading h2,
+.offer-text h2 {
+    font-size: 32px;
+}
+
+.impact-section h2 {
+    font-size: 32px;
+}
+
+.offer-container {
+    grid-template-columns: 1fr;
+
+    gap: 40px;
+
+    text-align: center;
+}
+
+.offer-text p {
+    margin-left: auto;
+
+    margin-right: auto;
+}
+
+.offer-text .buy-button {
+    margin-left: auto;
+
+    margin-right: auto;
+}
+
+}
+
+/* ================================================= /
+/ ===================== CELULAR =================== /
+/ ================================================= */
+
+@media (max-width: 700px) {
+
+/* HEADER */
+
+.header-container {
+    min-height: 55px;
+
+    padding: 8px 15px;
+
+    gap: 10px;
+}
+
+.logo {
+    font-size: 23px;
+}
+
+.menu {
+    gap: 9px;
+}
+
+.menu a {
+    font-size: 8px;
+}
+
+
+/* HERO */
+
+.hero {
+    padding: 38px 15px 55px;
+}
+
+.badge {
+    font-size: 8px;
+
+    padding: 6px 10px;
+
+    letter-spacing: 0.6px;
+
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 34px;
+
+    line-height: 1.15;
+
+    margin-bottom: 15px;
+}
+
+.hero-description {
+    font-size: 13px;
+
+    line-height: 1.6;
+}
+
+
+/* PRODUTO */
+
+.product-area {
+    grid-template-columns: 1fr;
+
+    max-width: 500px;
+
+    gap: 28px;
+
+    margin-top: 35px;
+}
+
+.product-left {
+    order: 1;
+}
+
+.product-right {
+    order: 2;
+}
+
+.book-wrapper {
+    max-width: 430px;
+
+    padding: 10px;
+
+    border-radius: 16px;
+}
+
+.book-image {
+    border-radius: 11px;
+}
+
+
+/* CARD */
+
+.purchase-card {
+    width: 100%;
+
+    padding: 27px 21px;
+
+    border-radius: 17px;
+}
+
+.small-title {
+    font-size: 21px;
+
+    line-height: 1.3;
+}
+
+.access {
+    font-size: 12px;
+
+    line-height: 1.55;
+}
+
+.price {
+    font-size: 34px;
+
+    margin-bottom: 22px;
+}
+
+
+/* BENEFÍCIOS */
+
+.benefit {
+    gap: 8px;
+
+    margin-bottom: 13px;
+}
+
+.benefit span {
+    font-size: 13px;
+}
+
+.benefit p {
+    font-size: 11px;
 
     line-height: 1.5;
 }
 
 
-/* ================================================= */
-/* ===================== TABLET ==================== */
-/* ================================================= */
+/* BOTÕES */
 
-@media (max-width: 1000px) {
-
-    .content-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .audience-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .product-area {
-        max-width: 900px;
-
-        gap: 30px;
-    }
-
-}
-
-
-/* ================================================= */
-/* ===================== TABLET ==================== */
-/* ================================================= */
-
-@media (max-width: 900px) {
-
-    .header-container {
-        padding: 8px 20px;
-    }
-
-    .logo {
-        font-size: 28px;
-    }
-
-    .menu {
-        gap: 18px;
-    }
-
-    .menu a {
-        font-size: 10px;
-    }
-
-    .hero h1 {
-        font-size: 44px;
-    }
-
-    .hero-description {
-        font-size: 15px;
-    }
-
-    .product-area {
-        grid-template-columns: 1fr 1fr;
-
-        gap: 25px;
-
-        max-width: 850px;
-    }
-
-    .purchase-card {
-        padding: 26px;
-    }
-
-    .section-heading h2,
-    .audience-heading h2,
-    .faq-heading h2,
-    .offer-text h2 {
-        font-size: 32px;
-    }
-
-    .impact-section h2 {
-        font-size: 32px;
-    }
-
-    .offer-container {
-        grid-template-columns: 1fr;
-
-        gap: 40px;
-
-        text-align: center;
-    }
-
-    .offer-text p {
-        margin-left: auto;
-
-        margin-right: auto;
-    }
-
-    .offer-text .buy-button {
-        margin-left: auto;
-
-        margin-right: auto;
-    }
-
-}
-
-
-/* ================================================= */
-/* ===================== CELULAR =================== */
-/* ================================================= */
-
-@media (max-width: 700px) {
-
-    /* HEADER */
-
-    .header-container {
-        min-height: 55px;
-
-        padding: 8px 15px;
-
-        gap: 10px;
-    }
-
-    .logo {
-        font-size: 23px;
-    }
-
-    .menu {
-        gap: 9px;
-    }
-
-    .menu a {
-        font-size: 8px;
-    }
-
-
-    /* HERO */
-
-    .hero {
-        padding: 38px 15px 55px;
-    }
-
-    .badge {
-        font-size: 8px;
-
-        padding: 6px 10px;
-
-        letter-spacing: 0.6px;
-
-        margin-bottom: 15px;
-    }
-
-    .hero h1 {
-        font-size: 34px;
-
-        line-height: 1.15;
-
-        margin-bottom: 15px;
-    }
-
-    .hero-description {
-        font-size: 13px;
-
-        line-height: 1.6;
-    }
-
-
-    /* PRODUTO */
-
-    .product-area {
-        grid-template-columns: 1fr;
-
-        max-width: 500px;
-
-        gap: 28px;
-
-        margin-top: 35px;
-    }
-
-    .product-left {
-        order: 1;
-    }
-
-    .product-right {
-        order: 2;
-    }
-
-    .book-wrapper {
-        max-width: 430px;
-
-        padding: 10px;
-
-        border-radius: 16px;
-    }
-
-    .book-image {
-        border-radius: 11px;
-    }
-
-
-    /* CARD */
-
-    .purchase-card {
-        width: 100%;
-
-        padding: 27px 21px;
-
-        border-radius: 17px;
-    }
-
-    .small-title {
-        font-size: 21px;
-
-        line-height: 1.3;
-    }
-
-    .access {
-        font-size: 12px;
-
-        line-height: 1.55;
-    }
-
-    .price {
-        font-size: 34px;
-
-        margin-bottom: 22px;
-    }
-
-
-    /* BENEFÍCIOS */
-
-    .benefit {
-        gap: 8px;
-
-        margin-bottom: 13px;
-    }
-
-    .benefit span {
-        font-size: 13px;
-    }
-
-    .benefit p {
-        font-size: 11px;
-
-        line-height: 1.5;
-    }
-
-
-    /* BOTÕES */
-
-    .buy-button {
-        width: 100%;
-
-        min-height: 50px;
-
-        display: flex;
-
-        align-items: center;
-
-        justify-content: center;
-
-        padding: 15px 12px;
-
-        font-size: 10px;
-
-        line-height: 1.3;
-
-        border-radius: 10px;
-
-        white-space: normal;
-
-        text-align: center;
-    }
-
-    .security {
-        font-size: 8px;
-    }
-
-
-    /* CONTEÚDO */
-
-    .content-section {
-        padding: 65px 15px;
-    }
-
-    .section-heading h2,
-    .audience-heading h2,
-    .faq-heading h2,
-    .offer-text h2 {
-        font-size: 27px;
-    }
-
-    .section-heading p,
-    .audience-heading p,
-    .faq-heading p,
-    .offer-text p {
-        font-size: 13px;
-
-        line-height: 1.6;
-    }
-
-    .content-grid {
-        grid-template-columns: repeat(2, 1fr);
-
-        gap: 10px;
-    }
-
-    .content-item {
-        min-height: 140px;
-
-        padding: 16px 13px;
-    }
-
-    .icon {
-        font-size: 21px;
-
-        margin-bottom: 8px;
-    }
-
-    .content-item strong {
-        font-size: 12px;
-    }
-
-    .content-item span {
-        font-size: 9px;
-
-        line-height: 1.45;
-    }
-
-
-    /* ================= GUIA PARA VOCÊ ================= */
-
-    .audience-section {
-        padding: 65px 15px;
-    }
-
-    .audience-heading {
-        margin-bottom: 30px;
-    }
-
-    .audience-grid {
-        grid-template-columns: 1fr 1fr;
-
-        gap: 10px;
-    }
-
-    .audience-item {
-        min-height: 125px;
-
-        padding: 16px 13px;
-
-        border-radius: 12px;
-    }
-
-    .audience-item span {
-        font-size: 10px;
-
-        line-height: 1.5;
-
-        gap: 7px;
-    }
-
-    .audience-item span::before {
-        font-size: 13px;
-    }
-
-
-    /* ================= IMPACTO ================= */
-
-    .impact-section {
-        padding: 65px 15px;
-    }
-
-    .impact-mark {
-        font-size: 48px;
-    }
-
-    .impact-section h2 {
-        font-size: 26px;
-
-        line-height: 1.25;
-    }
-
-
-    /* ================= OFERTA ================= */
-
-    .offer-section {
-        padding: 65px 15px;
-    }
-
-    .offer-container {
-        gap: 35px;
-    }
-
-    .offer-product .book-wrapper {
-        max-width: 330px;
-    }
-
-    .offer-button {
-        width: 100%;
-
-        max-width: none;
-    }
-
-
-    /* ================= FAQ ================= */
-
-    .faq-section {
-        padding: 65px 15px;
-    }
-
-    .faq-heading {
-        margin-bottom: 30px;
-    }
-
-    .faq-list {
-        gap: 10px;
-    }
-
-    .faq-item {
-        padding: 18px 16px;
-
-        border-radius: 12px;
-    }
-
-    .faq-item h3 {
-        font-size: 14px;
-
-        line-height: 1.4;
-    }
-
-    .faq-item p {
-        font-size: 11px;
-
-        line-height: 1.55;
-    }
-
-
-    /* ================= FOOTER ================= */
-
-    footer {
-        padding: 35px 15px;
-    }
-
-    .footer-logo {
-        font-size: 26px;
-    }
-
-    footer p {
-        font-size: 8px;
-    }
-
-}
-
-
-/* ================================================= */
-/* ================= CELULAR PEQUENO =============== */
-/* ================================================= */
-
-@media (max-width: 480px) {
-
-    .header-container {
-        min-height: 52px;
-
-        padding: 8px 12px;
-    }
-
-    .logo {
-        font-size: 20px;
-    }
-
-    .menu {
-        gap: 6px;
-    }
-
-    .menu a {
-        font-size: 7px;
-    }
-
-
-    /* HERO */
-
-    .hero {
-        padding: 30px 12px 45px;
-    }
-
-    .hero h1 {
-        font-size: 29px;
-    }
-
-    .hero-description {
-        font-size: 12px;
-    }
-
-
-    /* PRODUTO */
-
-    .product-area {
-        margin-top: 28px;
-
-        gap: 23px;
-    }
-
-    .book-wrapper {
-        padding: 8px;
-
-        border-radius: 14px;
-    }
-
-    .purchase-card {
-        padding: 23px 17px;
-
-        border-radius: 14px;
-    }
-
-    .small-title {
-        font-size: 19px;
-    }
-
-    .access {
-        font-size: 11px;
-    }
-
-    .price {
-        font-size: 31px;
-    }
-
-    .benefit p {
-        font-size: 10px;
-    }
-
-
-    /* BOTÃO */
-
-    .buy-button {
-        width: 100%;
-
-        min-height: 52px;
-
-        padding: 15px 8px;
-
-        font-size: 9px;
-
-        line-height: 1.3;
-    }
-
-
-    /* CONTEÚDO */
-
-    .content-section {
-        padding: 55px 12px;
-    }
-
-    .section-heading h2,
-    .audience-heading h2,
-    .faq-heading h2,
-    .offer-text h2 {
-        font-size: 24px;
-    }
-
-    .content-grid {
-        gap: 8px;
-    }
-
-    .content-item {
-        min-height: 135px;
-
-        padding: 13px 10px;
-    }
-
-    .icon {
-        font-size: 19px;
-    }
-
-    .content-item strong {
-        font-size: 11px;
-    }
-
-    .content-item span {
-        font-size: 8px;
-    }
-
-
-    /* GUIA */
-
-    .audience-section {
-        padding: 55px 12px;
-    }
-
-    .audience-grid {
-        gap: 8px;
-    }
-
-    .audience-item {
-        min-height: 125px;
-
-        padding: 13px 10px;
-    }
-
-    .audience-item span {
-        font-size: 9px;
-    }
-
-
-    /* IMPACTO */
-
-    .impact-section {
-        padding: 55px 12px;
-    }
-
-    .impact-section h2 {
-        font-size: 22px;
-    }
-
-
-    /* OFERTA */
-
-    .offer-section {
-        padding: 55px 12px;
-    }
-
-    .offer-product .book-wrapper {
-        max-width: 300px;
-    }
-
-
-    /* FAQ */
-
-    .faq-section {
-        padding: 55px 12px;
-    }
-
-    .faq-item {
-        padding: 17px 14px;
-    }
-
-    .faq-item h3 {
-        font-size: 13px;
-    }
-
-    .faq-item p {
-        font-size: 10px;
-    }
-
-
-    /* FOOTER */
-
-    footer {
-        padding: 30px 10px;
-
-        border-top: 1px solid #EF4936;
-        border-bottom: 1px solid #EF4936;
-    }
-
-    .footer-logo {
-        font-size: 23px;
-    }
-
-    footer p {
-        font-size: 7px;
-    }
-
-}
-
-
-/* ================================================= */
-/* ================= MUITO PEQUENO ================= */
-/* ================================================= */
-
-@media (max-width: 360px) {
-
-    .logo {
-        font-size: 18px;
-    }
-
-    .menu {
-        gap: 5px;
-    }
-
-    .menu a {
-        font-size: 6px;
-    }
-
-    .hero h1 {
-        font-size: 26px;
-    }
-
-    .hero-description {
-        font-size: 11px;
-    }
-
-    .small-title {
-        font-size: 17px;
-    }
-
-    .price {
-        font-size: 28px;
-    }
-
-    .benefit p {
-        font-size: 9px;
-    }
-
-    .content-item {
-        min-height: 130px;
-    }
-
-    .content-item span {
-        font-size: 7px;
-    }
-
-    .audience-item {
-        min-height: 120px;
-    }
-
-    .audience-item span {
-        font-size: 8px;
-    }
-
-    .faq-item h3 {
-        font-size: 12px;
-    }
-
-    .faq-item p {
-        font-size: 9px;
-    }
-
-    .buy-button {
-        min-height: 50px;
-
-        font-size: 8px;
-    }
-}
-
-
-/* ================================================= */
-/* ================= AJUSTES FINAIS ================ */
-/* ================================================= */
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-a,
-button {
-    -webkit-tap-highlight-color: transparent;
-}
-
-.buy-button:focus-visible,
-.menu a:focus-visible {
-    outline: 3px solid rgba(239, 73, 54, 0.35);
-
-    outline-offset: 4px;
-}
-
-
-/* ================================================= */
-/* ================= ACESSIBILIDADE ================ */
-/* ================================================= */
-
-@media (prefers-reduced-motion: reduce) {
-
-    html {
-        scroll-behavior: auto;
-    }
-
-    *,
-    *::before,
-    *::after {
-        transition-duration: 0.01ms !important;
-
-        animation-duration: 0.01ms !important;
-
-        animation-iteration-count: 1 !important;
-    }
-}
-
-
-/* ================================================= */
-/* ============== VEJA POR DENTRO DO GUIA ========== */
-/* ================================================= */
-
-.preview-section {
-    width: 100%;
-    padding: 85px 20px;
-    background: #ffffff;
-}
-
-.preview-container {
-    width: 100%;
-    max-width: 1120px;
-    margin: auto;
-}
-
-
-/* ================= TÍTULO ================= */
-
-.preview-section .section-heading {
-    max-width: 760px;
-    margin: 0 auto 45px;
-    text-align: center;
-}
-
-.preview-section .section-badge {
-    display: inline-block;
-
-    padding: 7px 14px;
-
-    border-radius: 30px;
-
-    background: #F3E7E3;
-
-    color: #EF4936;
-
-    font-size: 10px;
-
-    font-weight: 800;
-
-    letter-spacing: 1px;
-}
-
-.preview-section .section-heading h2 {
-    margin: 15px 0;
-
-    font-size: 36px;
-
-    line-height: 1.15;
-
-    color: #111F28;
-}
-
-.preview-section .section-heading p {
-    max-width: 680px;
-
-    margin: 0 auto;
-
-    color: #6F7A82;
-
-    font-size: 15px;
-
-    line-height: 1.7;
-}
-
-
-/* ================= GRID ================= */
-
-.preview-grid {
+.buy-button {
     width: 100%;
 
-    display: grid;
-
-    grid-template-columns: repeat(3, 1fr);
-
-    gap: 22px;
-}
-
-
-/* ================= CARD ================= */
-
-.preview-card {
-    background: #ffffff;
-
-    border: 1px solid #E3E0DB;
-
-    border-radius: 18px;
-
-    padding: 15px;
-
-    box-shadow:
-        0 12px 35px rgba(17, 31, 40, 0.08);
-
-    transition: 0.2s ease;
-
-    overflow: hidden;
-}
-
-.preview-card:hover {
-    transform: translateY(-4px);
-
-    box-shadow:
-        0 18px 40px rgba(17, 31, 40, 0.12);
-}
-
-
-/* ================= LABEL ================= */
-
-.preview-label {
-    margin: 5px 3px 15px;
-
-    font-size: 11px;
-
-    font-weight: 800;
-
-    color: #EF4936;
-
-    letter-spacing: 0.5px;
-}
-
-
-/* ================= IMAGEM REAL DO PDF ================= */
-
-.preview-image-wrapper {
-    width: 100%;
-
-    height: 480px;
-
-    overflow: hidden;
+    min-height: 50px;
 
     display: flex;
 
-    align-items: flex-start;
+    align-items: center;
 
     justify-content: center;
 
-    background: #F3F0EB;
+    padding: 15px 12px;
+
+    font-size: 10px;
+
+    line-height: 1.3;
+
+    border-radius: 10px;
+
+    white-space: normal;
+
+    text-align: center;
+}
+
+.security {
+    font-size: 8px;
+}
+
+
+/* CONTEÚDO */
+
+.content-section {
+    padding: 65px 15px;
+}
+
+.section-heading h2,
+.audience-heading h2,
+.faq-heading h2,
+.offer-text h2 {
+    font-size: 27px;
+}
+
+.section-heading p,
+.audience-heading p,
+.faq-heading p,
+.offer-text p {
+    font-size: 13px;
+
+    line-height: 1.6;
+}
+
+.content-grid {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 10px;
+}
+
+.content-item {
+    min-height: 140px;
+
+    padding: 16px 13px;
+}
+
+.icon {
+    font-size: 21px;
+
+    margin-bottom: 8px;
+}
+
+.content-item strong {
+    font-size: 12px;
+}
+
+.content-item span {
+    font-size: 9px;
+
+    line-height: 1.45;
+}
+
+
+/* ================= GUIA PARA VOCÊ ================= */
+
+.audience-section {
+    padding: 65px 15px;
+}
+
+.audience-heading {
+    margin-bottom: 30px;
+}
+
+.audience-grid {
+    grid-template-columns: 1fr 1fr;
+
+    gap: 10px;
+}
+
+.audience-item {
+    min-height: 125px;
+
+    padding: 16px 13px;
 
     border-radius: 12px;
 }
 
-.preview-image {
-    display: block;
+.audience-item span {
+    font-size: 10px;
 
-    width: 100%;
-
-    height: 100%;
-
-    object-fit: contain;
-
-    object-position: top center;
-}
-
-
-/* ================= TEXTO DO CARD ================= */
-
-.preview-card h3 {
-    margin: 18px 3px 8px;
-
-    font-size: 19px;
-
-    line-height: 1.3;
-
-    color: #111F28;
-}
-
-.preview-card p {
-    margin: 0 3px 5px;
-
-    font-size: 12px;
-
-    line-height: 1.6;
-
-    color: #6F7A82;
-}
-
-
-/* ================================================= */
-/* ================= BLOCO INFERIOR ================= */
-/* ================================================= */
-
-.preview-bottom {
-    width: 100%;
-
-    margin-top: 25px;
-
-    padding: 22px;
-
-    display: flex;
-
-    align-items: center;
-
-    gap: 22px;
-
-    background: #F3E7E3;
-
-    border-radius: 18px;
-}
-
-
-/* ================= MINI PÁGINA ================= */
-
-.preview-mini {
-    width: 90px;
-
-    height: 120px;
-
-    flex-shrink: 0;
-
-    overflow: hidden;
-
-    display: flex;
-
-    justify-content: center;
-
-    align-items: flex-start;
-
-    background: #ffffff;
-
-    border-radius: 9px;
-
-    box-shadow:
-        0 8px 20px rgba(17, 31, 40, 0.10);
-}
-
-.preview-mini img {
-    display: block;
-
-    width: 100%;
-
-    height: 100%;
-
-    object-fit: contain;
-}
-
-
-/* ================= TEXTO INFERIOR ================= */
-
-.preview-bottom-text {
-    display: flex;
-
-    flex-direction: column;
+    line-height: 1.5;
 
     gap: 7px;
 }
 
-.preview-bottom-text strong {
-    font-size: 18px;
-
-    line-height: 1.35;
-
-    color: #111F28;
-}
-
-.preview-bottom-text span {
-    font-size: 12px;
-
-    line-height: 1.6;
-
-    color: #6F7A82;
+.audience-item span::before {
+    font-size: 13px;
 }
 
 
-/* ================================================= */
-/* ===================== TABLET ==================== */
-/* ================================================= */
+/* ================= IMPACTO ================= */
 
-@media (max-width: 1000px) {
+.impact-section {
+    padding: 65px 15px;
+}
 
-    .preview-grid {
-        grid-template-columns: repeat(3, 1fr);
+.impact-mark {
+    font-size: 48px;
+}
 
-        gap: 15px;
-    }
+.impact-section h2 {
+    font-size: 26px;
 
-    .preview-image-wrapper {
-        height: 400px;
-    }
-
-    .preview-card {
-        padding: 12px;
-    }
-
-    .preview-card h3 {
-        font-size: 17px;
-    }
-
-    .preview-card p {
-        font-size: 11px;
-    }
-
+    line-height: 1.25;
 }
 
 
-/* ================================================= */
-/* ===================== TABLET ==================== */
-/* ================================================= */
+/* ================= OFERTA ================= */
 
-@media (max-width: 900px) {
+.offer-section {
+    padding: 65px 15px;
+}
 
-    .preview-section {
-        padding: 75px 20px;
-    }
+.offer-container {
+    gap: 35px;
+}
 
-    .preview-section .section-heading h2 {
-        font-size: 32px;
-    }
+.offer-product .book-wrapper {
+    max-width: 330px;
+}
 
-    .preview-section .section-heading p {
-        font-size: 14px;
-    }
+.offer-button {
+    width: 100%;
 
-    .preview-grid {
-        grid-template-columns: 1fr;
-
-        max-width: 600px;
-
-        margin-left: auto;
-        margin-right: auto;
-
-        gap: 22px;
-    }
-
-    .preview-image-wrapper {
-        height: auto;
-
-        max-height: 720px;
-    }
-
-    .preview-image {
-        width: 100%;
-
-        height: auto;
-
-        max-height: 720px;
-
-        object-fit: contain;
-    }
-
+    max-width: none;
 }
 
 
-/* ================================================= */
-/* ===================== CELULAR =================== */
-/* ================================================= */
+/* ================= FAQ ================= */
 
-@media (max-width: 700px) {
+.faq-section {
+    padding: 65px 15px;
+}
 
-    .preview-section {
-        padding: 65px 15px;
-    }
+.faq-heading {
+    margin-bottom: 30px;
+}
 
-    .preview-section .section-heading {
-        margin-bottom: 30px;
-    }
+.faq-list {
+    gap: 10px;
+}
 
-    .preview-section .section-heading h2 {
-        font-size: 27px;
-    }
+.faq-item {
+    padding: 18px 16px;
 
-    .preview-section .section-heading p {
-        font-size: 13px;
+    border-radius: 12px;
+}
 
-        line-height: 1.6;
-    }
+.faq-item h3 {
+    font-size: 14px;
 
-    .preview-grid {
-        gap: 18px;
-    }
+    line-height: 1.4;
+}
 
-    .preview-card {
-        padding: 12px;
+.faq-item p {
+    font-size: 11px;
 
-        border-radius: 15px;
-    }
-
-    .preview-label {
-        font-size: 9px;
-
-        margin-bottom: 12px;
-    }
-
-    .preview-image-wrapper {
-        height: auto;
-
-        max-height: none;
-
-        border-radius: 10px;
-    }
-
-    .preview-image {
-        width: 100%;
-
-        height: auto;
-
-        max-height: none;
-    }
-
-    .preview-card h3 {
-        margin-top: 15px;
-
-        font-size: 16px;
-    }
-
-    .preview-card p {
-        font-size: 10px;
-
-        line-height: 1.55;
-    }
-
-
-    /* ================= BLOCO INFERIOR ================= */
-
-    .preview-bottom {
-        margin-top: 18px;
-
-        padding: 17px;
-
-        gap: 15px;
-
-        border-radius: 15px;
-    }
-
-    .preview-mini {
-        width: 70px;
-
-        height: 95px;
-
-        border-radius: 7px;
-    }
-
-    .preview-bottom-text {
-        gap: 5px;
-    }
-
-    .preview-bottom-text strong {
-        font-size: 15px;
-    }
-
-    .preview-bottom-text span {
-        font-size: 10px;
-
-        line-height: 1.5;
-    }
-
+    line-height: 1.55;
 }
 
 
-/* ================================================= */
-/* ================= CELULAR PEQUENO =============== */
-/* ================================================= */
+/* ================= FOOTER ================= */
+
+footer {
+    padding: 35px 15px;
+}
+
+.footer-logo {
+    font-size: 26px;
+}
+
+footer p {
+    font-size: 8px;
+}
+
+}
+
+/* ================================================= /
+/ ================= CELULAR PEQUENO =============== /
+/ ================================================= */
 
 @media (max-width: 480px) {
 
-    .preview-section {
-        padding: 55px 12px;
-    }
+.header-container {
+    min-height: 52px;
 
-    .preview-section .section-heading h2 {
-        font-size: 24px;
-    }
+    padding: 8px 12px;
+}
 
-    .preview-section .section-heading p {
-        font-size: 12px;
-    }
+.logo {
+    font-size: 20px;
+}
 
-    .preview-card {
-        padding: 10px;
+.menu {
+    gap: 6px;
+}
 
-        border-radius: 13px;
-    }
-
-    .preview-label {
-        font-size: 8px;
-    }
-
-    .preview-card h3 {
-        font-size: 15px;
-    }
-
-    .preview-card p {
-        font-size: 9px;
-    }
-
-    .preview-bottom {
-        padding: 14px;
-
-        gap: 12px;
-    }
-
-    .preview-mini {
-        width: 60px;
-
-        height: 82px;
-    }
-
-    .preview-bottom-text strong {
-        font-size: 13px;
-    }
-
-    .preview-bottom-text span {
-        font-size: 9px;
-    }
-
+.menu a {
+    font-size: 7px;
 }
 
 
-/* ================================================= */
-/* ================= MUITO PEQUENO ================= */
-/* ================================================= */
+/* HERO */
+
+.hero {
+    padding: 30px 12px 45px;
+}
+
+.hero h1 {
+    font-size: 29px;
+}
+
+.hero-description {
+    font-size: 12px;
+}
+
+
+/* PRODUTO */
+
+.product-area {
+    margin-top: 28px;
+
+    gap: 23px;
+}
+
+.book-wrapper {
+    padding: 8px;
+
+    border-radius: 14px;
+}
+
+.purchase-card {
+    padding: 23px 17px;
+
+    border-radius: 14px;
+}
+
+.small-title {
+    font-size: 19px;
+}
+
+.access {
+    font-size: 11px;
+}
+
+.price {
+    font-size: 31px;
+}
+
+.benefit p {
+    font-size: 10px;
+}
+
+
+/* BOTÃO */
+
+.buy-button {
+    width: 100%;
+
+    min-height: 52px;
+
+    padding: 15px 8px;
+
+    font-size: 9px;
+
+    line-height: 1.3;
+}
+
+
+/* CONTEÚDO */
+
+.content-section {
+    padding: 55px 12px;
+}
+
+.section-heading h2,
+.audience-heading h2,
+.faq-heading h2,
+.offer-text h2 {
+    font-size: 24px;
+}
+
+.content-grid {
+    gap: 8px;
+}
+
+.content-item {
+    min-height: 135px;
+
+    padding: 13px 10px;
+}
+
+.icon {
+    font-size: 19px;
+}
+
+.content-item strong {
+    font-size: 11px;
+}
+
+.content-item span {
+    font-size: 8px;
+}
+
+
+/* GUIA */
+
+.audience-section {
+    padding: 55px 12px;
+}
+
+.audience-grid {
+    gap: 8px;
+}
+
+.audience-item {
+    min-height: 125px;
+
+    padding: 13px 10px;
+}
+
+.audience-item span {
+    font-size: 9px;
+}
+
+
+/* IMPACTO */
+
+.impact-section {
+    padding: 55px 12px;
+}
+
+.impact-section h2 {
+    font-size: 22px;
+}
+
+
+/* OFERTA */
+
+.offer-section {
+    padding: 55px 12px;
+}
+
+.offer-product .book-wrapper {
+    max-width: 300px;
+}
+
+
+/* FAQ */
+
+.faq-section {
+    padding: 55px 12px;
+}
+
+.faq-item {
+    padding: 17px 14px;
+}
+
+.faq-item h3 {
+    font-size: 13px;
+}
+
+.faq-item p {
+    font-size: 10px;
+}
+
+
+/* FOOTER */
+
+footer {
+    padding: 30px 10px;
+
+    border-top: 1px solid #d13622;
+    border-bottom: 1px solid #d13622;
+}
+
+.footer-logo {
+    font-size: 23px;
+}
+
+footer p {
+    font-size: 7px;
+}
+
+}
+
+/* ================================================= /
+/ ================= MUITO PEQUENO ================= /
+/ ================================================= */
 
 @media (max-width: 360px) {
 
-    .preview-section {
-        padding: 50px 10px;
-    }
+.logo {
+    font-size: 18px;
+}
 
-    .preview-section .section-heading h2 {
-        font-size: 22px;
-    }
+.menu {
+    gap: 5px;
+}
 
-    .preview-section .section-heading p {
-        font-size: 11px;
-    }
+.menu a {
+    font-size: 6px;
+}
 
-    .preview-card h3 {
-        font-size: 14px;
-    }
+.hero h1 {
+    font-size: 26px;
+}
 
-    .preview-card p {
-        font-size: 8px;
-    }
+.hero-description {
+    font-size: 11px;
+}
 
-    .preview-bottom-text strong {
-        font-size: 12px;
-    }
+.small-title {
+    font-size: 17px;
+}
 
-    .preview-bottom-text span {
-        font-size: 8px;
-    }
+.price {
+    font-size: 28px;
+}
+
+.benefit p {
+    font-size: 9px;
+}
+
+.content-item {
+    min-height: 130px;
+}
+
+.content-item span {
+    font-size: 7px;
+}
+
+.audience-item {
+    min-height: 120px;
+}
+
+.audience-item span {
+    font-size: 8px;
+}
+
+.faq-item h3 {
+    font-size: 12px;
+}
+
+.faq-item p {
+    font-size: 9px;
+}
+
+.buy-button {
+    min-height: 50px;
+
+    font-size: 8px;
+}
 
 }
+
+/* ================================================= /
+/ ================= AJUSTES FINAIS ================ /
+/ ================================================= */
+
+img {
+max-width: 100%;
+height: auto;
+}
+
+a,
+button {
+-webkit-tap-highlight-color: transparent;
+}
+
+.buy-button,
+.menu a {
+outline: 3px solid rgba(209, 54, 34, 0.35);
+
+outline-offset: 4px;
+
+}
+
+/* ================================================= /
+/ ================= ACESSIBILIDADE ================ /
+/ ================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+html {
+    scroll-behavior: auto;
+}
+
+*,
+*::before,
+*::after {
+    transition-duration: 0.01ms !important;
+
+    animation-duration: 0.01ms !important;
+
+    animation-iteration-count: 1 !important;
+}
+
+}
+
+/* ================================================= /
+/ ============== VEJA POR DENTRO DO GUIA ========== /
+/ ================================================= */
+
+.preview-section {
+width: 100%;
+padding: 85px 20px;
+background: #ffffff;
+}
+
+.preview-container {
+width: 100%;
+max-width: 1120px;
+margin: auto;
+}
+
+/* ================= TÍTULO ================= */
+
+.preview-section .section-heading {
+max-width: 760px;
+margin: 0 auto 45px;
+text-align: center;
+}
+
+.preview-section .section-badge {
+display: inline-block;
+
+padding: 7px 14px;
+
+border-radius: 30px;
+
+background: #f7ebeb;
+
+color: #d13622;
+
+font-size: 10px;
+
+font-weight: 800;
+
+letter-spacing: 1px;
+
+}
+
+.preview-section .section-heading h2 {
+margin: 15px 0;
+
+font-size: 36px;
+
+line-height: 1.15;
+
+color: #172033;
+
+}
+
+.preview-section .section-heading p {
+max-width: 680px;
+
+margin: 0 auto;
+
+color: #697386;
+
+font-size: 15px;
+
+line-height: 1.7;
+
+}
+
+/* ================= GRID ================= */
+
+.preview-grid {
+width: 100%;
+
+display: grid;
+
+grid-template-columns: repeat(3, 1fr);
+
+gap: 22px;
+
+}
+
+/* ================= CARD ================= */
+
+.preview-card {
+background: #ffffff;
+
+border: 1px solid #eeeeee;
+
+border-radius: 18px;
+
+padding: 15px;
+
+box-shadow:
+    0 12px 35px rgba(23, 32, 51, 0.08);
+
+transition: 0.2s ease;
+
+overflow: hidden;
+
+}
+
+.preview-card {
+transform: translateY(-4px);
+
+box-shadow:
+    0 18px 40px rgba(23, 32, 51, 0.12);
+
+}
+
+/* ================= LABEL ================= */
+
+.preview-label {
+margin: 5px 3px 15px;
+
+font-size: 11px;
+
+font-weight: 800;
+
+color: #d13622;
+
+letter-spacing: 0.5px;
+
+}
+
+/* ================= IMAGEM REAL DO PDF ================= */
+
+.preview-image-wrapper {
+width: 100%;
+
+height: 480px;
+
+overflow: hidden;
+
+display: flex;
+
+align-items: flex-start;
+
+justify-content: center;
+
+background: #f5f5f3;
+
+border-radius: 12px;
+
+}
+
+.preview-image {
+display: block;
+
+width: 100%;
+
+height: 100%;
+
+object-fit: contain;
+
+object-position: top center;
+
+}
+
+/* ================= TEXTO DO CARD ================= */
+
+.preview-card h3 {
+margin: 18px 3px 8px;
+
+font-size: 19px;
+
+line-height: 1.3;
+
+color: #172033;
+
+}
+
+.preview-card p {
+margin: 0 3px 5px;
+
+font-size: 12px;
+
+line-height: 1.6;
+
+color: #697386;
+
+}
+
+/* ================================================= /
+/ ================= BLOCO INFERIOR ================= /
+/ ================================================= */
+
+.preview-bottom {
+width: 100%;
+
+margin-top: 25px;
+
+padding: 22px;
+
+display: flex;
+
+align-items: center;
+
+gap: 22px;
+
+background: #f7ebeb;
+
+border-radius: 18px;
+
+}
+
+/* ================= MINI PÁGINA ================= */
+
+.preview-mini {
+width: 90px;
+
+height: 120px;
+
+flex-shrink: 0;
+
+overflow: hidden;
+
+display: flex;
+
+justify-content: center;
+
+align-items: flex-start;
+
+background: #ffffff;
+
+border-radius: 9px;
+
+box-shadow:
+    0 8px 20px rgba(23, 32, 51, 0.10);
+
+}
+
+.preview-mini img {
+display: block;
+
+width: 100%;
+
+height: 100%;
+
+object-fit: contain;
+
+}
+
+/* ================= TEXTO INFERIOR ================= */
+
+.preview-bottom-text {
+display: flex;
+
+flex-direction: column;
+
+gap: 7px;
+
+}
+
+.preview-bottom-text strong {
+font-size: 18px;
+
+line-height: 1.35;
+
+color: #172033;
+
+}
+
+.preview-bottom-text span {
+font-size: 12px;
+
+line-height: 1.6;
+
+color: #697386;
+
+}
+
+/* ================================================= /
+/ ===================== TABLET ==================== /
+/ ================================================= */
+
+@media (max-width: 1000px) {
+
+.preview-grid {
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 15px;
+}
+
+.preview-image-wrapper {
+    height: 400px;
+}
+
+.preview-card {
+    padding: 12px;
+}
+
+.preview-card h3 {
+    font-size: 17px;
+}
+
+.preview-card p {
+    font-size: 11px;
+}
+
+}
+
+/* ================================================= /
+/ ===================== TABLET ==================== /
+/ ================================================= */
+
+@media (max-width: 900px) {
+
+.preview-section {
+    padding: 75px 20px;
+}
+
+.preview-section .section-heading h2 {
+    font-size: 32px;
+}
+
+.preview-section .section-heading p {
+    font-size: 14px;
+}
+
+.preview-grid {
+    grid-template-columns: 1fr;
+
+    max-width: 600px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    gap: 22px;
+}
+
+.preview-image-wrapper {
+    height: auto;
+
+    max-height: 720px;
+}
+
+.preview-image {
+    width: 100%;
+
+    height: auto;
+
+    max-height: 720px;
+
+    object-fit: contain;
+}
+
+}
+
+/* ================================================= /
+/ ===================== CELULAR =================== /
+/ ================================================= */
+
+@media (max-width: 700px) {
+
+.preview-section {
+    padding: 65px 15px;
+}
+
+.preview-section .section-heading {
+    margin-bottom: 30px;
+}
+
+.preview-section .section-heading h2 {
+    font-size: 27px;
+}
+
+.preview-section .section-heading p {
+    font-size: 13px;
+
+    line-height: 1.6;
+}
+
+.preview-grid {
+    gap: 18px;
+}
+
+.preview-card {
+    padding: 12px;
+
+    border-radius: 15px;
+}
+
+.preview-label {
+    font-size: 9px;
+
+    margin-bottom: 12px;
+}
+
+.preview-image-wrapper {
+    height: auto;
+
+    max-height: none;
+
+    border-radius: 10px;
+}
+
+.preview-image {
+    width: 100%;
+
+    height: auto;
+
+    max-height: none;
+}
+
+.preview-card h3 {
+    margin-top: 15px;
+
+    font-size: 16px;
+}
+
+.preview-card p {
+    font-size: 10px;
+
+    line-height: 1.55;
+}
+
+
+/* ================= BLOCO INFERIOR ================= */
+
+.preview-bottom {
+    margin-top: 18px;
+
+    padding: 17px;
+
+    gap: 15px;
+
+    border-radius: 15px;
+}
+
+.preview-mini {
+    width: 70px;
+
+    height: 95px;
+
+    border-radius: 7px;
+}
+
+.preview-bottom-text {
+    gap: 5px;
+}
+
+.preview-bottom-text strong {
+    font-size: 15px;
+}
+
+.preview-bottom-text span {
+    font-size: 10px;
+
+    line-height: 1.5;
+}
+
+}
+
+/* ================================================= /
+/ ================= CELULAR PEQUENO =============== /
+/ ================================================= */
+
+@media (max-width: 480px) {
+
+.preview-section {
+    padding: 55px 12px;
+}
+
+.preview-section .section-heading h2 {
+    font-size: 24px;
+}
+
+.preview-section .section-heading p {
+    font-size: 12px;
+}
+
+.preview-card {
+    padding: 10px;
+
+    border-radius: 13px;
+}
+
+.preview-label {
+    font-size: 8px;
+}
+
+.preview-card h3 {
+    font-size: 15px;
+}
+
+.preview-card p {
+    font-size: 9px;
+}
+
+.preview-bottom {
+    padding: 14px;
+
+    gap: 12px;
+}
+
+.preview-mini {
+    width: 60px;
+
+    height: 82px;
+}
+
+.preview-bottom-text strong {
+    font-size: 13px;
+}
+
+.preview-bottom-text span {
+    font-size: 9px;
+}
+
+}
+
+/* ================================================= /
+/ ================= MUITO PEQUENO ================= /
+/ ================================================= */
+
+@media (max-width: 360px) {
+
+.preview-section {
+    padding: 50px 10px;
+}
+
+.preview-section .section-heading h2 {
+    font-size: 22px;
+}
+
+.preview-section .section-heading p {
+    font-size: 11px;
+}
+
+.preview-card h3 {
+    font-size: 14px;
+}
+
+.preview-card p {
+    font-size: 8px;
+}
+
+.preview-bottom-text strong {
+    font-size: 12px;
+}
+
+.preview-bottom-text span {
+    font-size: 8px;
+}
+
+}
+
+Fechar
