@@ -17,16 +17,16 @@
 <style>
 /* ================= CRONÔMETRO DA PROMOÇÃO ================= */
 .promo-timer {
-    margin: 24px 0 22px;
-    padding: 16px 20px;
-    background: #111F28;
-    border-radius: 12px;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    border-radius: 0;
     text-align: center;
 }
 
 .promo-timer-label {
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: 0;
     color: #F4F0E7;
     font-size: 11px;
     font-weight: 800;
@@ -35,10 +35,10 @@
 
 .promo-countdown {
     color: #F74B35;
-    font-size: 32px;
+    font-size: 15px;
     line-height: 1;
     font-weight: 800;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 
 .promo-ended {
@@ -58,11 +58,13 @@
 
         <div class="top-bar-content">
 
-            <strong>ACESSO DIGITAL IMEDIATO</strong>
+            <strong>OFERTA ESPECIAL</strong>
 
             <span>•</span>
 
-            <span>Estude antes de embarcar</span>
+            <span>Termina em</span>
+
+            <span class="promo-countdown" id="promoCountdown">18:00:00</span>
 
         </div>
 
@@ -715,20 +717,6 @@
                         Em vez de tentar memorizar centenas de palavras, tenha acesso a frases práticas para consultar exatamente quando precisar.
                     </p>
 
-
-                    <!-- ================= CRONÔMETRO ================= -->
-
-                    <div class="promo-timer">
-
-                        <span class="promo-timer-label">
-                            OFERTA ESPECIAL TERMINA EM
-                        </span>
-
-                        <div class="promo-countdown" id="promoCountdown">
-                            18:00:00
-                        </div>
-
-                    </div>
 
                     <a
                         href="index (2).html"
