@@ -2,55 +2,21 @@
 <html lang="pt-BR">
 
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 
     <title>Inglês sem Travar na Viagem</title>
 
     <link rel="stylesheet" href="web2.css">
 
-<style>
-/* ================= VEJA POR DENTRO ================= */
-.preview-section{padding:90px 20px;background:#f7f8fa}.preview-container{width:min(1180px,100%);margin:0 auto}.preview-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:45px}.preview-card{background:#fff;border-radius:22px;padding:18px;box-shadow:0 15px 45px rgba(0,0,0,.08);overflow:hidden}.preview-label{font-size:13px;font-weight:800;letter-spacing:.4px;margin:4px 4px 16px}.preview-image-wrapper{width:100%;height:500px;overflow:hidden;border-radius:14px;background:#eceff3}.preview-image{display:block;width:100%;height:100%;object-fit:contain;object-position:top center}.preview-card h3{margin:20px 4px 8px;font-size:21px;line-height:1.2}.preview-card p{margin:0 4px 8px;line-height:1.6;color:#5f6368}.preview-bottom{display:flex;align-items:center;gap:28px;margin-top:35px;padding:25px;background:#fff;border-radius:22px;box-shadow:0 15px 45px rgba(0,0,0,.06)}.preview-mini{width:120px;height:160px;flex:0 0 120px;overflow:hidden;border-radius:10px;background:#eceff3}.preview-mini img{width:100%;height:100%;object-fit:contain}.preview-bottom-text{display:flex;flex-direction:column;gap:8px}.preview-bottom-text strong{font-size:20px}.preview-bottom-text span{color:#656a70;line-height:1.5}@media(max-width:900px){.preview-grid{grid-template-columns:1fr;max-width:600px;margin-left:auto;margin-right:auto}.preview-image-wrapper{height:auto;max-height:720px}.preview-image{height:auto;max-height:720px}}@media(max-width:600px){.preview-section{padding:65px 16px}.preview-grid{gap:20px;margin-top:30px}.preview-card{padding:13px;border-radius:18px}.preview-bottom{align-items:flex-start;padding:18px;gap:16px}.preview-mini{width:80px;height:110px;flex-basis:80px}.preview-bottom-text strong{font-size:17px}.preview-bottom-text span{font-size:14px}}
-</style>
-
-<style>
-/* ================= CRONÔMETRO DA PROMOÇÃO ================= */
-.promo-timer {
-    margin: 0;
-    padding: 0;
-    background: transparent;
-    border-radius: 0;
-    text-align: center;
-}
-
-.promo-timer-label {
-    display: block;
-    margin-bottom: 0;
-    color: #F4F0E7;
-    font-size: 11px;
-    font-weight: 800;
-    letter-spacing: 1px;
-}
-
-.promo-countdown {
-    color: #F74B35;
-    font-size: 15px;
-    line-height: 1;
-    font-weight: 800;
-    letter-spacing: 1px;
-}
-
-.promo-ended {
-    color: #F4F0E7;
-    font-size: 18px;
-    letter-spacing: 0;
-}
-</style>
-
 </head>
 
+
 <body>
+
 
     <!-- ================= TOP BAR ================= -->
 
@@ -64,7 +30,9 @@
 
             <span>Termina em</span>
 
-            <span class="promo-countdown" id="promoCountdown">18:00:00</span>
+            <span class="promo-countdown" id="promoCountdown">
+                18:00:00
+            </span>
 
         </div>
 
@@ -81,7 +49,27 @@
                 AXION<span>CORP</span>
             </div>
 
-            <nav class="menu">
+
+            <!-- BOTÃO MENU MOBILE -->
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Abrir menu"
+                aria-expanded="false"
+                type="button"
+            >
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+
+            <!-- MENU -->
+
+            <nav class="menu" id="mainMenu">
 
                 <a href="#conteudo">
                     O que você recebe
@@ -91,7 +79,10 @@
                     Dúvidas
                 </a>
 
-                <a href="#oferta" class="header-button">
+                <a
+                    href="#oferta"
+                    class="header-button"
+                >
                     Quero meu ebook
                 </a>
 
@@ -106,6 +97,7 @@
 
     <main>
 
+
         <section class="hero">
 
             <div class="hero-container">
@@ -114,18 +106,25 @@
                     GUIA DIGITAL PARA SUA VIAGEM
                 </div>
 
+
                 <h1>
                     Inglês <span>Sem Travar</span> na Viagem
                 </h1>
 
+
                 <p class="hero-description">
-                    Saiba exatamente o que falar em inglês nas situações que mais podem acontecer durante sua viagem — com frases prontas, tradução, pronúncia e exemplos práticos.
+
+                    Saiba exatamente o que falar em inglês nas situações
+                    que mais podem acontecer durante sua viagem — com frases
+                    prontas, tradução, pronúncia e exemplos práticos.
+
                 </p>
 
 
                 <!-- ================= PRODUTO ================= -->
 
                 <div class="product-area">
+
 
                     <!-- CAPA -->
 
@@ -146,31 +145,49 @@
 
                     <!-- CARD DE COMPRA -->
 
-                    <div class="product-right" id="comprar">
+                    <div
+                        class="product-right"
+                        id="comprar"
+                    >
 
                         <div class="purchase-card">
 
                             <div class="small-title">
-                                Você já imaginou chegar à imigração e não entender o que o agente está perguntando?
+
+                                Você já imaginou chegar à imigração
+                                e não entender o que o agente está
+                                perguntando?
+
                             </div>
 
+
                             <div class="access">
-                                Tenha acesso imediato ao guia e consulte as frases quando precisar.
+
+                                Tenha acesso imediato ao guia e consulte
+                                as frases quando precisar.
+
                             </div>
+
 
                             <div class="price">
                                 R$ 24,99
                             </div>
 
 
-                            <div class="benefits" id="beneficios">
+                            <!-- BENEFÍCIOS -->
+
+                            <div
+                                class="benefits"
+                                id="beneficios"
+                            >
 
                                 <div class="benefit">
 
                                     <span>✓</span>
 
                                     <p>
-                                        Viaje com mais segurança para lidar com situações comuns em inglês.
+                                        Viaje com mais segurança para lidar
+                                        com situações comuns em inglês.
                                     </p>
 
                                 </div>
@@ -181,7 +198,8 @@
                                     <span>✓</span>
 
                                     <p>
-                                        Tenha frases prontas para consultar antes ou durante a viagem.
+                                        Tenha frases prontas para consultar
+                                        antes ou durante a viagem.
                                     </p>
 
                                 </div>
@@ -192,7 +210,8 @@
                                     <span>✓</span>
 
                                     <p>
-                                        Prepare-se para aeroporto, imigração, hotel, restaurante, transporte e muito mais.
+                                        Prepare-se para aeroporto, imigração,
+                                        hotel, restaurante, transporte e muito mais.
                                     </p>
 
                                 </div>
@@ -203,7 +222,8 @@
                                     <span>✓</span>
 
                                     <p>
-                                        Evite aquele momento de nervosismo sem saber o que responder ou perguntar.
+                                        Evite aquele momento de nervosismo
+                                        sem saber o que responder ou perguntar.
                                     </p>
 
                                 </div>
@@ -240,63 +260,167 @@
 
         <!-- ================= VEJA POR DENTRO ================= -->
 
-        <section class="preview-section" id="veja-por-dentro">
+        <section
+            class="preview-section"
+            id="veja-por-dentro"
+        >
 
             <div class="preview-container">
 
+
                 <div class="section-heading">
+
                     <div class="section-badge">
                         VEJA POR DENTRO DO GUIA
                     </div>
+
 
                     <h2>
                         Veja algumas páginas reais do seu material.
                     </h2>
 
+
                     <p>
-                        Não é apenas um ebook de inglês. Você encontra frases, tradução, pronúncia e exemplos práticos para situações reais da viagem.
+
+                        Não é apenas um ebook de inglês.
+                        Você encontra frases, tradução, pronúncia
+                        e exemplos práticos para situações reais da viagem.
+
                     </p>
+
                 </div>
+
 
                 <div class="preview-grid">
 
-                    <article class="preview-card">
-                        <div class="preview-label">✈️ AEROPORTO E IMIGRAÇÃO</div>
-                        <div class="preview-image-wrapper">
-                            <img src="page_9_nova.png" alt="Página real do ebook sobre Aeroporto e Imigração" class="preview-image" loading="lazy">
-                        </div>
-                        <h3>Saiba o que responder na imigração</h3>
-                        <p>Perguntas comuns do oficial e exemplos de respostas para você se preparar antes da viagem.</p>
-                    </article>
+
+                    <!-- CARD 1 -->
 
                     <article class="preview-card">
-                        <div class="preview-label">🏨 HOTEL</div>
-                        <div class="preview-image-wrapper">
-                            <img src="page_16_nova.png" alt="Página real do ebook sobre Hotel" class="preview-image" loading="lazy">
+
+                        <div class="preview-label">
+                            ✈️ AEROPORTO E IMIGRAÇÃO
                         </div>
-                        <h3>Resolva situações no hotel</h3>
-                        <p>Frases para check-in, problemas no quarto, Wi-Fi, ar-condicionado e outras situações.</p>
+
+
+                        <div class="preview-image-wrapper">
+
+                            <img
+                                src="page_9_nova.png"
+                                alt="Página real do ebook sobre Aeroporto e Imigração"
+                                class="preview-image"
+                                loading="lazy"
+                            >
+
+                        </div>
+
+
+                        <h3>
+                            Saiba o que responder na imigração
+                        </h3>
+
+
+                        <p>
+
+                            Perguntas comuns do oficial e exemplos
+                            de respostas para você se preparar antes da viagem.
+
+                        </p>
+
                     </article>
 
+
+
+                    <!-- CARD 2 -->
+
                     <article class="preview-card">
-                        <div class="preview-label">🍽️ RESTAURANTES</div>
-                        <div class="preview-image-wrapper">
-                            <img src="page_20_nova.png" alt="Página real do ebook sobre Restaurantes" class="preview-image" loading="lazy">
+
+                        <div class="preview-label">
+                            🏨 HOTEL
                         </div>
-                        <h3>Peça sua comida sem travar</h3>
-                        <p>Aprenda frases para pedir comida, falar sobre restrições alimentares e pedir a conta.</p>
+
+
+                        <div class="preview-image-wrapper">
+
+                            <img
+                                src="page_16_nova.png"
+                                alt="Página real do ebook sobre Hotel"
+                                class="preview-image"
+                                loading="lazy"
+                            >
+
+                        </div>
+
+
+                        <h3>
+                            Resolva situações no hotel
+                        </h3>
+
+
+                        <p>
+
+                            Frases para check-in, problemas no quarto,
+                            Wi-Fi, ar-condicionado e outras situações.
+
+                        </p>
+
+                    </article>
+
+
+
+                    <!-- CARD 3 -->
+
+                    <article class="preview-card">
+
+                        <div class="preview-label">
+                            🍽️ RESTAURANTES
+                        </div>
+
+
+                        <div class="preview-image-wrapper">
+
+                            <img
+                                src="page_20_nova.png"
+                                alt="Página real do ebook sobre Restaurantes"
+                                class="preview-image"
+                                loading="lazy"
+                            >
+
+                        </div>
+
+
+                        <h3>
+                            Peça sua comida sem travar
+                        </h3>
+
+
+                        <p>
+
+                            Aprenda frases para pedir comida,
+                            falar sobre restrições alimentares
+                            e pedir a conta.
+
+                        </p>
+
                     </article>
 
                 </div>
+
+            </div>
 
         </section>
 
 
+
         <!-- ================= CONTEÚDO ================= -->
 
-        <section class="content-section" id="conteudo">
+        <section
+            class="content-section"
+            id="conteudo"
+        >
 
             <div class="content-container">
+
 
                 <div class="section-heading">
 
@@ -304,12 +428,20 @@
                         PREPARE-SE PARA A VIAGEM
                     </div>
 
+
                     <h2>
-                        Tenha frases prontas para as situações que realmente importam.
+
+                        Tenha frases prontas para as situações
+                        que realmente importam.
+
                     </h2>
 
+
                     <p>
-                        Consulte o guia quando precisar e saiba o que falar em diferentes momentos da sua viagem.
+
+                        Consulte o guia quando precisar e saiba
+                        o que falar em diferentes momentos da sua viagem.
+
                     </p>
 
                 </div>
@@ -329,10 +461,14 @@
                         </strong>
 
                         <span>
-                            Saiba o que falar no check-in, embarque e durante sua passagem pelo aeroporto.
+
+                            Saiba o que falar no check-in,
+                            embarque e durante sua passagem pelo aeroporto.
+
                         </span>
 
                     </div>
+
 
 
                     <div class="content-item">
@@ -346,10 +482,14 @@
                         </strong>
 
                         <span>
-                            Prepare-se para responder perguntas comuns de forma mais tranquila.
+
+                            Prepare-se para responder perguntas comuns
+                            de forma mais tranquila.
+
                         </span>
 
                     </div>
+
 
 
                     <div class="content-item">
@@ -363,10 +503,14 @@
                         </strong>
 
                         <span>
-                            Aprenda frases para fazer check-in, pedir informações e resolver situações.
+
+                            Aprenda frases para fazer check-in,
+                            pedir informações e resolver situações.
+
                         </span>
 
                     </div>
+
 
 
                     <div class="content-item">
@@ -380,10 +524,14 @@
                         </strong>
 
                         <span>
-                            Saiba pedir sua comida, perguntar sobre o cardápio e lidar com a conta.
+
+                            Saiba pedir sua comida, perguntar
+                            sobre o cardápio e lidar com a conta.
+
                         </span>
 
                     </div>
+
 
 
                     <div class="content-item">
@@ -397,10 +545,14 @@
                         </strong>
 
                         <span>
-                            Tenha frases úteis para táxis, aplicativos, ônibus e para pedir direções.
+
+                            Tenha frases úteis para táxis,
+                            aplicativos, ônibus e para pedir direções.
+
                         </span>
 
                     </div>
+
 
 
                     <div class="content-item">
@@ -414,10 +566,14 @@
                         </strong>
 
                         <span>
-                            Aprenda a perguntar preços, tamanhos, disponibilidade e formas de pagamento.
+
+                            Aprenda a perguntar preços, tamanhos,
+                            disponibilidade e formas de pagamento.
+
                         </span>
 
                     </div>
+
 
 
                     <div class="content-item">
@@ -431,10 +587,14 @@
                         </strong>
 
                         <span>
-                            Prepare-se para pedir informações e aproveitar melhor os lugares que visitar.
+
+                            Prepare-se para pedir informações
+                            e aproveitar melhor os lugares que visitar.
+
                         </span>
 
                     </div>
+
 
 
                     <div class="content-item">
@@ -448,10 +608,14 @@
                         </strong>
 
                         <span>
-                            Tenha frases importantes para pedir ajuda quando surgir uma situação inesperada.
+
+                            Tenha frases importantes para pedir
+                            ajuda quando surgir uma situação inesperada.
+
                         </span>
 
                     </div>
+
 
 
                     <div class="content-item">
@@ -465,10 +629,14 @@
                         </strong>
 
                         <span>
-                            Consulte expressões úteis para situações reais do dia a dia.
+
+                            Consulte expressões úteis para
+                            situações reais do dia a dia.
+
                         </span>
 
                     </div>
+
 
 
                     <div class="content-item">
@@ -482,7 +650,10 @@
                         </strong>
 
                         <span>
-                            Pratique as frases e chegue mais preparado para sua viagem.
+
+                            Pratique as frases e chegue mais
+                            preparado para sua viagem.
+
                         </span>
 
                     </div>
@@ -495,76 +666,219 @@
 
 
 
-        <!-- ================= POR QUE ESTE MATERIAL? ================= -->
+        <!-- ================= POR QUE ESTE MATERIAL ================= -->
 
-        <section class="audience-section" style="
-            width: 100%;
-            padding: 38px 23px 105px;
-            background: #111f28;
-            color: #ffffff;
-        ">
+        <section
+            class="audience-section"
+            style="
+                width:100%;
+                padding:38px 23px 105px;
+                background:#111f28;
+                color:#ffffff;
+            "
+        >
 
-            <div style="
-                width: 100%;
-                max-width: 1050px;
-                margin: 0 auto;
-            ">
+            <div
+                style="
+                    width:100%;
+                    max-width:1050px;
+                    margin:0 auto;
+                "
+            >
 
-                <div style="margin-bottom: 65px;">
+                <div style="margin-bottom:65px;">
 
-                    <div style="
-                        font-size: 12px;
-                        font-weight: 800;
-                        letter-spacing: 1.4px;
-                        color: #ef4936;
-                        margin-bottom: 20px;
-                    ">
+                    <div
+                        style="
+                            font-size:12px;
+                            font-weight:800;
+                            letter-spacing:1.4px;
+                            color:#ef4936;
+                            margin-bottom:20px;
+                        "
+                    >
                         POR QUE ESTE MATERIAL?
                     </div>
 
-                    <h2 style="
-                        margin: 0;
-                        font-size: 50px;
-                        line-height: 1.05;
-                        font-weight: 400;
-                        letter-spacing: -2px;
-                        color: #ffffff;
-                    ">
+
+                    <h2
+                        style="
+                            margin:0;
+                            font-size:50px;
+                            line-height:1.05;
+                            font-weight:400;
+                            letter-spacing:-2px;
+                            color:#ffffff;
+                        "
+                    >
+
                         Menos ansiedade.<br>
-                        <span style="color: #ef4936;">Mais liberdade.</span>
+
+                        <span style="color:#ef4936;">
+                            Mais liberdade.
+                        </span>
+
                     </h2>
 
                 </div>
 
-                <div style="
-                    width: 100%;
-                    height: 1px;
-                    background: rgba(255,255,255,0.18);
-                    margin-bottom: 36px;
-                "></div>
 
-                <div style="
-                    display: grid;
-                    grid-template-columns: repeat(3, 1fr);
-                    gap: 70px;
-                ">
+                <div
+                    style="
+                        width:100%;
+                        height:1px;
+                        background:rgba(255,255,255,0.18);
+                        margin-bottom:36px;
+                    "
+                ></div>
+
+
+                <div
+                    style="
+                        display:grid;
+                        grid-template-columns:repeat(3,1fr);
+                        gap:70px;
+                    "
+                >
+
 
                     <div>
-                        <div style="font-size: 12px; font-weight: 500; color: #ef4936; margin-bottom: 31px;">01</div>
-                        <h3 style="margin: 0 0 18px; font-size: 21px; line-height: 1.2; font-weight: 400; color: #ffffff;">Prático de verdade</h3>
-                        <p style="margin: 0; max-width: 270px; font-size: 14px; line-height: 1.65; font-weight: 400; color: #b9c1c7;">Frases prontas separadas por situação para você encontrar exatamente o que precisa.</p>
+
+                        <div
+                            style="
+                                font-size:12px;
+                                font-weight:500;
+                                color:#ef4936;
+                                margin-bottom:31px;
+                            "
+                        >
+                            01
+                        </div>
+
+
+                        <h3
+                            style="
+                                margin:0 0 18px;
+                                font-size:21px;
+                                line-height:1.2;
+                                font-weight:400;
+                                color:#ffffff;
+                            "
+                        >
+                            Prático de verdade
+                        </h3>
+
+
+                        <p
+                            style="
+                                margin:0;
+                                max-width:270px;
+                                font-size:14px;
+                                line-height:1.65;
+                                font-weight:400;
+                                color:#b9c1c7;
+                            "
+                        >
+
+                            Frases prontas separadas por situação
+                            para você encontrar exatamente o que precisa.
+
+                        </p>
+
                     </div>
 
-                    <div>
-                        <div style="font-size: 12px; font-weight: 500; color: #ef4936; margin-bottom: 31px;">02</div>
-                        <h3 style="margin: 0 0 18px; font-size: 21px; line-height: 1.2; font-weight: 400; color: #ffffff;">Feito para iniciantes</h3>
-                        <p style="margin: 0; max-width: 270px; font-size: 14px; line-height: 1.65; font-weight: 400; color: #b9c1c7;">Sem palavras difíceis ou explicações intermináveis. Aprenda pelo contexto e use na hora.</p>
-                    </div>
+
 
                     <div>
-                        <div style="font-size: 12px; font-weight: 500; color: #ef4936; margin-bottom: 31px;">03</div>
-                        <h3 style="margin: 0 0 18px; font-size: 21px; line-height: 1.2; font-weight: 400; color: #ffffff;">Seu guia de bolso</h3>
-                        <p style="margin: 0; max-width: 270px; font-size: 14px; line-height: 1.65; font-weight: 400; color: #b9c1c7;">Consulte pelo celular antes ou durante a viagem, no seu ritmo e onde estiver.</p>
+
+                        <div
+                            style="
+                                font-size:12px;
+                                font-weight:500;
+                                color:#ef4936;
+                                margin-bottom:31px;
+                            "
+                        >
+                            02
+                        </div>
+
+
+                        <h3
+                            style="
+                                margin:0 0 18px;
+                                font-size:21px;
+                                line-height:1.2;
+                                font-weight:400;
+                                color:#ffffff;
+                            "
+                        >
+                            Feito para iniciantes
+                        </h3>
+
+
+                        <p
+                            style="
+                                margin:0;
+                                max-width:270px;
+                                font-size:14px;
+                                line-height:1.65;
+                                font-weight:400;
+                                color:#b9c1c7;
+                            "
+                        >
+
+                            Sem palavras difíceis ou explicações
+                            intermináveis. Aprenda pelo contexto e use na hora.
+
+                        </p>
+
+                    </div>
+
+
+
+                    <div>
+
+                        <div
+                            style="
+                                font-size:12px;
+                                font-weight:500;
+                                color:#ef4936;
+                                margin-bottom:31px;
+                            "
+                        >
+                            03
+                        </div>
+
+
+                        <h3
+                            style="
+                                margin:0 0 18px;
+                                font-size:21px;
+                                line-height:1.2;
+                                font-weight:400;
+                                color:#ffffff;
+                            "
+                        >
+                            Seu guia de bolso
+                        </h3>
+
+
+                        <p
+                            style="
+                                margin:0;
+                                max-width:270px;
+                                font-size:14px;
+                                line-height:1.65;
+                                font-weight:400;
+                                color:#b9c1c7;
+                            "
+                        >
+
+                            Consulte pelo celular antes ou durante
+                            a viagem, no seu ritmo e onde estiver.
+
+                        </p>
+
                     </div>
 
                 </div>
@@ -572,6 +886,7 @@
             </div>
 
         </section>
+
 
 
         <!-- ================= FRASE DE IMPACTO ================= -->
@@ -584,9 +899,15 @@
                     “
                 </div>
 
+
                 <h2>
+
                     Você não precisa falar inglês perfeitamente.
-                    <span>Precisa saber o que dizer quando realmente precisar.</span>
+
+                    <span>
+                        Precisa saber o que dizer quando realmente precisar.
+                    </span>
+
                 </h2>
 
             </div>
@@ -597,9 +918,13 @@
 
         <!-- ================= FAQ ================= -->
 
-        <section class="faq-section" id="faq">
+        <section
+            class="faq-section"
+            id="faq"
+        >
 
             <div class="faq-container">
+
 
                 <div class="section-heading">
 
@@ -607,12 +932,17 @@
                         PERGUNTAS FREQUENTES
                     </div>
 
+
                     <h2>
                         Ainda ficou com alguma dúvida?
                     </h2>
 
+
                     <p>
-                        Confira as respostas para as perguntas mais comuns sobre o guia.
+
+                        Confira as respostas para as perguntas
+                        mais comuns sobre o guia.
+
                     </p>
 
                 </div>
@@ -628,10 +958,14 @@
                         </h3>
 
                         <p>
-                            Não. O material foi pensado para quem possui conhecimento básico ou pouca confiança.
+
+                            Não. O material foi pensado para quem
+                            possui conhecimento básico ou pouca confiança.
+
                         </p>
 
                     </div>
+
 
 
                     <div class="faq-item">
@@ -647,6 +981,7 @@
                     </div>
 
 
+
                     <div class="faq-item">
 
                         <h3>
@@ -658,6 +993,7 @@
                         </p>
 
                     </div>
+
 
 
                     <div class="faq-item">
@@ -673,6 +1009,7 @@
                     </div>
 
 
+
                     <div class="faq-item">
 
                         <h3>
@@ -680,7 +1017,10 @@
                         </h3>
 
                         <p>
-                            Ele é focado em situações comuns de viagens internacionais em inglês.
+
+                            Ele é focado em situações comuns
+                            de viagens internacionais em inglês.
+
                         </p>
 
                     </div>
@@ -695,9 +1035,13 @@
 
         <!-- ================= NOVA OFERTA ================= -->
 
-        <section class="offer-section" id="oferta">
+        <section
+            class="offer-section"
+            id="oferta"
+        >
 
             <div class="offer-container">
+
 
                 <div class="offer-text">
 
@@ -705,12 +1049,21 @@
                         VIAJE MAIS PREPARADO
                     </div>
 
+
                     <h2>
-                        Tenha o inglês necessário para aproveitar sua viagem com mais tranquilidade.
+
+                        Tenha o inglês necessário para aproveitar
+                        sua viagem com mais tranquilidade.
+
                     </h2>
 
+
                     <p>
-                        Em vez de tentar memorizar centenas de palavras, tenha acesso a frases práticas para consultar exatamente quando precisar.
+
+                        Em vez de tentar memorizar centenas de palavras,
+                        tenha acesso a frases práticas para consultar
+                        exatamente quando precisar.
+
                     </p>
 
 
@@ -723,6 +1076,7 @@
                     </a>
 
                 </div>
+
 
 
                 <div class="offer-product">
@@ -755,57 +1109,269 @@
             Axion<span>Corp</span>
         </div>
 
+
         <p>
-            © 2026 Inglês sem Travar na Viagem • Todos os direitos reservados.
+
+            © 2026 Inglês sem Travar na Viagem
+            • Todos os direitos reservados.
+
         </p>
 
     </footer>
 
 
 
+    <!-- ================= JAVASCRIPT ================= -->
+
     <script src="web3.js"></script>
 
 
-<script>
-(function () {
-    const STORAGE_KEY = "axioncorp_promo_end";
-    const DURATION = 18 * 60 * 60 * 1000; // 18 horas
-    const countdown = document.getElementById("promoCountdown");
+    <!-- CRONÔMETRO -->
 
-    if (!countdown) return;
+    <script>
 
-    let endTime = Number(localStorage.getItem(STORAGE_KEY));
+    (function () {
 
-    if (!endTime || endTime <= Date.now()) {
-        endTime = Date.now() + DURATION;
-        localStorage.setItem(STORAGE_KEY, String(endTime));
-    }
+        const STORAGE_KEY = "axioncorp_promo_end";
 
-    function updateCountdown() {
-        const remaining = endTime - Date.now();
+        const DURATION =
+            18 * 60 * 60 * 1000;
 
-        if (remaining <= 0) {
-            countdown.textContent = "OFERTA ENCERRADA";
-            countdown.classList.add("promo-ended");
-            clearInterval(timer);
-            return;
+        const countdown =
+            document.getElementById("promoCountdown");
+
+
+        if (!countdown) return;
+
+
+        let endTime =
+            Number(
+                localStorage.getItem(STORAGE_KEY)
+            );
+
+
+        if (
+            !endTime ||
+            endTime <= Date.now()
+        ) {
+
+            endTime =
+                Date.now() + DURATION;
+
+            localStorage.setItem(
+                STORAGE_KEY,
+                String(endTime)
+            );
+
         }
 
-        const totalSeconds = Math.floor(remaining / 1000);
-        const hours = Math.floor(totalSeconds / 3600);
-        const minutes = Math.floor((totalSeconds % 3600) / 60);
-        const seconds = totalSeconds % 60;
 
-        countdown.textContent =
-            String(hours).padStart(2, "0") + ":" +
-            String(minutes).padStart(2, "0") + ":" +
-            String(seconds).padStart(2, "0");
-    }
+        function updateCountdown() {
 
-    updateCountdown();
-    const timer = setInterval(updateCountdown, 1000);
-})();
-</script>
+            const remaining =
+                endTime - Date.now();
+
+
+            if (remaining <= 0) {
+
+                countdown.textContent =
+                    "OFERTA ENCERRADA";
+
+                countdown.classList.add(
+                    "promo-ended"
+                );
+
+                clearInterval(timer);
+
+                return;
+
+            }
+
+
+            const totalSeconds =
+                Math.floor(
+                    remaining / 1000
+                );
+
+
+            const hours =
+                Math.floor(
+                    totalSeconds / 3600
+                );
+
+
+            const minutes =
+                Math.floor(
+                    (totalSeconds % 3600) / 60
+                );
+
+
+            const seconds =
+                totalSeconds % 60;
+
+
+            countdown.textContent =
+
+                String(hours).padStart(2, "0") +
+                ":" +
+
+                String(minutes).padStart(2, "0") +
+                ":" +
+
+                String(seconds).padStart(2, "0");
+
+        }
+
+
+        updateCountdown();
+
+
+        const timer =
+            setInterval(
+                updateCountdown,
+                1000
+            );
+
+    })();
+
+    </script>
+
+
+
+    <!-- MENU MOBILE -->
+
+    <script>
+
+    document.addEventListener(
+        "DOMContentLoaded",
+        function () {
+
+            const menuToggle =
+                document.getElementById(
+                    "menuToggle"
+                );
+
+
+            const mainMenu =
+                document.getElementById(
+                    "mainMenu"
+                );
+
+
+            if (
+                !menuToggle ||
+                !mainMenu
+            ) {
+                return;
+            }
+
+
+            /* ABRIR / FECHAR MENU */
+
+            menuToggle.addEventListener(
+                "click",
+                function () {
+
+                    const isOpen =
+                        menuToggle.classList.toggle(
+                            "active"
+                        );
+
+
+                    mainMenu.classList.toggle(
+                        "active"
+                    );
+
+
+                    menuToggle.setAttribute(
+                        "aria-expanded",
+                        isOpen
+                    );
+
+                }
+            );
+
+
+            /* FECHAR AO CLICAR NO LINK */
+
+            const menuLinks =
+                mainMenu.querySelectorAll("a");
+
+
+            menuLinks.forEach(
+                function (link) {
+
+                    link.addEventListener(
+                        "click",
+                        function () {
+
+                            menuToggle.classList.remove(
+                                "active"
+                            );
+
+
+                            mainMenu.classList.remove(
+                                "active"
+                            );
+
+
+                            menuToggle.setAttribute(
+                                "aria-expanded",
+                                "false"
+                            );
+
+                        }
+                    );
+
+                }
+            );
+
+
+            /* FECHAR CLICANDO FORA */
+
+            document.addEventListener(
+                "click",
+                function (event) {
+
+                    if (
+
+                        !mainMenu.contains(
+                            event.target
+                        )
+
+                        &&
+
+                        !menuToggle.contains(
+                            event.target
+                        )
+
+                    ) {
+
+                        menuToggle.classList.remove(
+                            "active"
+                        );
+
+
+                        mainMenu.classList.remove(
+                            "active"
+                        );
+
+
+                        menuToggle.setAttribute(
+                            "aria-expanded",
+                            "false"
+                        );
+
+                    }
+
+                }
+            );
+
+        }
+    );
+
+    </script>
+
 
 </body>
 
