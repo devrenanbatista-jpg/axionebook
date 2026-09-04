@@ -399,33 +399,46 @@
 
     </main>
 
-
-    <!-- ================= FOOTER ================= -->
-
-  <!-- ================= FOOTER ================= -->
+<!-- ================= FOOTER ================= -->
 
 <footer>
 
     <div class="footer-content">
 
-        <!-- LOGO À ESQUERDA -->
+        <!-- ESQUERDA -->
         <div class="footer-logo">
             Axion<span>Corp</span>
         </div>
 
-        <!-- BOTÃO À DIREITA -->
-        <a href="#topo" class="voltar-topo">
+        <!-- CENTRO -->
+        <p>
+            Inglês sem Travar na Viagem © 2026
+        </p>
+
+        <!-- DIREITA -->
+        <a href="#" class="voltar-topo">
             Voltar ao topo ↑
         </a>
 
     </div>
 
-    <!-- FRASE NO CENTRO -->
-    <p>
-        Inglês sem Travar na Viagem © 2026
-    </p>
-
 </footer>
+
+
+<!-- ================= VOLTAR AO TOPO ================= -->
+
+<script>
+    document.querySelector('.voltar-topo').addEventListener('click', function(e) {
+
+        e.preventDefault();
+
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+
+    });
+</script>
 
 
     <!-- ================= VOLTAR AO TOPO ================= -->
