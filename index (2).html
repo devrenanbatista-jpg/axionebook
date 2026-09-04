@@ -20,6 +20,17 @@
     <!-- ================= SCRIPT ================= -->
 
     <script>
+    document.querySelector('.voltar-topo').addEventListener('click', function(e) {
+        e.preventDefault();
+
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+</script>
+
+    <script>
         (function () {
 
             var f_mohn = atob(
