@@ -1048,6 +1048,47 @@ footer {
     color: #EF4936;
 }
 
+/* ================= FOOTER ================= */
+
+footer {
+    width: 100%;
+    padding: 30px 28px;
+    box-sizing: border-box;
+}
+
+.footer-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.footer-logo span {
+    color: #EF4936;
+}
+
+.voltar-topo {
+    display: inline-block !important;
+    color: #111F28 !important;
+    text-decoration: none !important;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.voltar-topo:hover {
+    text-decoration: underline !important;
+}
+
+footer p {
+    text-align: center;
+    margin: 25px 0 0;
+}
 .voltar-topo {
     color: #111F28;
     text-decoration: none;
