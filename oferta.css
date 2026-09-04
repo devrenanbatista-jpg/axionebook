@@ -1028,3 +1028,38 @@ footer p {
 
 }
 
+
+footer {
+    padding: 30px 8%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.footer-logo span {
+    color: #EF4936;
+}
+
+.voltar-topo {
+    color: #111F28;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.voltar-topo:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    text-align: center;
+    margin-top: 25px;
+}
