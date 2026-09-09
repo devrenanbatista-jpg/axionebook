@@ -21,6 +21,18 @@
     </script>
     <!-- End Meta Pixel Code -->
 
+    <!-- ================= GOOGLE ANALYTICS 4 ================= -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-46ZHGMPJYV"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-46ZHGMPJYV');
+    </script>
+    <!-- ================= FIM GOOGLE ANALYTICS 4 ================= -->
+
+
 
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0, viewport-fit=cover">
@@ -322,6 +334,7 @@
                                 href="index (2).html"
                                 class="buy-button"
                                 aria-label="Quero viajar mais preparado"
+                                onclick="registrarCliqueCompra('botao_principal')"
                             >
                                 QUERO VIAJAR MAIS PREPARADO
                             </a>
@@ -1156,6 +1169,7 @@
                         href="index (2).html"
                         class="buy-button offer-button"
                         aria-label="Quero viajar mais preparado"
+                        onclick="registrarCliqueCompra('botao_oferta')"
                     >
                         QUERO VIAJAR MAIS PREPARADO
                     </a>
@@ -1482,6 +1496,32 @@
 
     </script>
 
+
+
+    <!-- ================= RASTREAMENTO DE CONVERSÃO ================= -->
+    <script>
+        function registrarCliqueCompra(local) {
+            // Google Analytics 4
+            if (typeof gtag === 'function') {
+                gtag('event', 'clique_compra', {
+                    produto: 'Inglês sem Travar na Viagem',
+                    valor: 24.99,
+                    moeda: 'BRL',
+                    local_botao: local
+                });
+            }
+
+            // Meta Pixel
+            if (typeof fbq === 'function') {
+                fbq('track', 'InitiateCheckout', {
+                    value: 24.99,
+                    currency: 'BRL',
+                    content_name: 'Inglês sem Travar na Viagem'
+                });
+            }
+        }
+    </script>
+    <!-- ================= FIM DO RASTREAMENTO ================= -->
 
 </body>
 
