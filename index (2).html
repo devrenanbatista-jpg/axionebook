@@ -20,6 +20,17 @@
     </script>
     <!-- End Meta Pixel Code -->
 
+    <!-- ================= GOOGLE ANALYTICS 4 ================= -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-46ZHGMPJYV"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-46ZHGMPJYV');
+    </script>
+    <!-- ================= FIM GOOGLE ANALYTICS 4 ================= -->
+
+
    
 
     <meta name="viewport"
@@ -434,6 +445,7 @@ src="https://www.facebook.com/tr?id=1744152410098686&ev=PageView&noscript=1"
                         <a
                             href="https://pay.cakto.com.br/377twj4_1083118"
                             class="plan-button complete-button"
+                            onclick="registrarCliqueCompra('kit_39_99')"
                         >
                             QUERO O KIT COMPLETO
                         </a>
@@ -533,6 +545,32 @@ src="https://www.facebook.com/tr?id=1744152410098686&ev=PageView&noscript=1"
 
     </script>
 
+
+
+    <!-- ================= RASTREAMENTO DE CONVERSÃO ================= -->
+    <script>
+        function registrarCliqueCompra(local) {
+            if (typeof gtag === 'function') {
+                gtag('event', 'clique_compra', {
+                    produto: 'Inglês sem Travar na Viagem',
+                    valor: local === 'kit_39_99' ? 39.99 : 24.99,
+                    moeda: 'BRL',
+                    local_botao: local
+                });
+            }
+
+            if (typeof fbq === 'function') {
+                fbq('track', 'InitiateCheckout', {
+                    value: local === 'kit_39_99' ? 39.99 : 24.99,
+                    currency: 'BRL',
+                    content_name: local === 'kit_39_99'
+                        ? 'Inglês sem Travar na Viagem 2.0'
+                        : 'Inglês sem Travar na Viagem'
+                });
+            }
+        }
+    </script>
+    <!-- ================= FIM DO RASTREAMENTO ================= -->
 
 </body>
 
